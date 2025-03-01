@@ -1,0 +1,1045 @@
+{
+  "namespace": "war_info_faction",
+  "main_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "content": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "size": [
+                  "100%",
+                  17
+                ],
+                "color": "$181821",
+                "keep_ratio": false,
+                "controls": [
+                  {
+                    "border_bottom": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$0D0D12",
+                      "keep_ratio": false,
+                      "layer": 3,
+                      "anchor_from": "bottom_left",
+                      "anchor_to": "bottom_left",
+                      "size": [
+                        "100%",
+                        1
+                      ]
+                    }
+                  },
+                  {
+                    "bg": {
+                      "type": "image",
+                      "texture": "textures/global/effet_radian",
+                      "keep_ratio": false,
+                      "color": "white",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "title@server_form.button_one": {
+                            "offset": [
+                              0,
+                              -5
+                            ],
+                            "anchor_from": "left_middle",
+                            "anchor_to": "left_middle",
+                            "$button": "rd_main.check_title"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  8
+                ]
+              }
+            },
+            {
+              "content": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  "100%",
+                  175
+                ],
+                "controls": [
+                  {
+                    "me": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        174,
+                        "100%"
+                      ],
+                      "color": "$242431",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "alpha": 0.75,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$42424F",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "alpha": 0.75,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "title_country@server_form.button_horizontal": {
+                            "$button": "war_info_faction.button_choice_country1"
+                          }
+                        },
+                        {
+                          "progress": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              150,
+                              15
+                            ],
+                            "offset": [
+                              12,
+                              50
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Progression",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    -12
+                                  ],
+                                  "shadow": true,
+                                  "font_scale_factor": 0.6
+                                }
+                              },
+                              {
+                                "percent_prog_1@server_form.button_horizontal": {
+                                  "offset": [
+                                    -16,
+                                    -8
+                                  ],
+                                  "anchor_from": "top_right",
+                                  "anchor_to": "top_right",
+                                  "$button": "war_info_faction.percent_prog_1"
+                                }
+                              },
+                              {
+                                "progress_inactivity@server_form.button_horizontal": {
+                                  "$color_bg": "$EEAD30",
+                                  "$color_bg_bottom": "$93650D",
+                                  "$size_global": [
+                                    150,
+                                    6
+                                  ],
+                                  "$button": "server_form.choice_progress"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "inactivity": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              150,
+                              15
+                            ],
+                            "offset": [
+                              12,
+                              76
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Inactivite",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    -12
+                                  ],
+                                  "shadow": true,
+                                  "font_scale_factor": 0.6
+                                }
+                              },
+                              {
+                                "percent_prog_1@server_form.button_horizontal": {
+                                  "offset": [
+                                    -16,
+                                    -8
+                                  ],
+                                  "anchor_from": "top_right",
+                                  "anchor_to": "top_right",
+                                  "$button": "war_info_faction.percent_inn_1"
+                                }
+                              },
+                              {
+                                "progress_progress@server_form.button_horizontal": {
+                                  "$color_bg": "$FF005C",
+                                  "$color_bg_bottom": "$D6004C",
+                                  "$size_global": [
+                                    150,
+                                    6
+                                  ],
+                                  "$button": "server_form.choice_progress_1"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seconde_title@server_form.text": {
+                            "$text": "Conditions de victoire",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "color": "white",
+                            "offset": [
+                              12,
+                              -74
+                            ],
+                            "shadow": true,
+                            "font_scale_factor": 0.6
+                          }
+                        },
+                        {
+                          "list": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "anchor_from": "bottom_middle",
+                            "anchor_to": "bottom_middle",
+                            "size": [
+                              150,
+                              60
+                            ],
+                            "offset": [
+                              0,
+                              -8
+                            ],
+                            "color": "$111117",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "scrolling_condition@server_form.scrolling_panel": {
+                                  "anchor_from": "top_middle",
+                                  "anchor_to": "top_middle",
+                                  "$color_bg_rail": "$14141B",
+                                  "$color_bg_handle": "$363643",
+                                  "size": [
+                                    150,
+                                    55
+                                  ],
+                                  "layer": 16,
+                                  "$show_background": false,
+                                  "$scroll_bar_side": "right",
+                                  "$scrolling_content": "war_info_faction.button_list_me",
+                                  "$scroll_size": [
+                                    3,
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_size": [
+                                    "100%",
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_offset": [
+                                    4,
+                                    3
+                                  ],
+                                  "$scroll_bar_right_padding_size": [
+                                    8,
+                                    0
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        8,
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "ennemy": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        174,
+                        "100%"
+                      ],
+                      "color": "$181821",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "alpha": 0.75,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$42424F",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "alpha": 0.75,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "title_country@server_form.button_horizontal": {
+                            "$button": "war_info_faction.button_choice_country2"
+                          }
+                        },
+                        {
+                          "progress": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              150,
+                              15
+                            ],
+                            "offset": [
+                              12,
+                              50
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Progression",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    -12
+                                  ],
+                                  "shadow": true,
+                                  "font_scale_factor": 0.6
+                                }
+                              },
+                              {
+                                "percent_prog_2@server_form.button_horizontal": {
+                                  "offset": [
+                                    -16,
+                                    -8
+                                  ],
+                                  "anchor_from": "top_right",
+                                  "anchor_to": "top_right",
+                                  "$button": "war_info_faction.percent_prog_2"
+                                }
+                              },
+                              {
+                                "progress_inactivity@server_form.button_horizontal": {
+                                  "$color_bg": "$EEAD30",
+                                  "$color_bg_bottom": "$93650D",
+                                  "$size_global": [
+                                    150,
+                                    6
+                                  ],
+                                  "$button": "server_form.choice_progress_2"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "inactivity": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              150,
+                              15
+                            ],
+                            "offset": [
+                              12,
+                              76
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Inactivite",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    -12
+                                  ],
+                                    "shadow": true,
+                                  "font_scale_factor": 0.6
+                                }
+                              },
+                              {
+                                "percent_inn_2@server_form.button_horizontal": {
+                                  "offset": [
+                                    -16,
+                                    -8
+                                  ],
+                                  "anchor_from": "top_right",
+                                  "anchor_to": "top_right",
+                                  "$button": "war_info_faction.percent_inn_2"
+                                }
+                              },
+                              {
+                                "progress_progress@server_form.button_horizontal": {
+                                  "$color_bg": "$FF005C",
+                                  "$color_bg_bottom": "$D6004C",
+                                  "$size_global": [
+                                    150,
+                                    6
+                                  ],
+                                  "$button": "server_form.choice_progress_3"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title@server_form.text": {
+                            "$text": "Conditions de victoire",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "color": "white",
+                            "offset": [
+                              12,
+                              -74
+                            ],
+                            "shadow": true,
+                            "font_scale_factor": 0.6
+                          }
+                        },
+                        {
+                          "list": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "anchor_from": "bottom_middle",
+                            "anchor_to": "bottom_middle",
+                            "size": [
+                              150,
+                              60
+                            ],
+                            "offset": [
+                              0,
+                              -8
+                            ],
+                            "color": "$111117",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "scrolling_condition@server_form.scrolling_panel": {
+                                  "anchor_from": "top_middle",
+                                  "anchor_to": "top_middle",
+                                  "$color_bg_rail": "$14141B",
+                                  "$color_bg_handle": "$363643",
+                                  "size": [
+                                    150,
+                                    55
+                                  ],
+                                  "layer": 16,
+                                  "$show_background": false,
+                                  "$scroll_bar_side": "right",
+                                  "$scrolling_content": "war_info_faction.button_list_ennemy",
+                                  "$scroll_size": [
+                                    3,
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_size": [
+                                    "100%",
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_offset": [
+                                    4,
+                                    3
+                                  ],
+                                  "$scroll_bar_right_padding_size": [
+                                    8,
+                                    0
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "percent_prog_1": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.percent": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§r§o§g§r§e') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "percent_inn_1": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.percent": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§1§r§o§g§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "percent_prog_2": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.percent": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§2§r§o§g§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "percent_inn_2": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.percent": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§3§r§o§g§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "percent": {
+    "type": "panel",
+    "size": [
+      30,
+      15
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "controls": [
+      {
+        "content@server_form.text": {
+          "$text": "#form_button_texture",
+          "font_scale_factor": 0.6,
+          "color": "white",
+          "shadow": true,
+          "offset": [
+            36,
+            -6
+          ],
+          "size": [
+            100,
+            10
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_texture",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "button_choice_country1": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.affiche": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§c§o§u§n§t§1§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_choice_country2": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.affiche": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§c§o§u§n§t§2§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "affiche": {
+    "type": "panel",
+    "size": [
+      150,
+      15
+    ],
+    "offset": [
+      2,
+      12
+    ],
+    "controls": [
+      {
+        "flag": {
+          "type": "image",
+          "keep_ratio": false,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "layer": 99,
+          "offset": [
+            8,
+            0
+          ],
+          "size": [
+            24,
+            14
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_name": "#form_button_texture_file_system",
+              "binding_name_override": "#texture_file_system",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#texture \u003d \u0027\u0027) or (#texture \u003d \u0027loading\u0027)))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "content@server_form.text": {
+          "$font_type": "MinecraftTen",
+          "$text": "#form_button_text",
+          "font_scale_factor": 0.8,
+          "color": "white",
+          "offset": [
+            36,
+            -6
+          ],
+          "size": [
+            100,
+            10
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            },
+            {
+              "binding_type":"view",
+              "source_property_name":"(('%.110s' * #form_button_text) - ':')",
+              "target_property_name":"#form_button_text"
+            }
+          ]
+        }
+      },
+      {
+        "second@server_form.text": {
+          "$font_type": "normal",
+          "$text": "#text",
+          "font_scale_factor": 0.7,
+          "color": "white",
+          "offset": [
+            36,
+            6
+          ],
+          "size": [
+            100,
+            10
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            },
+            {
+              "binding_type":"view",
+              "source_property_name":"((#form_button_text - ('%.110s' * #form_button_text)) - ':')",
+              "target_property_name":"#text"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_list_me": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@war_info_faction.button_grid_me": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 1px",
+      "100%c + 1px"
+    ]
+  },
+  "button_grid_me": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "war_info_faction.button_choice_me",
+      "name": "button_list_factory"
+    }
+  },
+  "button_choice_me": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.condition": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§1§r§0') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_list_ennemy": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@war_info_faction.button_grid_ennemy": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 1px",
+      "100%c + 1px"
+    ]
+  },
+  "button_grid_ennemy": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "war_info_faction.button_choice_ennemy",
+      "name": "button_list_factory"
+    }
+  },
+  "button_choice_ennemy": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@war_info_faction.condition": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§2§r§0') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "condition": {
+    "type": "panel",
+    "size": [
+      140,
+      10
+    ],
+    "controls": [
+      {
+        "name@server_form.text": {
+          "$text": "#form_button_text",
+          "font_scale_factor": 0.8,
+          "color": "white",
+          "offset": [
+            2,
+            0
+          ],
+          "size": [
+            100,
+            "100%"
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "value@server_form.text": {
+          "$text": "#form_button_texture",
+          "font_scale_factor": 0.8,
+          "color": "white",
+          "offset": [
+            -2,
+            0
+          ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_texture",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

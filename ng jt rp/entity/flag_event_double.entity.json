@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:flag_event_double",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/flag_event_double"
+			},
+			"geometry": {
+				"default": "geometry.flag_event_double"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#aa3b03",
+				"overlay_color": "#1863ce"
+			}
+		}
+	}
+}

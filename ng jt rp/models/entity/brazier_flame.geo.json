@@ -1,0 +1,53 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.brazier_flame",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [9, 0, -9],
+					"cubes": [
+						{
+							"origin": [-15, 0, -17],
+							"size": [32, 1, 32],
+							"uv": {
+								"north": {"uv": [12, 56], "uv_size": [12, 8]},
+								"east": {"uv": [0, 56], "uv_size": [12, 8]},
+								"south": {"uv": [36, 56], "uv_size": [12, 8]},
+								"west": {"uv": [24, 56], "uv_size": [12, 8]},
+								"up": {"uv": [12, 44], "uv_size": [12, 12]},
+								"down": {"uv": [24, 56], "uv_size": [12, -12]}
+							}
+						}
+					],
+					"locators": {
+						"locator": [1, 37, -1],
+						"locator2": [1, 10, -1]
+					}
+				},
+				{
+					"name": "bone",
+					"parent": "root",
+					"pivot": [-1.5, 2.5, 2],
+					"rotation": [0, -12.5, 0],
+					"cubes": [
+						{"origin": [4, 0, -11], "size": [3, 3, 16], "uv": [0, 0]},
+						{"origin": [-1, 4, -11], "size": [3, 3, 16], "pivot": [1, 4, -10], "rotation": [0, -12.5, 0], "uv": [0, 0]},
+						{"origin": [5, 4, -8], "size": [3, 3, 16], "pivot": [7, 4, -7], "rotation": [0, -27.5, 0], "uv": [0, 0]},
+						{"origin": [-3, 1, -13], "size": [3, 3, 16], "pivot": [-1.5, 2.5, -5], "rotation": [-12.5, -52.5, 0], "uv": [0, 0]},
+						{"origin": [-3, 6, -10], "size": [3, 3, 16], "pivot": [-1.5, 7.5, -2], "rotation": [-39.32283, -77.9992, 28.72829], "uv": [0, 0]},
+						{"origin": [-3, 1, -6], "size": [3, 3, 16], "pivot": [-1.5, 2.5, 2], "rotation": [-169.23597, -44.84206, 176.62068], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

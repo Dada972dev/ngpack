@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:ng_phone",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ng_phone"
+			},
+			"geometry": {
+				"default": "geometry.ng_phone"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#352f57",
+				"overlay_color": "#fdbee5"
+			}
+		}
+	}
+}

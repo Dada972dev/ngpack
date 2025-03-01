@@ -1,0 +1,239 @@
+{
+  "namespace": "catalogue_menu",
+  "main_panel": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "top_title": {
+          "type": "panel",
+          "size": [
+            "100%",
+            35
+          ],
+          "controls": [
+            {
+              "global_title": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "offset": [
+                  3,
+                  0
+                ],
+                "controls": [
+
+                  {
+                    "title@server_form.text": {
+                      "$text": "LE CATALOGUE",
+                      "$font_size": "normal",
+                      "$font_type": "MinecraftTen",
+                      "font_scale_factor": 1.4,
+                      "$color": "white",
+                      "offset": [
+                        0,
+                        9
+                      ]
+                    }
+                  },
+                  {
+                    "subtitle@server_form.text": {
+                      "$text": "ACCUEIL",
+                      "$font_size": "normal",
+                      "$font_type": "MinecraftTen",
+                      "font_scale_factor": 0.9,
+                      "$color": "$color_lime",
+                      "offset": [
+                        0,
+                        22
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "info": {
+          "type": "panel",
+          "size": [
+            "100%",
+            85
+          ],
+          "controls": [
+            {
+              "affiche": {
+                "type": "image",
+                "texture": "textures/global/background_full_color_white",
+                "keep_ratio": false,
+                "color": "$color7",
+                "size": [
+                  339,
+                  "100%"
+                ],
+                "offset": [
+                  3,
+                  0
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "controls": [
+                  {
+                    "view@server_form.button_one": {
+                      "offset": [
+                        0,
+                        0
+                      ],
+                      "$button": "hdv_menu.view"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            "100%",
+            10
+          ]
+        }
+      },
+      {
+        "choice": {
+          "type": "panel",
+          "size": [
+            "100%",
+            52
+          ],
+          "controls": [
+            {
+              "buttons_choice@server_form.button_horizontal": {
+                "offset": [
+                  0,
+                  0
+                ],
+                "$button": "catalogue_menu.choice_option"
+              }
+            }
+
+          ]
+        }
+      }
+    ]
+  },
+  "choice_option": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "block@hdv_menu.choice_option_inner": {
+          "$texture": "textures/global/blocs",
+          "$offset": [
+            0,
+            0
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§b§l§o§k') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "meuble@hdv_menu.choice_option_inner": {
+          "$texture": "textures/global/couch",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§m§e§u§b') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "hero@hdv_menu.choice_option_inner": {
+          "$texture": "textures/global/hero",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§h§e§r§o') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "utilitaire@hdv_menu.choice_option_inner": {
+          "$texture": "textures/global/tools",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§u§t§i§l') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "saisonier@hdv_menu.choice_option_inner": {
+          "$texture": "textures/global/calendar",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§s§a§i§s') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:brazier_",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/brazier_"
+			},
+			"geometry": {
+				"default": "geometry.brazier_"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#15b024",
+				"overlay_color": "#a244a6"
+			}
+		}
+	}
+}

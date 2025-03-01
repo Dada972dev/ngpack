@@ -1,0 +1,204 @@
+{
+  "namespace": "location_buy_faction",
+  "main_panel": {
+    "type": "panel",
+    "size": [
+      356,
+      200
+    ],
+    "controls": [
+      {
+        "content": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "size": [
+                  "100%",
+                  17
+                ],
+                "color": "$181821",
+                "keep_ratio": false,
+                "controls": [
+                  {
+                    "border_bottom": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$0D0D12",
+                      "keep_ratio": false,
+                      "layer": 3,
+                      "anchor_from": "bottom_left",
+                      "anchor_to": "bottom_left",
+                      "size": [
+                        "100%",
+                        1
+                      ]
+                    }
+                  },
+                  {
+                    "bg": {
+                      "type": "image",
+                      "texture": "textures/global/effet_radian",
+                      "keep_ratio": false,
+                      "color": "white",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "title@server_form.button_one": {
+                            "offset": [
+                              0,
+                              -5
+                            ],
+                            "anchor_from": "left_middle",
+                            "anchor_to": "left_middle",
+                            "$button": "rd_main.check_title"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "form": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "size": [
+                  "100%",
+                  172
+                ],
+                "color": "$1B1B24",
+                "keep_ratio": false,
+                "controls": [
+                  {
+                    "scrolling_condition@server_form.scrolling_panel": {
+                      "anchor_from": "top_middle",
+                      "anchor_to": "top_middle",
+                      "$color_bg_rail": "$14141B",
+                      "$color_bg_handle": "$363643",
+                      "size": [
+                        346,
+                        148
+                      ],
+                      "offset": [
+                        0,
+                        0
+                      ],
+                      "layer": 16,
+                      "$show_background": false,
+                      "$scroll_bar_side": "right",
+                      "$scrolling_content": "location_buy_faction.button_list_craft",
+                      "$scroll_size": [
+                        3,
+                        "100%"
+                      ],
+                      "$scrolling_pane_size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "$scrolling_pane_offset": [
+                        4,
+                        3
+                      ],
+                      "$scroll_bar_right_padding_size": [
+                        8,
+                        0
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_list_craft": {
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@location_buy_faction.button_grid": {
+        }
+      }
+    ],
+    "offset": [
+      7,
+      0
+    ],
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "type": "panel"
+  },
+  "button_grid": {
+    "type": "grid",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_item_template": "location_buy_faction.button_list_entry_inside_daily",
+    "grid_rescaling_type": "horizontal",
+    "collection_name": "form_buttons",
+    "offset": [
+      -11,
+      3
+    ],
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#maximum_grid_items"
+      }
+    ]
+  },
+  "button_list_entry_inside_daily": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@location_rent_faction.button_primary": {
+          "size": [
+            83,
+            52
+          ],
+          "$color_bg": "$7AC95F",
+          "$color_text": "$0C2F00",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§r§e§n§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

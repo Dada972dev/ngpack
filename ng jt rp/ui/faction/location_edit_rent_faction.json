@@ -1,0 +1,1179 @@
+{
+  "namespace": "location_edit_rent_faction",
+  "main_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "content": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "size": [
+                  "100%",
+                  17
+                ],
+                "color": "$181821",
+                "keep_ratio": false,
+                "controls": [
+                  {
+                    "border_bottom": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$0D0D12",
+                      "keep_ratio": false,
+                      "layer": 3,
+                      "anchor_from": "bottom_left",
+                      "anchor_to": "bottom_left",
+                      "size": [
+                        "100%",
+                        1
+                      ]
+                    }
+                  },
+                  {
+                    "bg": {
+                      "type": "image",
+                      "texture": "textures/global/effet_radian",
+                      "keep_ratio": false,
+                      "color": "white",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "option@server_form.button_one": {
+                            "anchor_from": "right_middle",
+                            "anchor_to": "right_middle",
+                            "size": [
+                              60,
+                              12
+                            ],
+                            "offset": [
+                              -10,
+                              0
+                            ],
+                            "$button": "location_edit_rent_faction.choice_edit_mode"
+                          }
+                        },
+                        {
+                          "title@server_form.button_one": {
+                            "offset": [
+                              0,
+                              -5
+                            ],
+                            "anchor_from": "left_middle",
+                            "anchor_to": "left_middle",
+                            "$button": "rd_main.check_title"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "form": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "size": [
+                  "100%",
+                  178
+                ],
+                "color": "$1B1B24",
+                "keep_ratio": false,
+                "controls": [
+                  {
+                    "top_content": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        "100%",
+                        41
+                      ],
+                      "controls": [
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "name": {
+                            "type": "panel",
+                            "size": [
+                              107,
+                              "100%"
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Nom",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    10
+                                  ],
+                                  "font_scale_factor": 0.7,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "content": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "anchor_from": "bottom_middle",
+                                  "anchor_to": "bottom_middle",
+                                  "size": [
+                                    "100%",
+                                    20
+                                  ],
+                                  "keep_ratio": false,
+                                  "color": "$363643",
+                                  "controls": [
+                                    {
+                                      "option@server_form.button_one": {
+                                        "$button": "location_add_faction.choice_name"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "duree": {
+                            "type": "panel",
+                            "size": [
+                              107,
+                              "100%"
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Durée",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    10
+                                  ],
+                                  "font_scale_factor": 0.7,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "content": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "anchor_from": "bottom_middle",
+                                  "anchor_to": "bottom_middle",
+                                  "size": [
+                                    "100%",
+                                    20
+                                  ],
+                                  "keep_ratio": false,
+                                  "color": "$363643",
+                                  "controls": [
+                                    {
+                                      "option@server_form.button_one": {
+                                        "$button": "location_edit_rent_faction.choice_duree"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "price": {
+                            "type": "panel",
+                            "size": [
+                              107,
+                              "100%"
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Prix",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    10
+                                  ],
+                                  "font_scale_factor": 0.7,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "content": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "anchor_from": "bottom_middle",
+                                  "anchor_to": "bottom_middle",
+                                  "size": [
+                                    "100%",
+                                    20
+                                  ],
+                                  "keep_ratio": false,
+                                  "color": "$13131A",
+                                  "controls": [
+                                    {
+                                      "option@server_form.button_one": {
+                                        "$button": "location_edit_rent_faction.choice_price"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "middle_content": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "offset": [
+                        0,
+                        54
+                      ],
+                      "size": [
+                        "100%",
+                        86
+                      ],
+                      "controls": [
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "description": {
+                            "type": "panel",
+                            "size": [
+                              107,
+                              86
+                            ],
+                            "offset": [
+                              0,
+                              12
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Description",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    -6
+                                  ],
+                                  "font_scale_factor": 0.7,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "content": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "anchor_from": "bottom_middle",
+                                  "anchor_to": "bottom_middle",
+                                  "size": [
+                                    "100%",
+                                    86
+                                  ],
+                                  "offset": [
+                                    0,
+                                    4
+                                  ],
+                                  "keep_ratio": false,
+                                  "color": "$363643",
+                                  "controls": [
+                                    {
+                                      "option@server_form.button_one": {
+                                        "$button": "location_edit_rent_faction.choice_desc"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "colocataire": {
+                            "type": "panel",
+                            "size": [
+                              107,
+                              86
+                            ],
+                            "offset": [
+                              0,
+                              12
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Colocataire",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    -6
+                                  ],
+                                  "font_scale_factor": 0.7,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "content": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "anchor_from": "bottom_middle",
+                                  "anchor_to": "bottom_middle",
+                                  "size": [
+                                    "100%",
+                                    86
+                                  ],
+                                  "offset": [
+                                    0,
+                                    4
+                                  ],
+                                  "keep_ratio": false,
+                                  "color": "$13131A",
+                                  "controls": [
+
+                                    {
+                                      "scrolling_condition@server_form.scrolling_panel": {
+                                        "anchor_from": "top_middle",
+                                        "anchor_to": "top_middle",
+                                        "$color_bg_rail": "$14141B",
+                                        "$color_bg_handle": "$363643",
+                                        "size": [
+                                          95,
+                                          62
+                                        ],
+                                        "layer": 16,
+                                        "$show_background": false,
+                                        "$scroll_bar_side": "right",
+                                        "$scrolling_content": "location_edit_rent_faction.button_list_me",
+                                        "$scroll_size": [
+                                          3,
+                                          "100%"
+                                        ],
+                                        "$scrolling_pane_size": [
+                                          "100%",
+                                          "100%"
+                                        ],
+                                        "$scrolling_pane_offset": [
+                                          4,
+                                          3
+                                        ],
+                                        "$scroll_bar_right_padding_size": [
+                                          8,
+                                          0
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "option@server_form.button_one": {
+                                        "size": [
+                                          92,
+                                          14
+                                        ],
+                                        "offset": [
+                                          6,
+                                          66
+                                        ],
+                                        "$button": "location_edit_rent_faction.choice_add_loc"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "info": {
+                            "type": "panel",
+                            "size": [
+                              107,
+                              86
+                            ],
+                            "offset": [
+                              0,
+                              12
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Information",
+                                  "color": "white",
+                                  "offset": [
+                                    0,
+                                    -6
+                                  ],
+                                  "font_scale_factor": 0.7,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "content": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "anchor_from": "bottom_middle",
+                                  "anchor_to": "bottom_middle",
+                                  "size": [
+                                    "100%",
+                                    86
+                                  ],
+                                  "offset": [
+                                    0,
+                                    4
+                                  ],
+                                  "keep_ratio": false,
+                                  "color": "$13131A",
+                                  "controls": [
+                                    {
+                                      "data@server_form.button_one": {
+                                        "offset": [
+                                          4,
+                                          6
+                                        ],
+                                        "$button": "location_edit_rent_faction.choice_info_type"
+                                      }
+                                    },
+
+                                    {
+                                      "option@server_form.button_one": {
+                                        "size": [
+                                          92,
+                                          14
+                                        ],
+                                        "offset": [
+                                          6,
+                                          66
+                                        ],
+                                        "$button": "location_edit_rent_faction.choice_localisation"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "bottom_content": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": [
+                        330,
+                        41
+                      ],
+                      "offset": [
+                        -5,
+                        14
+                      ],
+                      "anchor_from": "bottom_middle",
+                      "anchor_to": "bottom_middle",
+                      "controls": [
+                        {
+                          "send@server_form.button_one": {
+                            "size": [
+                              162,
+                              18
+                            ],
+                            "$button": "location_add_faction.choice_send"
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              12,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "cancel@server_form.button_one": {
+                            "size": [
+                              162,
+                              18
+                            ],
+                            "$button": "location_add_faction.choice_cancel"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+
+  "choice_info_type": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@location_view_action_faction.option": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§o§2§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "button_list_me": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@location_edit_rent_faction.button_grid_me": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 1px",
+      "100%c + 1px"
+    ]
+  },
+  "button_grid_me": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "location_edit_rent_faction.button_choice_me",
+      "name": "button_list_factory"
+    }
+  },
+  "button_choice_me": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@location_edit_rent_faction.coloc_ligne": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§r§o§p§r§i§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "coloc_ligne":  {
+    "type": "panel",
+    "size": [
+      86,
+      15
+    ],
+    "controls": [
+      {
+        "content@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "offset": [
+            14,
+            0
+          ],
+          "font_scale_factor": 0.8,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      },
+      {
+        "img": {
+          "type": "image",
+          "texture": "#texture",
+          "layer": 1,
+          "size": [
+            8,
+            8
+          ],
+          "offset": [
+            2,
+            0
+          ],
+          "keep_ratio": true,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_name": "#form_button_texture_file_system",
+              "binding_name_override": "#texture_file_system",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#texture \u003d \u0027\u0027) or (#texture \u003d \u0027loading\u0027)))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "button@location_edit_rent_faction.button_logo": {
+          "anchor_from": "richt_middle",
+          "anchor_to": "richt_middle",
+          "offset": [
+            32,
+            0
+          ],
+          "$bg": "$13131A",
+          "$bg_logo": "$FF005C",
+          "$size_logo": [
+            4,
+            4
+          ],
+          "$logo": "textures/global/cross",
+          "$size_button": [
+            8,
+            8
+          ],
+          "$click": "button.form_button_click"
+        }
+      }
+    ]
+  },
+  "button_logo": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$pressed_button_name": "button.form_button_click",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "size": "$size_button",
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$bg_logo",
+                      "keep_ratio": false,
+                      "size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "background": {
+                            "type": "image",
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "color": "$bg",
+                            "layer": 2,
+                            "size": [
+                              "100% - 1px",
+                              "100% - 1px"
+                            ],
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "logo": {
+                      "type": "image",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "color": "$bg_logo",
+                      "size": "$size_logo",
+                      "layer": 3,
+                      "keep_ratio": false,
+                      "texture": "$logo",
+                      "offset": [
+                        0,
+                        0
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background_hover": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$bg",
+                      "keep_ratio": false,
+                      "size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "color": "$bg_logo",
+                            "layer": 2,
+                            "size": [
+                              "100% - 1px",
+                              "100% - 1px"
+                            ],
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "logo": {
+                      "type": "image",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "layer": 3,
+                      "color": "$bg",
+                      "size": "$size_logo",
+                      "keep_ratio": false,
+                      "texture": "$logo",
+                      "offset": [
+                        0,
+                        0
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "choice_edit_mode": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "send@war_traite_send_faction.button_base_text": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$bg": "$363646",
+          "$bg_hover": "$787886",
+          "$size_button": [
+            60,
+            12
+          ],
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§m§o§d§e§i§i§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_add_loc": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "send@war_traite_send_faction.button_base_text": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$bg": "$5E5E69",
+          "$bg_hover": "$787886",
+          "$size_button": [
+            92,
+            14
+          ],
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§d§d§c§o§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_localisation": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "send@war_traite_send_faction.button_base_text": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$bg": "$5E5E69",
+          "$bg_hover": "$787886",
+          "$size_button": [
+            92,
+            14
+          ],
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§o§c§a§l§i§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_desc": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@location_edit_rent_faction.texte_big": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§e§s§c§b§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "texte_big": {
+    "type": "panel",
+    "size": [
+      102,
+      86
+    ],
+    "controls": [
+      {
+        "content@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "offset": [
+            8,
+            4
+          ],
+          "size": [
+            90,
+            86
+          ],
+          "font_scale_factor": 0.6,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      },
+      {
+        "button@server_form.button_base_logo_default": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [
+            0,
+            4
+          ],
+          "$bg": "$242431",
+          "$bg_hover": "$5E5E69",
+          "$size_logo": [
+            6,
+            6
+          ],
+          "$logo": "textures/global/edit",
+          "$size_button": [
+            12,
+            12
+          ],
+          "$click": "button.form_button_click"
+        }
+      }
+    ]
+  },
+
+  "choice_duree": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@location_add_faction.texte": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§u§r§e§e§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_price": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@location_edit_rent_faction.texte_off": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§r§i§c§b') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "texte_off": {
+    "type": "panel",
+    "size": [
+      102,
+      20
+    ],
+    "controls": [
+      {
+        "content@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "offset": [
+            8,
+            0
+          ],
+          "font_scale_factor": 0.8,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

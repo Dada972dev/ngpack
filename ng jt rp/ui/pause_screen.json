@@ -1,0 +1,9 @@
+{
+    "pause_screen": {
+        "$screen_content": "ng_pause.content",
+        "$screen_bg_content": "endiorite_pause.bg",
+        "variables": [],
+        "cache_screen": true,
+        "force_render_below": true
+    }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:patrick_box",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/patrick_box"
+			},
+			"geometry": {
+				"default": "geometry.patrick_box"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#91096c",
+				"overlay_color": "#2b6c1e"
+			}
+		}
+	}
+}

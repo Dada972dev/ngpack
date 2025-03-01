@@ -1,0 +1,1083 @@
+{
+  "namespace": "nuke_forge",
+
+  "main_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "base": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  10
+                ],
+                "controls": [
+                  {
+                    "title@server_form.button_one": {
+                      "$button": "base_machine.check_title"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  8
+                ]
+              }
+            },
+            {
+              "content": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  "100%",
+                  176
+                ],
+                "controls": [
+                  {
+                    "info_content": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$14141B",
+                      "size": [
+                        181,
+                        "100%"
+                      ],
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "info": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              "100%",
+                              30
+                            ],
+                            "offset": [
+                              0,
+                              6
+                            ],
+                            "controls": [
+                              {
+                                "block@server_form.button_one": {
+                                  "$button": "nuke_forge.check_block_desc"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title@server_form.text": {
+                            "$text": "Connexion",
+                            "font_scale_factor": 0.6,
+                            "color": "white",
+                            "offset": [
+                              8,
+                              40
+                            ],
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left"
+                          }
+                        },
+                        {
+                          "link": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$0D0D12",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "keep_ratio": false,
+                            "offset": [
+                              8,
+                              48
+                            ],
+                            "size": [
+                              87,
+                              20
+                            ],
+                            "controls": [
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$060608",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "offset": [
+                                    0,
+                                    0.5
+                                  ],
+                                  "color": "$171721",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "block@server_form.button_one": {
+                                  "anchor_from": "center",
+                                  "anchor_to": "center",
+                                  "offset": [
+                                    4,
+                                    0
+                                  ],
+                                  "$button": "nuke_forge.choice_connexion"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title@server_form.text": {
+                            "$text": "Contenue",
+                            "font_scale_factor": 0.6,
+                            "color": "white",
+                            "offset": [
+                              8,
+                              78
+                            ],
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left"
+                          }
+                        },
+                        {
+                          "block_content": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$0D0D12",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "keep_ratio": false,
+                            "offset": [
+                              8,
+                              86
+                            ],
+                            "size": [
+                              87,
+                              78
+                            ],
+                            "controls": [
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$060608",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "offset": [
+                                    0,
+                                    0.5
+                                  ],
+                                  "color": "$171721",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "scrolling_condition@server_form.scrolling_panel": {
+                                  "anchor_from": "top_middle",
+                                  "anchor_to": "top_middle",
+                                  "$color_bg_rail": "$14141B",
+                                  "$color_bg_handle": "$363643",
+                                  "size": [
+                                    "100%",
+                                    34
+                                  ],
+                                  "layer": 16,
+                                  "$show_background": false,
+                                  "$scroll_bar_side": "right",
+                                  "$scrolling_content": "base_machine_main.button_list_content",
+                                  "$scroll_size": [
+                                    3,
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_size": [
+                                    "100%",
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_offset": [
+                                    4,
+                                    3
+                                  ],
+                                  "$scroll_bar_right_padding_size": [
+                                    8,
+                                    0
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "action": {
+                      "type": "stack_panel",
+                      "orientation": "vertical",
+                      "size": [
+                        123,
+                        "100%"
+                      ],
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "choice": {
+                            "type": "image",
+                            "size": [
+                              "100%",
+                              153
+                            ],
+                            "texture": "textures/global/background",
+                            "color": "$242431",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$393945",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "offset": [
+                                    0,
+                                    0.5
+                                  ],
+                                  "color": "$0D0D12",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "panel": {
+                                  "type": "stack_panel",
+                                  "orientation": "vertical",
+                                  "size": [
+                                    "100%",
+                                    "100%"
+                                  ],
+                                  "controls": [
+                                    {
+                                      "padding": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          8
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "select": {
+                                        "type": "stack_panel",
+                                        "orientation": "horizontal",
+                                        "size": [
+                                          "100%",
+                                          40
+                                        ],
+                                        "controls": [
+                                          {
+                                            "padding": {
+                                              "type": "panel",
+                                              "size": [
+                                                8,
+                                                "100%"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "cadre": {
+                                              "type": "image",
+                                              "texture": "textures/global/background",
+                                              "color": "$0D0D12",
+                                              "layer": 16,
+                                              "size": [
+                                                40,
+                                                "100%"
+                                              ],
+                                              "keep_ratio": false,
+                                              "controls": [
+                                                {
+                                                  "border": {
+                                                    "type": "image",
+                                                    "anchor_from": "top_left",
+                                                    "anchor_to": "top_left",
+                                                    "layer": 16,
+                                                    "alpha": 1,
+                                                    "size": [
+                                                      "100%",
+                                                      1
+                                                    ],
+                                                    "color": "$060608",
+                                                    "keep_ratio": false,
+                                                    "texture": "textures/global/background"
+                                                  }
+                                                },
+                                                {
+                                                  "border_bottom": {
+                                                    "type": "image",
+                                                    "anchor_from": "bottom_left",
+                                                    "anchor_to": "bottom_left",
+                                                    "layer": 16,
+                                                    "alpha": 1,
+                                                    "size": [
+                                                      "100%",
+                                                      1
+                                                    ],
+                                                    "offset": [
+                                                      0,
+                                                      0
+                                                    ],
+                                                    "color": "$171721",
+                                                    "keep_ratio": false,
+                                                    "texture": "textures/global/background"
+                                                  }
+                                                },
+                                                {
+                                                  "block@server_form.button_one": {
+                                                    "anchor_from": "center",
+                                                    "anchor_to": "center",
+                                                    "$button": "nuke_forge.choice_select_img"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "info": {
+                                              "type": "panel",
+                                              "size": [
+                                                91,
+                                                "100%"
+                                              ],
+                                              "controls": [
+                                                {
+                                                  "block@server_form.button_one": {
+                                                    "$button": "nuke_forge.choice_title_img"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+
+                                    {
+                                      "progress@nuke_forge.choice_color_progress": {
+                                        "size": [
+                                          "100%",
+                                          4
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "consomation": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          40
+                                        ],
+                                        "controls": [
+                                          {
+                                            "title@server_form.text": {
+                                              "$text": "Consomation",
+                                              "font_scale_factor": 0.6,
+                                              "color": "white",
+                                              "offset": [
+                                                8,
+                                                24
+                                              ],
+                                              "anchor_from": "top_left",
+                                              "anchor_to": "top_left"
+                                            }
+                                          },
+                                          {
+                                            "content": {
+                                              "type": "image",
+                                              "texture": "textures/global/background",
+                                              "color": "$0D0D12",
+                                              "layer": 3,
+                                              "keep_ratio": false,
+                                              "size": [
+                                                107,
+                                                56
+                                              ],
+                                              "offset": [
+                                                0,
+                                                44
+                                              ],
+                                              "controls": [
+                                                {
+                                                  "bar_border_top": {
+                                                    "type": "image",
+                                                    "texture": "textures/global/background",
+                                                    "color": "$060608",
+                                                    "keep_ratio": false,
+                                                    "layer": 1,
+                                                    "anchor_from": "top_left",
+                                                    "anchor_to": "top_left",
+                                                    "size": [
+                                                      "100%",
+                                                      1
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "bar_border_bottom": {
+                                                    "type": "image",
+                                                    "texture": "textures/global/background",
+                                                    "color": "$33333E",
+                                                    "keep_ratio": false,
+                                                    "layer": 1,
+                                                    "anchor_from": "bottom_left",
+                                                    "anchor_to": "bottom_left",
+                                                    "size": [
+                                                      "100%",
+                                                      1
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "scrolling_condition@server_form.scrolling_panel": {
+                                                    "anchor_from": "top_middle",
+                                                    "anchor_to": "top_middle",
+                                                    "$color_bg_rail": "$14141B",
+                                                    "$color_bg_handle": "$363643",
+                                                    "size": [
+                                                      "100%",
+                                                      "100%"
+                                                    ],
+                                                    "layer": 16,
+                                                    "$show_background": false,
+                                                    "$scroll_bar_side": "right",
+                                                    "$scrolling_content": "base_machine.button_list_info",
+                                                    "$scroll_size": [
+                                                      3,
+                                                      "100%"
+                                                    ],
+                                                    "$scrolling_pane_size": [
+                                                      "100%",
+                                                      "100%"
+                                                    ],
+                                                    "$scrolling_pane_offset": [
+                                                      4,
+                                                      3
+                                                    ],
+                                                    "$scroll_bar_right_padding_size": [
+                                                      8,
+                                                      0
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              4
+                            ]
+                          }
+                        },
+                        {
+                          "action@server_form.button_one": {
+                            "size": [
+                              123,
+                              19
+                            ],
+                            "anchor_from": "bottom_middle",
+                            "anchor_to": "bottom_middle",
+                            "$button": "nuke_forge.choice_action"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "choice_connexion": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "condition_actif@nuke_forge.list": {
+          "$alpha_checked": 1,
+          "$color_logo": "$30EE89",
+          "$color_text": "$30EE89",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§m§a§c§h§i§n§e§a§m§p§i§i§t§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "list": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      "100%",
+      12
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "controls": [
+      {
+        "content": {
+          "type": "panel",
+          "size": [
+            "100%",
+            8
+          ],
+          "controls": [
+            {
+              "number": {
+                "type": "panel",
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "controls": [
+                  {
+                    "content@server_form.text": {
+                      "$text": "#text",
+                      "$color": "white",
+                      "anchor_from": "bottom_right",
+                      "anchor_to": "bottom_right",
+                      "font_scale_factor": 0.65,
+                      "offset": [
+                        -8,
+                        -2
+                      ],
+                      "bindings": [
+                        {
+                          "binding_name": "#form_button_text",
+                          "binding_type": "collection",
+                          "binding_collection_name": "form_buttons"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "((#form_button_text - ('%.90s' * #form_button_text)) - ':')",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  }
+                ]
+
+              }
+            },
+            {
+              "picture": {
+                "type": "custom",
+                "renderer": "inventory_item_renderer",
+                "size": [
+                  7,
+                  7
+                ],
+                "offset": [
+                  0,
+                  0
+                ],
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "layer": 99,
+                "$test": "form_button_texture",
+                "property_bag": {
+                  "#score": 0
+                },
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "((#form_button_texture * 1) + #score )",
+                    "target_property_name": "#item_id_aux"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_select_img": {
+    "type": "panel",
+    "controls": [
+      {
+        "title@nuke_forge.data_title_picture": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§t§e§m§s§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "data_title_picture": {
+    "type": "panel",
+    "size": [
+      40,
+      40
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "controls": [
+      {
+        "picture": {
+          "type": "custom",
+          "renderer": "inventory_item_renderer",
+          "size": [
+            30,
+            30
+          ],
+          "offset": [
+            0,
+            -20
+          ],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "layer": 99,
+          "$test": "form_button_texture",
+          "property_bag": {
+            "#score": 0
+          },
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "((#form_button_texture * 1) + #score )",
+              "target_property_name": "#item_id_aux"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_color_progress": {
+    "type": "panel",
+    "controls": [
+      {
+        "block@server_form.button_one": {
+          "$button": "nuke_forge.choice_percent"
+        }
+      },
+      {
+        "green@server_form.button_vertical": {
+          "$color_bg": "$00FF85",
+          "$color_bg_bottom": "$00FF85",
+          "$bg_back": "$1A1A23",
+          "$bg_back_bottom": "$15151D",
+          "$size_global": [
+            107,
+            4
+          ],
+          "offset": [
+            8,
+            10
+          ],
+          "$button": "server_form.choice_progress"
+        }
+      }
+    ]
+  },
+  "choice_percent": {
+    "type": "panel",
+    "controls": [
+      {
+        "title@nuke_forge.percent": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§r§o§g§r§e§s') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "percent": {
+    "type": "panel",
+    "size": [
+      107,
+      25
+    ],
+    "controls": [
+      {
+        "info@server_form.text": {
+          "$text": "#title",
+          "font_scale_factor": 0.5,
+          "size": [
+            57,
+            20
+          ],
+          "color": "white",
+          "offset": [
+            0,
+            16
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_type": "collection",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#title"
+            }
+          ]
+        }
+      },
+      {
+        "data@server_form.text": {
+          "$text": "#texte",
+          "font_scale_factor": 0.5,
+          "size": [
+            50,
+            20
+          ],
+          "color": "white",
+          "offset": [
+            10,
+            16
+          ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_type": "collection",
+              "binding_condition": "none",
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texte"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_title_img": {
+    "type": "panel",
+    "controls": [
+      {
+        "title@nuke_forge.title_select": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§t§e§m§s§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "title_select": {
+    "type": "panel",
+    "controls": [
+      {
+        "content@server_form.text": {
+          "$text": "#title",
+          "font_scale_factor": 0.7,
+          "font_type": "MinecraftTen",
+          "size": [
+            100,
+            20
+          ],
+          "color": "white",
+          "offset": [
+            8,
+            0
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_type": "collection",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#title"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_action": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "$size_button_primary|default": [
+      123,
+      19
+    ],
+    "controls": [
+      {
+        "good@base_machine_main.button_primary_option": {
+          "$clicked": "button.form_button_click",
+          "$colorBg": "$00FF85",
+          "$colorText": "$0B5E36",
+          "$colorBgHover": "$71FFBB",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§c§t§i§o§n§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "none@base_machine_main.button_primary_option": {
+          "$clicked": "",
+          "$colorBg": "$393945",
+          "$colorText": "$565666",
+          "$colorBgHover": "$393945",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§c§t§i§o§f§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "check_block_desc": {
+    "type": "panel",
+    "controls": [
+      {
+        "content@nuke_forge.block_desc": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§m§a§c§h§i§n§e§d§e§s§c§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "block_desc": {
+    "type": "panel",
+    "size": [
+      "100%",
+      25
+    ],
+    "controls": [
+      {
+        "title@server_form.text": {
+          "$font_type": "normal",
+          "$text": "Information",
+          "font_scale_factor": 0.7,
+          "color": "white",
+          "offset": [
+            8,
+            4
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "content@server_form.text": {
+          "$text": "#title",
+          "font_scale_factor": 0.5,
+          "size": [
+            "90%",
+            20
+          ],
+          "color": "white",
+          "offset": [
+            8,
+            15
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_type": "collection",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#title"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

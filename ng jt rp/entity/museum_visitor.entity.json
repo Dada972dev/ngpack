@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:museum_visitor",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/museum_visitor"
+			},
+			"geometry": {
+				"default": "geometry.museum_visitor"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#91096c",
+				"overlay_color": "#2b6c1e"
+			}
+		}
+	}
+}

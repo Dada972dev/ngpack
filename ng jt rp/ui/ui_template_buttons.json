@@ -1,0 +1,205 @@
+/********************************************************
++*   (c) Mojang. All rights reserved                       *
++*   (c) Microsoft. All rights reserved.                   *
++*********************************************************/
+
+{
+  "namespace": "common_buttons",
+
+
+  /////////////////////////////////
+  //
+  //  TEXT BUTTON
+  //
+  /////////////////////////////////
+
+  // This needs you to define the button mapping and the size of the button
+  "light_text_button_ng@light_button_assets_ng": {
+    "$button_offset|default": [ 0, 0 ],
+    "$button_pressed_offset|default": [ 0, 1 ],
+    "$button_text|default": "",
+    "$button_font_size|default": "normal",
+    "$button_font_scale_factor|default": 1.0,
+    "$pressed_alpha|default": 1,
+    "$default_button_alpha|default": 1,
+    "$default_hover_alpha|default": 1,
+    "$default_pressed_alpha|default": 1,
+    "$default_button_pressed_offset|default": [ 0, 1 ],
+
+    "$default_text_color|default": "$light_button_default_text_color",
+    "$hover_text_color|default": "$light_button_hover_text_color",
+    "$pressed_text_color|default": "$light_button_pressed_text_color",
+    "$locked_text_color|default": "$light_button_locked_text_color",
+
+    // For text bindings
+    "$button_text_binding_type|default": "none",
+    "$button_binding_condition|default": "none",
+    "$button_text_grid_collection_name|default": "",
+
+    "$button_type_panel": "common_buttons.new_ui_binding_button_label",
+    "$button_state_panel|default": "common_buttons.new_ui_button_panel_ng",
+
+    // These states are for passing the button state to the button content - do not set these in a parent!
+    "$default_state|default": false,
+    "$hover_state|default": false,
+    "$pressed_state|default": false,
+    "$locked_state|default": false,
+
+    "controls": [
+      {
+        "default@$button_state_panel": {
+          "$new_ui_button_texture": "$default_button_texture",
+          "$button_image_color": "$181821",
+          "$button_image_border_color": "$2F2F37",
+          "$text_color": "white",
+          "$secondary_text_color": "white",
+          "$content_alpha": "$default_content_alpha",
+          "$border_color": "$light_border_default_color",
+          "$border_layer": 2,
+          "$default_state": true,
+          "$button_alpha": "$default_button_alpha",
+          "layer": 1
+        }
+      },
+      {
+        "hover@$button_state_panel": {
+          "$new_ui_button_texture": "$default_button_texture",
+          "$button_image_color": "$6864FF",
+          "$button_image_border_color": "white",
+          "$text_color": "white",
+          "$secondary_text_color": "white",
+          "$content_alpha": 1,
+          "$hover_state": true,
+          "$button_alpha": "$default_hover_alpha",
+          "layer": 4 // This is several layers higher than default in case two buttons share a border and that shared border needs to turn with with either button hover/press state
+        }
+      },
+      {
+        "pressed@$button_state_panel": {
+          "$new_ui_button_texture": "$default_button_texture",
+          "$button_image_color": "$6864FF",
+          "$button_image_border_color": "white",
+          "$text_color": "white",
+          "$secondary_text_color": "white",
+          "$button_offset|default": "$button_pressed_offset",
+          "$content_alpha": "$pressed_alpha",
+          "$border_color": "$light_border_pressed_color",
+          "$border_layer": 5,
+          "$pressed_state": true,
+          "$button_alpha": "$default_pressed_alpha",
+          "layer": 5
+        }
+      },
+      {
+        "locked@$button_state_panel": {
+          "$new_ui_button_texture": "$default_button_texture",
+          "$button_image_color": "$6864FF",
+          "$button_image_border_color": "white",
+          "$text_color": "white",
+          "$secondary_text_color": "white",
+          "$content_alpha": "$locked_alpha",
+          "$border_color": "$light_border_locked_color",
+          "$button_image": "common_buttons.locked_button_image",
+          "$border_layer": 1,
+          "$locked_state": true,
+          "layer": 1
+        }
+      }
+    ]
+  },
+
+
+  "light_button_assets_ng@common.button": {
+    "$default_button_texture|default": "textures/global/background",
+    "$default_content_alpha|default": 1,
+    "$hover_content_alpha|default": 1,
+    "locked_control": "locked",
+    "$default_font|default": "default",
+    "$font_type": "$default_font",
+    "$locked_alpha": 1
+  },
+
+
+  "new_ui_button_panel_ng": {
+    "type": "panel",
+    "$button_alpha|default": 1,
+    "layer": 1,
+    "$button_size_override|default": [ "100%", "100%" ],
+    "size": "$button_size_override",
+    "$content_alpha|default": 1,
+    "$button_image|default": "common_buttons.button_image_ng",
+    "$button_image_visible|default": true,
+    "$button_image_size|default": [ "100% - 2px", "100% - 2px" ],
+    "$image_anchor|default": "center",
+    "$image_offset|default": [ 0, 0 ],
+    "$border_visible|default": true,
+    "$border_alpha|default": 1,
+    "$button_anchor_to|default": "center",
+    "$button_anchor_from|default": "center",
+    "anchor_to": "$button_anchor_to",
+    "anchor_from": "$button_anchor_from",
+    "$button_image_fill|default": false,
+    "$button_image_color|default": [ 1.0, 1.0, 1.0 ],
+    "controls": [
+      {
+        "$button_image@$button_image": {
+          "ignored": "(not $button_image_visible)",
+          "size": "$button_image_size",
+          "offset": "$image_offset",
+          "anchor_from": "$image_anchor",
+          "anchor_to": "$image_anchor",
+          "layer": 1,
+          "fill": "$button_image_fill",
+          "color": "$button_image_color"
+        }
+      },
+      {
+        "border": {
+          "ignored": "(not $button_image_visible)",
+          "type": "image",
+          "color": "$button_image_border_color",
+          "keep_ratio": false,
+          "offset": [ 1, 1 ],
+          "alpha": 0.75,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "textures/global/background",
+          "layer": 2,
+          "size": [
+            "100% - 2px",
+            1
+          ]
+        }
+      },
+      {
+        "button_content": {
+          "type": "panel",
+          "$button_content_size|default": [ "100% - 6px", "100% - 6px" ],
+          "size": "$button_content_size",
+
+          "controls": [
+            {
+              "$button_type_panel@$button_type_panel": {
+                "layer": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_image_ng": {
+    "type": "image",
+    "keep_ratio": false,
+    "layer": 1,
+    "color": "$button_image_color",
+    "texture": "$new_ui_button_texture",
+    "$button_alpha|default": "$content_alpha",
+    "alpha": "$button_alpha",
+    "$button_image_bindings|default": [],
+    "bindings": "$button_image_bindings"
+  }
+
+
+}

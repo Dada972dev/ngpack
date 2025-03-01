@@ -1,0 +1,765 @@
+{
+    "namespace":"calendar",
+
+    "main_panel":{
+        "type":"panel",
+        "size":["80%","70%"],
+        "controls":[
+            {
+                "background":{
+                    "type":"image",
+                    "keep_ratio":false,
+                    "texture":"textures/calendar/map",
+                    "uv_size":[1248,705],
+                    "uv":[0,0],
+                    "controls":[
+                        {
+                        "close_button@common.close_button":{
+                            "$default_button_alpha":1,
+                           "anchor_from":"top_right",
+                           "anchor_to":"top_right",
+                           "layer":6,
+                           "controls":[
+                              {
+                                 "default":{
+                                  "type":"panel",
+                                    "controls":[
+                                       {
+                                          "close@common.close_button_panel":{
+                                             "$close_button_texture":"textures/calendar/close_button_default",
+                                             "size":["30%","30%"]
+                                             
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "hover":{
+                                    "type":"panel",
+                                    "controls":[
+                                       {
+                                          "close@common.close_button_panel":{
+                                           "$close_button_texture":"textures/calendar/close_button_hover",
+                                           "size":["30%","30%"]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "pressed":{
+                                  "type":"panel",
+                                    "controls":[
+                                       {
+                                          "close@common.close_button_panel":{
+                                           "$close_button_texture":"textures/calendar/close_button_hover",
+                                           "size":["30%","30%"]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                        },
+                        {
+                            "panel":{
+                                "type":"stack_panel",
+                                "size":["100%","100%"],
+                                "anchor_from":"top_left",
+                                "anchor_to":"top_left",
+                                "orientation":"vertical",
+                                "controls":[
+                                    {
+                                        "top_panel":{
+                                            "type":"stack_panel",
+                                            "size":["100%","30%"],
+                                            "orientation":"horizontal",
+                                            "controls":[
+                                                {
+                                                    "padding":{
+                                                        "type":"panel",
+                                                        "size":["10%","100%"]
+                                                    }
+                                                },
+                                                {
+                                                    "left_text":{
+                                                        "type":"stack_panel",
+                                                        "size":["40%","100%"],
+                                                        "orientation":"vertical",
+                                                        "controls":[ 
+                                                            {
+                                                                "padding":{
+                                                                    "type":"panel",
+                                                                    "size":["100%","40%"]
+                                                                }
+                                                            },
+                                                            {
+                                                                "normal_case_label" : {
+                                                                    "type" : "label",
+                                                                    "text" : "$text_left",
+                                                                    "color" : [0.792,0.631,0.407],
+                                                                    "font_type": "default",
+                                                                    "text_alignment": "left",
+                                                                    "font_scale_factor" : 0.7,
+                                                                    "anchor_from" : "top_left",
+                                                                    "anchor_to" : "top_left",
+                                                                    "size" : [
+                                                                        "100%",
+                                                                        "default"
+                                                                    ],
+                                                                    "layer" : 50,
+                                                                    "shadow" : false
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "padding":{
+                                                        "type":"panel",
+                                                        "size":["17%","100%"]
+                                                    }
+                                                },
+                                                {
+                                                    "right_text":{
+                                                        "type":"stack_panel",
+                                                        "size":["40%","100%"],
+                                                        "orientation":"vertical",
+                                                        "controls":[ 
+                                                            {
+                                                                "padding":{
+                                                                    "type":"panel",
+                                                                    "size":["100%","40%"]
+                                                                }
+                                                            },
+                                                            {
+                                                                "normal_case_label" : {
+                                                                    "type" : "label",
+                                                                    "text" : "$text_right",
+                                                                    "color" : [0.792,0.631,0.407],
+                                                                    "font_type": "default",
+                                                                    "text_alignment": "left",
+                                                                    "font_scale_factor" : 0.7,
+                                                                    "anchor_from" : "top_left",
+                                                                    "anchor_to" : "top_left",
+                                                                    "size" : [
+                                                                        "100%",
+                                                                        "default"
+                                                                    ],
+                                                                    "layer" : 50,
+                                                                    "shadow" : false
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "bottom_panel":{
+                                            "type":"stack_panel",
+                                            "size":["100%","fill"],
+                                            "anchor_from":"top_left",
+                                            "anchor_to":"top_left",
+                                            "orientation":"horizontal",
+                                            "controls":[
+                                                {
+                                                    "padding":{
+                                                        "type":"panel",
+                                                        "size":["5%","100%"]
+                                                    }
+                                                },
+                                                {
+                                                    "button__panel":{
+                                                        "type":"panel",
+                                                        "size":["80%","100%"],
+                                                        "controls":[
+                                                            {
+                                                                "calendar_wrapper_panel@calendar.calendar_grid_wrapper": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "panel":{
+                                                        "type":"panel",
+                                                        "size":["10%","80%"],
+                                                        "controls":[
+                                                            {
+                                                                "big_button@server_form.button_stack":{
+                                                                   "size":[
+                                                                      "100%",
+                                                                      "100%c"
+                                                                   ],
+                                                                   "$button":"calendar.big_button"
+                                                                }
+                                                             }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title_image":{
+                                "type":"image",
+                                "texture":"textures/calendar/map",
+                                "uv":"$uv_image",
+                                "uv_size":[417,207],
+                                "size":["25%","25%"],
+                                "anchor_from":"top_middle",
+                                "anchor_to":"top_middle",
+                                "offset":[0,10]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+
+    "big_button":{
+        "type":"panel",
+        "size":[
+            "100%",
+            "100%c"
+        ],
+        "controls":[
+            {
+                "big_one@calendar.big_button_inside":{
+                    "bindings":[
+                        {
+                            "binding_name":"#form_button_text",
+                            "binding_name_override":"#form_button_text",
+                            "binding_type":"collection",
+                            "binding_collection_name":"form_buttons"
+                        },
+                        {
+                            "binding_type":"view",
+                            "source_property_name":"(#form_button_text = 'special')",
+                            "target_property_name":"#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "calendar_grid_wrapper" : {
+        "type" : "panel",
+        "anchor_from" : "top_middle",
+        "anchor_to" : "top_middle",
+        "offset" : [
+            0,
+            5
+        ],
+        "size" : [
+            "100% - 5px",
+            "100%c"
+        ],
+        "controls" : [
+            {
+                "grid@calendar.calendar_grid" : {
+
+                }
+            }
+        ]
+    },
+    "calendar_grid" : {
+        "type" : "grid",
+        "size" : [
+            "100%",
+            "90%c"
+        ],
+        "anchor_from" : "top_middle",
+        "anchor_to" : "top_middle",
+        "grid_item_template" : "calendar.case_main_button",
+        "grid_rescaling_type" : "horizontal",
+        "collection_name" : "form_buttons",
+        "bindings" : [
+            {
+                "binding_name" : "#form_button_length",
+                "binding_name_override" : "#maximum_grid_items"
+            }
+        ]
+    },
+    "case_main_button" : {
+        "type" : "panel",
+        "size" : ["12%", "100%x"],
+        "controls" : [
+            {
+                "button@common.button" : {
+                    "size" : [
+                        "80%",
+                        "70%"
+                    ],
+                    "anchor_from" : "top_middle",
+                    "anchor_to" : "top_middle",
+                    "layer" : 1,
+                    "$pressed_button_name" : "button.form_button_click",
+                    "controls" : [
+                        {
+                            "default@calendar.case_button_inside" : {
+                                "$state" : "default"
+                            }
+                        },
+                        {
+                            "hover@calendar.case_button_inside" : {
+                                "$state" : "hover"
+                            }
+                        }
+                    ],
+                    "bindings" : [
+                        {
+                            "binding_type" : "collection_details",
+                            "binding_collection_name" : "form_buttons"
+                        },
+                        {
+                            "binding_type" : "collection",
+                            "binding_collection_name" : "form_buttons",
+                            "binding_condition" : "none",
+                            "binding_name" : "#form_button_text",
+                            "binding_name_override" : "#form_button_text"
+                        },
+                        {
+                            "binding_type" : "view",
+                            "source_property_name" : "(not ((#form_button_text = '') or (#form_button_text = 'loading')))",
+                            "target_property_name" : "#visible"
+                        }
+                    ]
+                }
+            }
+        ],
+        "bindings":[
+            {
+               "binding_name":"#form_button_text",
+               "binding_name_override":"#form_button_text",
+               "binding_type":"collection",
+               "binding_collection_name":"form_buttons"
+            },
+            {
+                "binding_type":"view",
+                "source_property_name":"(not(#form_button_text = 'special'))",
+                "target_property_name":"#visible"
+             }
+         ]
+    },
+    "case_button_inside" : {
+        "type" : "stack_panel",
+        "anchor_from" : "top_left",
+        "anchor_to" : "top_left",
+        "size" : [
+            "100%",
+            "100%"
+        ],
+        "orientation" : "vertical",
+        "$uv|default":[1461,156],
+        "$uv_size|default":[120,120],
+        "$size|default":["100%","100%"],
+        "$size2|default":["100%","100%"],
+        "$uv_red|default":[1931,156],
+        "offset1|default" : [
+            0,
+            "-10%"
+        ],
+        "variables" : [
+            {
+                "requires" : "($state = 'hover')",
+                "$uv" : [
+                   1605,
+                   148
+                ],
+                "$uv_size":[146,146],
+                "$size":["100%","110%"],
+                "$uv_red":[1773,156],
+                "$offset1":[0,"7%"],
+                "$size2":["95%","95%"]
+            }
+        ],
+        "controls" : [
+            {
+                "normal_case" : {
+                    "size" : "$size",
+                    "layer" : 44,
+                    "type" : "image",
+                    "texture" : "textures/calendar/map",
+                    "uv":"$uv",
+                    "uv_size":"$uv_size",
+                    "keep_ratio" : false,
+                    "controls" : [
+                        {
+                            "normal_case_label" : {
+                                "type" : "label",
+                                "text" : "#form_button_text",
+                                "color" : [0.792,0.631,0.407],
+                                "font_type": "MinecraftTen",
+                                "text_alignment": "center",
+                                "font_scale_factor" : 1.7,
+                                "anchor_from" : "center",
+                                "anchor_to" : "center",
+                                "offset" : "$offset1",
+                                "size" : [
+                                    "100% - 8px",
+                                    "100% - 8px"
+                                ],
+                                "layer" : 50,
+                                "shadow" : false,
+                                "bindings" : [
+                                    {
+                                        "binding_type" : "collection",
+                                        "binding_collection_name" : "form_buttons",
+                                        "binding_condition" : "none",
+                                        "binding_name" : "#form_button_text",
+                                        "binding_name_override" : "#form_button_text"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "bindings":[
+                        {
+                           "binding_name":"#form_button_texture",
+                           "binding_name_override":"#form_button_texture",
+                           "binding_type":"collection",
+                           "binding_collection_name":"form_buttons"
+                        },
+                        {
+                           "binding_type":"view",
+                           "source_property_name":"(#form_button_texture = 'not_open')",
+                           "target_property_name":"#visible"
+                        }
+                     ]
+                }
+            },
+            {
+                "old_normal_case" : {
+                    "size" : ["100%","100%"],
+                    "layer" : 44,
+                    "type" : "image",
+                    "texture" : "textures/calendar/map",
+                    "uv":[1461,156],
+                    "uv_size":[120,120],
+                    "keep_ratio" : false,
+                    "controls" : [
+                        {
+                            "old_normal_case_image" : {
+                                "type" : "image",
+                                "anchor_from" : "center",
+                                "anchor_to" : "center",
+                                "offset" : [
+                                    0,
+                                    0
+                                ],
+                                "size" : [
+                                    "100% - 8px",
+                                    "default"
+                                ],
+                                "layer" : 50,
+                                "texture" : "textures/calendar/map",
+                                "uv":[1792,38],
+                                "uv_size":[107,100]
+                            }
+                        }
+                    ],
+                    "bindings":[
+                        {
+                           "binding_name":"#form_button_texture",
+                           "binding_name_override":"#form_button_texture",
+                           "binding_type":"collection",
+                           "binding_collection_name":"form_buttons"
+                        },
+                        {
+                           "binding_type":"view",
+                           "source_property_name":"(#form_button_texture = 'old')",
+                           "target_property_name":"#visible"
+                        }
+                     ]
+                }
+            },
+            {
+                "old_miss_case" : {
+                    "size" : ["100%","100%"],
+                    "layer" : 44,
+                    "type" : "image",
+                    "texture" : "textures/calendar/map",
+                    "uv":[1614,3],
+                    "uv_size":[120,120],
+                    "keep_ratio" : false,
+                    "bindings":[
+                        {
+                           "binding_name":"#form_button_texture",
+                           "binding_name_override":"#form_button_texture",
+                           "binding_type":"collection",
+                           "binding_collection_name":"form_buttons"
+                        },
+                        {
+                           "binding_type":"view",
+                           "source_property_name":"(#form_button_texture = 'old_fail')",
+                           "target_property_name":"#visible"
+                        }
+                     ]
+                }
+            },
+            {
+                "normal_case_24" : {
+                    "size" : "$size2",
+                    "layer" : 44,
+                    "type" : "image",
+                    "texture" : "textures/calendar/map",
+                    "uv":"$uv_red",
+                    "uv_size":[120,120],
+                    "keep_ratio" : false,
+                    "controls" : [
+                        {
+                            "normal_case_label" : {
+                                "type" : "label",
+                                "text" : "#form_button_text",
+                                "color" : "white",
+                                "font_type": "MinecraftTen",
+                                "text_alignment": "center",
+                                "font_scale_factor" : 1.8,
+                                "anchor_from" : "center",
+                                "anchor_to" : "center",
+                                "offset" : [
+                                    0,
+                                    "-10%"
+                                ],
+                                "size" : [
+                                    "100% - 8px",
+                                    "default"
+                                ],
+                                "layer" : 50,
+                                "shadow" : false,
+                                "bindings" : [
+                                    {
+                                        "binding_type" : "collection",
+                                        "binding_collection_name" : "form_buttons",
+                                        "binding_condition" : "none",
+                                        "binding_name" : "#form_button_text",
+                                        "binding_name_override" : "#form_button_text"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "bindings":[
+                        {
+                           "binding_name":"#form_button_texture",
+                           "binding_name_override":"#form_button_texture",
+                           "binding_type":"collection",
+                           "binding_collection_name":"form_buttons"
+                        },
+                        {
+                           "binding_type":"view",
+                           "source_property_name":"(#form_button_texture = 'red')",
+                           "target_property_name":"#visible"
+                        }
+                     ]
+                }
+            }
+        ]
+    },
+    "big_button_inside":{
+        "type":"panel",
+        "size":[
+            "100%",
+            "240%x"
+        ],
+        "offset":[0,5],
+        "controls":[
+            {
+ 
+                "form_button@common.button":{
+                    "$default_state|default":false,
+                    "$pressed_button_name":"button.form_button_click",
+                    "$hover_state|default":false,
+                    "size":[
+                        "100%","100%"
+                    ],
+                    "controls":[
+                        {
+                            "main_panel":{
+                                "type":"panel",
+                                "controls":[ 
+                                    {
+                                        "default":{
+                                            "type":"image",
+                                            "texture":"textures/calendar/map",
+                                            "keep_ratio":false,
+                                            "size":[
+                                             "100%","100%"
+                                         ],
+                                         "uv":[1759,321],
+                                         "uv_size":[124,407],
+                                         "controls":[
+                                             {
+                                                 "normal_case_label" : {
+                                                     "type" : "label",
+                                                     "text":"$text_big_button",
+                                                     "color" : "white",
+                                                     "font_type": "MinecraftTen",
+                                                     "text_alignment": "center",
+                                                     "font_scale_factor" : 0.8,
+                                                     "anchor_from" : "center",
+                                                     "anchor_to" : "center",
+                                                     "size" : [
+                                                         "100% - 8px",
+                                                         "100% - 8px"
+                                                     ],
+                                                     "layer" : 50,
+                                                     "shadow" : false
+                                                 }
+                                             }
+                                         ]
+                                        }
+                                    },
+                                    {
+                                        "hover":{
+                                            "type":"image",
+                                            "texture":"textures/calendar/map",
+                                            "keep_ratio":false,
+                                            "size":[
+                                             "100%","100%"
+                                         ],
+                                         "uv":[1761,324],
+                                         "uv_size":[120,402],
+                                         "controls":[ 
+                                            {
+                                                "normal_case_label" : {
+                                                    "type" : "label",
+                                                    "text":"$text_big_button",
+                                                    "color" : "white",
+                                                    "font_type": "MinecraftTen",
+                                                    "text_alignment": "center",
+                                                    "font_scale_factor" : 0.8,
+                                                    "anchor_from" : "center",
+                                                    "anchor_to" : "center",
+                                                    "size" : [
+                                                        "100% - 8px",
+                                                        "100% - 8px"
+                                                    ],
+                                                    "layer" : 50,
+                                                    "shadow" : false
+                                                }
+                                            }
+                                         ]
+                                        }
+                                    }
+                                ],
+                                "bindings":[
+                                    {
+                                       "binding_name":"#form_button_texture",
+                                       "binding_name_override":"#form_button_texture",
+                                       "binding_type":"collection",
+                                       "binding_collection_name":"form_buttons"
+                                    },
+                                    {
+                                       "binding_type":"view",
+                                       "source_property_name":"(#form_button_texture = 'not_open')",
+                                       "target_property_name":"#visible"
+                                    }
+                                 ]
+                            }
+                        },
+                        {
+                            "miss_panel":{
+                                "type":"panel",
+                                "controls":[ 
+                                    {
+                                        "miss":{
+                                            "type":"image",
+                                            "texture":"textures/calendar/map",
+                                            "keep_ratio":false,
+                                            "size":[
+                                             "100%","100%"
+                                         ],
+                                         "uv":[1614,324],
+                                         "uv_size":[124,407]
+                                        }
+                                    }
+                                ],
+                                "bindings":[
+                                    {
+                                       "binding_name":"#form_button_texture",
+                                       "binding_name_override":"#form_button_texture",
+                                       "binding_type":"collection",
+                                       "binding_collection_name":"form_buttons"
+                                    },
+                                    {
+                                       "binding_type":"view",
+                                       "source_property_name":"(#form_button_texture = 'old_fail')",
+                                       "target_property_name":"#visible"
+                                    }
+                                 ]
+                            }
+                        },
+                        {
+                            "old_panel":{
+                                "type":"panel",
+                                "controls":[ 
+                                    {
+                                        "miss":{
+                                            "type":"image",
+                                            "texture":"textures/calendar/map",
+                                            "keep_ratio":false,
+                                            "size":[
+                                             "100%","100%"
+                                         ],
+                                         "uv":[1759,321],
+                                         "uv_size":[124,407],
+                                         "controls":[
+                                            {
+                                                "old_normal_case_image" : {
+                                                    "type" : "image",
+                                                    "anchor_from" : "center",
+                                                    "anchor_to" : "center",
+                                                    "offset" : [
+                                                        2,
+                                                        0
+                                                    ],
+                                                    "size" : [
+                                                        "100% - 8px",
+                                                        "default"
+                                                    ],
+                                                    "layer" : 50,
+                                                    "texture" : "textures/calendar/map",
+                                                    "uv":[1926,38],
+                                                    "uv_size":[107,100]
+                                                }
+                                            }
+                                         ]
+                                        }
+                                    }
+                                ],
+                                "bindings":[
+                                    {
+                                       "binding_name":"#form_button_texture",
+                                       "binding_name_override":"#form_button_texture",
+                                       "binding_type":"collection",
+                                       "binding_collection_name":"form_buttons"
+                                    },
+                                    {
+                                       "binding_type":"view",
+                                       "source_property_name":"(#form_button_texture = 'old')",
+                                       "target_property_name":"#visible"
+                                    }
+                                 ]
+                            }
+                        }
+                    ],
+                    "bindings":[
+                        {
+                            "binding_type":"collection_details",
+                            "binding_collection_name":"form_buttons"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

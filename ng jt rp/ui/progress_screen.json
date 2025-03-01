@@ -1,0 +1,304 @@
+{
+  "namespace": "progress",
+  "world_modal_progress_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "bg": {
+          "type": "image",
+          "fill": true,
+          "texture": "textures/global/bg",
+          "keep_ratio": true,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "bg_shadow": {
+          "type": "image",
+          "fill": true,
+          "texture": "textures/global/background",
+          "keep_ratio": true,
+          "color": "black",
+          "alpha": 0.4,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "version@server_form.color_global": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "keep_ratio": false,
+          "color": "$5E5E69",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "size": [
+            29,
+            15
+          ],
+          "offset": [
+            -8,
+            8
+          ],
+          "controls": [
+            {
+              "content": {
+                "type": "label",
+                "text": "V.01",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_type": "smooth",
+                "font_size": "normal",
+                "offset": [
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "shadow": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "color": "white",
+                "alpha": 0.4,
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "keep_ratio": false,
+                "size": [
+                  "100%",
+                  1
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "elements": {
+          "type": "panel",
+          "size": [
+            "100% - 10px",
+            110
+          ],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [
+            0,
+            -5
+          ],
+          "controls": [
+//            {
+//              "title": {
+//                "type": "label",
+//                "text": "NationsGlory",
+//                "anchor_from": "center",
+//                "anchor_to": "center",
+//                "font_type": "smooth",
+//                "font_scale_factor": 0.7,
+//                "font_size": "extra_large",
+//                "offset": [
+//                  0,
+//                  5
+//                ]
+//              }
+//            },
+            {
+              "subtitle": {
+                "type": "label",
+                "text": "Synchronisation du monde en cours...",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_type": "smooth",
+                "font_size": "normal",
+                "offset": [
+                  0,
+                  30
+                ]
+              }
+            },
+            {
+              "logo": {
+                "type": "image",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "texture": "textures/global/ng_logo",
+                "size": [
+                  200,
+                  200
+                ],
+                "offset": [
+                  0,
+                  -30
+                ]
+              }
+            },
+            {
+              "load_bar@server_form.color_global": {
+                "type": "image",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "texture": "textures/global/background",
+                "color": "$5E5E69",
+                "keep_ratio": false,
+                "size": [
+                  230,
+                  4
+                ],
+                "offset": [
+                  0,
+                  40
+                ],
+                "alpha": 1,
+                "controls": [
+                  {
+                    "shadow": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "white",
+                      "alpha": 0.4,
+                      "anchor_from": "top_middle",
+                      "anchor_to": "top_middle",
+                      "keep_ratio": false,
+                      "size": [
+                        "100%",
+                        1
+                      ],
+                      "offset": [
+                        0,
+                        0
+                      ]
+                    }
+                  },
+                  {
+                    "load": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$6864FF",
+                      "alpha": 1,
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "keep_ratio": false,
+                      "size": "@progress.anim_load",
+                      "offset": [
+                        0,
+                        0
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "world_modal_progress_panel_logout": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "panel": {
+          "type": "image",
+          "fill": true,
+          "texture": "textures/ui/Black",
+          "keep_ratio": true,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "elements": {
+          "type": "panel",
+          "size": [
+            "100% - 10px",
+            110
+          ],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [
+            0,
+            -5
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "label",
+                "text": "Déconnexion du serveur",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_type": "smooth",
+                "font_scale_factor": 0.7,
+                "font_size": "extra_large",
+                "offset": [
+                  0,
+                  -10
+                ]
+              }
+            },
+            {
+              "subtitle": {
+                "type": "label",
+                "text": "A bientôt sur nos serveurs.",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_type": "smooth",
+                "font_size": "normal",
+                "offset": [
+                  0,
+                  15
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "anim_load": {
+    "anim_type": "size",
+    "easing": "linear",
+    "duration": 1.2,
+    "from": [
+      0,
+      4
+    ],
+    "to": [
+      210,
+      4
+    ]
+  },
+
+  "world_convert_modal_progress_screen_content": {
+    "type": "panel",
+    "layer": 3,
+    "controls": [
+      {
+        "world_modal_progress_panel@progress.world_modal_progress_panel": {
+          "$modal_button_panel_type": "progress.modal_button_panel"
+        }
+      }
+    ]
+  },
+
+  "world_save_modal_progress_screen_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "world_modal_progress_panel_logout@progress.world_modal_progress_panel_logout": {
+          "$modal_button_panel_type": "progress.modal_button_panel_with_retry"
+        }
+      }
+    ]
+  }
+}
+

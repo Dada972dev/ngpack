@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:connect",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/connect"
+			},
+			"animations": {
+				"default_pose": "animation.connect.default_pose",
+				"no_pose": "animation.connect.no_pose",
+				"solemn_pose": "animation.connect.solemn_pose",
+				"athena_pose": "animation.connect.athena_pose",
+				"brandish_pose": "animation.connect.brandish_pose",
+				"honor_pose": "animation.connect.honor_pose",
+				"entertain_pose": "animation.connect.entertain_pose",
+				"salute_pose": "animation.connect.salute_pose",
+				"riposte_pose": "animation.connect.riposte_pose",
+				"zombie_pose": "animation.connect.zombie_pose",
+				"cancan_a_pose": "animation.connect.cancan_a_pose",
+				"cancan_b_pose": "animation.connect.cancan_b_pose",
+				"hero_pose": "animation.connect.hero_pose",
+				"wiggle": "animation.connect.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": ["variable.armor_stand.pose_index = 0;", "variable.armor_stand.hurt_time = 0;"],
+				"animate": ["controller.pose", "controller.wiggling"]
+			},
+			"geometry": {
+				"default": "geometry.connect"
+			},
+			"render_controllers": ["controller.render.armor_stand"],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#aa3b03",
+				"overlay_color": "#1863ce"
+			}
+		}
+	}
+}

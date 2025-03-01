@@ -1,0 +1,1629 @@
+{
+  "namespace": "diplomatie_faction",
+  "main_panel": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "top_title": {
+          "type": "panel",
+          "size": [
+            "100%",
+            17
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "color": "$181821",
+                "keep_ratio": false,
+                "controls": [
+                  {
+                    "bg": {
+                      "type": "image",
+                      "texture": "textures/global/effet_radian",
+                      "keep_ratio": false,
+                      "color": "white",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "title@server_form.button_one": {
+                            "offset": [
+                              0,
+                              -5
+                            ],
+                            "anchor_from": "left_middle",
+                            "anchor_to": "left_middle",
+                            "$button": "rd_main.check_title"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "choice": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            "100%",
+            108
+          ],
+          "color": "$111117",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "content": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  339.5,
+                  92
+                ],
+                "controls": [
+                  {
+                    "ally": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        110.5,
+                        "100%"
+                      ],
+                      "color": "$1A1A23",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "alpha": 0.3,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "white",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "alpha": 0.75,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "titleborder": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              "100%",
+                              12
+                            ],
+                            "color": "$B455FF",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "title@server_form.button_one": {
+                                  "offset": [
+                                    8,
+                                    8
+                                  ],
+                                  "$button": "diplomatie_faction.choice_ally"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "content@server_form.scrolling_panel": {
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "$color_bg_rail": "$14141B",
+                            "$color_bg_handle": "$363643",
+                            "size": [
+                              99,
+                              66
+                            ],
+                            "offset": [
+                              -2,
+                              19
+                            ],
+                            "layer": 16,
+                            "$show_background": false,
+                            "$scroll_bar_side": "right",
+                            "$scrolling_content": "diplomatie_faction.button_list_ally",
+                            "$scroll_size": [
+                              3,
+                              "100%"
+                            ],
+                            "$scrolling_pane_size": [
+                              "100% + 10px",
+                              "100%"
+                            ],
+                            "$scrolling_pane_offset": [
+                              15,
+                              3
+                            ],
+                            "$scroll_bar_right_padding_size": [
+                              15,
+                              0
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "ennemie": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        110.5,
+                        "100%"
+                      ],
+                      "color": "$1A1A23",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "alpha": 0.3,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "white",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "alpha": 0.75,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "titleborder": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              "100%",
+                              12
+                            ],
+                            "color": "$B455FF",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "title@server_form.button_one": {
+                                  "offset": [
+                                    8,
+                                    8
+                                  ],
+                                  "$button": "diplomatie_faction.choice_ennemie"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "content@server_form.scrolling_panel": {
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "$color_bg_rail": "$14141B",
+                            "$color_bg_handle": "$363643",
+                            "size": [
+                              99,
+                              66
+                            ],
+                            "offset": [
+                              -2,
+                              19
+                            ],
+                            "layer": 16,
+                            "$show_background": false,
+                            "$scroll_bar_side": "right",
+                            "$scrolling_content": "diplomatie_faction.button_list_ennemie",
+                            "$scroll_size": [
+                              3,
+                              "100%"
+                            ],
+                            "$scrolling_pane_size": [
+                              "100% + 10px",
+                              "100%"
+                            ],
+                            "$scrolling_pane_offset": [
+                              15,
+                              3
+                            ],
+                            "$scroll_bar_right_padding_size": [
+                              15,
+                              0
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "colony": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        110.5,
+                        "100%"
+                      ],
+                      "color": "$1A1A23",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "alpha": 0.3,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "white",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "alpha": 0.75,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "titleborder": {
+                            "type": "panel",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              "100%",
+                              12
+                            ],
+                            "color": "$B455FF",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "title@server_form.button_one": {
+                                  "offset": [
+                                    8,
+                                    8
+                                  ],
+                                  "$button": "diplomatie_faction.choice_colony"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "content@server_form.scrolling_panel": {
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "$color_bg_rail": "$14141B",
+                            "$color_bg_handle": "$363643",
+                            "size": [
+                              99,
+                              66
+                            ],
+                            "offset": [
+                              -2,
+                              19
+                            ],
+                            "layer": 16,
+                            "$show_background": false,
+                            "$scroll_bar_side": "right",
+                            "$scrolling_content": "diplomatie_faction.button_list_colony",
+                            "$scroll_size": [
+                              3,
+                              "100%"
+                            ],
+                            "$scrolling_pane_size": [
+                              "100% + 10px",
+                              "100%"
+                            ],
+                            "$scrolling_pane_offset": [
+                              15,
+                              3
+                            ],
+                            "$scroll_bar_right_padding_size": [
+                              15,
+                              0
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            "100%",
+            8
+          ]
+        }
+      },
+      {
+        "info": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [
+            339,
+            67
+          ],
+          "controls": [
+            {
+              "action": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "keep_ratio": false,
+                "color": "$111117",
+                "size": [
+                  174,
+                  67
+                ],
+                "controls": [
+                  {
+                    "background": {
+                      "type": "stack_panel",
+                      "orientation": "vertical",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ],
+                      "offset": [
+                        8,
+                        0
+                      ],
+                      "controls": [
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              0,
+                              8
+                            ]
+                          }
+                        },
+                        {
+                          "information": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "keep_ratio": false,
+                            "color": "$181821",
+                            "layer": 2,
+                            "size": [
+                              158,
+                              25
+                            ],
+                            "controls": [
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$42424F",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "logo": {
+                                  "type": "image",
+                                  "texture": "textures/global/diplomatie",
+                                  "layer": 3,
+                                  "anchor_from": "left_middle",
+                                  "anchor_to": "left_middle",
+                                  "size": [
+                                    8,
+                                    8
+                                  ],
+                                  "offset": [
+                                    8,
+                                    0
+                                  ],
+                                  "keep_ratio": false
+                                }
+                              },
+                              {
+                                "palier@server_form.text": {
+                                  "$text": "En attente de réponse.",
+                                  "color": "white",
+                                  "offset": [
+                                    24,
+                                    -4
+                                  ],
+                                  "font_type": "MinecraftTen",
+                                  "font_scale_factor": 0.8,
+                                  "anchor_from": "left_middle",
+                                  "anchor_to": "left_middle"
+                                }
+                              },
+                              {
+                                "action@server_form.button_one": {
+                                  "$button": "diplomatie_faction.choice_see"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$0D0D12",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              0,
+                              8
+                            ]
+                          }
+                        },
+                        {
+                          "button": {
+                            "type": "panel",
+                            "size": [
+                              158,
+                              18
+                            ],
+                            "offset": [
+                              -3.5,
+                              -1
+                            ],
+                            "controls": [
+                              {
+                                "action@server_form.button_one": {
+                                  "$button": "diplomatie_faction.choice_send"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  8,
+                  "100%"
+                ]
+              }
+            },
+            {
+              "helper": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "keep_ratio": false,
+                "color": "$181821",
+                "size": [
+                  174,
+                  67
+                ],
+                "controls": [
+                  {
+                    "border": {
+                      "type": "image",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "alpha": 0.75,
+                      "size": [
+                        "100%",
+                        1
+                      ],
+                      "color": "$42424F",
+                      "keep_ratio": false,
+                      "texture": "textures/global/background"
+                    }
+                  },
+                  {
+                    "title@server_form.text": {
+                      "$text": "Besoin d'aide ?",
+                      "color": "white",
+                      "offset": [
+                        8,
+                        6
+                      ],
+                      "size": [
+                        158,
+                        11
+                      ],
+                      "font_type": "MinecraftTen",
+                      "font_scale_factor": 0.8,
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left"
+                    }
+                  },
+                  {
+                    "desc@server_form.button_one": {
+                      "$button": "diplomatie_faction.choice_desc"
+                    }
+                  },
+                  {
+                    "border_bottom": {
+                      "type": "image",
+                      "anchor_from": "bottom_left",
+                      "anchor_to": "bottom_left",
+                      "alpha": 0.75,
+                      "size": [
+                        "100%",
+                        1
+                      ],
+                      "color": "$0D0D12",
+                      "keep_ratio": false,
+                      "texture": "textures/global/background"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_info": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "basic@rd_main.info": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§e§s§c§r§d§b§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_button": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "cancel@rd_main.button_cancel": {
+          "$size_button": [
+            158,
+            18
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§b§u§t§c§a§n§b§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "info": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "offset": [
+      8,
+      0
+    ],
+    "controls": [
+      {
+        "background": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "keep_ratio": false,
+          "color": "$181821",
+          "size": [
+            174,
+            67
+          ],
+          "controls": [
+            {
+              "border": {
+                "type": "image",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "alpha": 0.75,
+                "size": [
+                  "100%",
+                  1
+                ],
+                "color": "$42424F",
+                "keep_ratio": false,
+                "texture": "textures/global/background"
+              }
+            },
+            {
+              "title@server_form.text": {
+                "$text": "Besoin d'aide ?",
+                "color": "white",
+                "offset": [
+                  8,
+                  6
+                ],
+                "size": [
+                  158,
+                  11
+                ],
+                "font_type": "MinecraftTen",
+                "font_scale_factor": 0.8,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            },
+            {
+              "desc@server_form.text": {
+                "$text": "#form_button_text",
+                "color": "$8B95A3",
+                "offset": [
+                  8,
+                  20
+                ],
+                "size": [
+                  158,
+                  38
+                ],
+                "font_type": "normal",
+                "font_scale_factor": 0.6,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_text",
+                    "binding_name_override": "#form_button_text",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            },
+            {
+              "border_bottom": {
+                "type": "image",
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left",
+                "alpha": 0.75,
+                "size": [
+                  "100%",
+                  1
+                ],
+                "color": "$0D0D12",
+                "keep_ratio": false,
+                "texture": "textures/global/background"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_send": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "send@server_form.button_base_text": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$bg": "$5E5E69",
+          "$bg_hover": "$787886",
+          "$size_button": [
+            158,
+            18
+          ],
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§c§t§s§e§d§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_see": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@diplomatie_faction.see": {
+          "$bg_title": "$B455FF",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§c§t§d§e§m§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "see": {
+    "type": "panel",
+    "size": [
+      158,
+      25
+    ],
+    "controls": [
+      {
+        "title@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "offset": [
+            24,
+            4
+          ],
+          "font_scale_factor": 0.55,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      },
+      {
+        "button@server_form.button_base_logo_default": {
+          "anchor_from": "richt_middle",
+          "anchor_to": "richt_middle",
+          "offset": [
+            67,
+            0
+          ],
+          "$bg": "$242431",
+          "$bg_hover": "$5E5E69",
+          "$size_logo": [
+            6,
+            6
+          ],
+          "$logo": "textures/global/edit",
+          "$size_button": [
+            12,
+            12
+          ],
+          "$click": "button.form_button_click"
+        }
+      }
+    ]
+  },
+  "choice_ally": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@diplomatie_faction.button_relation": {
+          "$bg_title": "$B455FF",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§t§i§t§l§a§l§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_ennemie": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@diplomatie_faction.button_relation": {
+          "$bg_title": "$F5555F",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§t§i§t§l§e§n§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_colony": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@diplomatie_faction.button_relation": {
+          "$bg_title": "$00FF85",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§t§i§t§l§c§l§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_relation": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "title": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            82.5,
+            12
+          ],
+          "color": "$bg_title",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "border": {
+                "type": "image",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "layer": 3,
+                "alpha": 0.3,
+                "size": [
+                  "100%",
+                  1
+                ],
+                "color": "white",
+                "keep_ratio": false,
+                "texture": "textures/global/background"
+              }
+            },
+            {
+              "title@server_form.text": {
+                "$text": "#form_button_text",
+                "color": "white",
+                "offset": [
+                  4,
+                  0
+                ],
+                "font_scale_factor": 0.8,
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_text",
+                    "binding_name_override": "#form_button_text",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            },
+            {
+              "number@server_form.text": {
+                "$text": "#form_button_texture",
+                "color": "white",
+                "offset": [
+                  -4,
+                  0
+                ],
+                "font_scale_factor": 0.8,
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_texture",
+                    "binding_name_override": "#form_button_texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "button@server_form.button_base_logo_default": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [
+            0,
+            0
+          ],
+          "$bg": "$242431",
+          "$bg_hover": "$5E5E69",
+          "$size_logo": [
+            6,
+            6
+          ],
+          "$logo": "textures/global/cross",
+          "$size_button": [
+            12,
+            12
+          ],
+          "$click": "button.form_button_click"
+        }
+      }
+    ]
+  },
+  "button_list_ennemie": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@diplomatie_faction.button_grid_ennemie": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 10px",
+      "100%c + 10px"
+    ]
+  },
+  "button_grid_ennemie": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "diplomatie_faction.button_choice_ennemie",
+      "name": "button_list_factory"
+    }
+  },
+  "button_choice_ennemie": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "off@diplomatie_faction.ligne": {
+          "$border": "$363643",
+          "$bg": "$0D0D12",
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§e§n§r§n§o§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "on@diplomatie_faction.ligne": {
+          "$border": "$A4A2FF",
+          "$bg": "$6864FF",
+          "$click": "",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§e§n§r§a§c§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_list_ally": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@diplomatie_faction.button_grid_ally": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 10px",
+      "100%c + 10px"
+    ]
+  },
+  "button_grid_ally": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "diplomatie_faction.button_choice_ally",
+      "name": "button_list_factory"
+    }
+  },
+  "button_choice_ally": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "off@diplomatie_faction.ligne": {
+          "$border": "$363643",
+          "$bg": "$0D0D12",
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§a§l§r§n§o§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "on@diplomatie_faction.ligne": {
+          "$border": "$A4A2FF",
+          "$bg": "$6864FF",
+          "$click": "",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§a§l§r§a§c§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_list_colony": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@diplomatie_faction.button_grid_colony": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 10px",
+      "100%c + 10px"
+    ]
+  },
+  "button_grid_colony": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "diplomatie_faction.button_choice_colony",
+      "name": "button_list_factory"
+    }
+  },
+  "button_choice_colony": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "off@diplomatie_faction.ligne": {
+          "$border": "$363643",
+          "$bg": "$0D0D12",
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§c§l§r§n§o§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "on@diplomatie_faction.ligne": {
+          "$border": "$A4A2FF",
+          "$bg": "$6864FF",
+          "$click": "",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§c§l§r§a§c§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "ligne": {
+    "type": "panel",
+    "size": [
+      65,
+      8
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "name@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "$offset": [
+            28,
+            0
+          ],
+          "size": [
+            64,
+            8
+          ],
+          "font_type": "normal",
+          "font_scale_factor": 0.75,
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "skin": {
+          "type": "image",
+          "texture": "#texture",
+          "layer": 1,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "size": [
+            14,
+            7
+          ],
+          "offset": [
+            10,
+            0
+          ],
+          "keep_ratio": false,
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_name": "#form_button_texture_file_system",
+              "binding_name_override": "#texture_file_system",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#texture \u003d \u0027\u0027) or (#texture \u003d \u0027loading\u0027)))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "action@common.button": {
+          "$pressed_button_name": "$click",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "size": [
+            88,
+            8
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "border": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$border",
+                      "keep_ratio": false,
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "size": [
+                        6,
+                        6
+                      ],
+                      "controls": [
+                        {
+                          "background": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$bg",
+                            "keep_ratio": false,
+                            "size": [
+                              5,
+                              5
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "border": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$A4A2FF",
+                      "keep_ratio": false,
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "size": [
+                        6,
+                        6
+                      ],
+                      "controls": [
+                        {
+                          "background": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$6864FF",
+                            "keep_ratio": false,
+                            "size": [
+                              5,
+                              5
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_desc": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "content@diplomatie_faction.desc": {
+          "$bg_title": "$00FF85",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§e§s§c§r§d§b§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "desc": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "content@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "$8B95A3",
+          "offset": [
+            8,
+            20
+          ],
+          "size": [
+            158,
+            38
+          ],
+          "font_type": "normal",
+          "font_scale_factor": 0.6,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

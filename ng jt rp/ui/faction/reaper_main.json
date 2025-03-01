@@ -1,0 +1,1033 @@
+{
+  "namespace": "reaper_main",
+  "main_panel": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "top_title": {
+          "type": "panel",
+          "size": [
+            "100%",
+            27
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "title@server_form.button_one": {
+                      "$button": "reaper_main.check_title"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": {
+          "type": "panel",
+          "size": [
+            "100%",
+            15
+          ],
+          "controls": [
+            {
+              "title": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "title@server_form.button_one": {
+                      "$button": "reaper_main.desc_info"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            "100%",
+            12
+          ]
+        }
+      },
+      {
+        "base": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [
+            "100%",
+            111
+          ],
+          "controls": [
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  6,
+                  "100%"
+                ]
+              }
+            },
+            {
+              "info": {
+                "type": "image",
+                "texture": "textures/global/button_color_white",
+                "color": "$color4",
+                "size": [
+                  196,
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "title@server_form.text": {
+                      "$text": "INFORMATIONS",
+                      "$font_size": "normal",
+                      "$font_type": "MinecraftTen",
+                      "font_scale_factor": 1,
+                      "$color": "white",
+                      "offset": [
+                        12,
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "info@server_form.button_one": {
+                      "offset": [
+                        12,
+                        25
+                      ],
+                      "$button": "reaper_main.choice_info"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  6,
+                  "100%"
+                ]
+              }
+            },
+            {
+              "action": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": [
+                  137,
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "choice_percent": {
+                      "type": "image",
+                      "texture": "textures/global/button_color_white",
+                      "color": "$color3",
+                      "size": [
+                        "100%",
+                        43
+                      ],
+                      "controls": [
+                        {
+                          "title@server_form.text": {
+                            "$text": "POURCENTAGE REPARATION",
+                            "$font_type": "MinecraftTen",
+                            "color": "white",
+                            "font_scale_factor": 0.7,
+                            "offset": [
+                              8,
+                              8
+                            ]
+                          }
+                        },
+                        {
+                          "action@server_form.button_horizontal": {
+                            "size": [
+                              78,
+                              12
+                            ],
+                            "offset": [
+                              8,
+                              21
+                            ],
+                            "$button": "reaper_main.choice_action_percent"
+                          }
+                        }
+                      ]
+
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        2
+                      ]
+                    }
+                  },
+                  {
+                    "choice_coup": {
+                      "type": "image",
+                      "texture": "textures/global/button_color_white",
+                      "color": "$color3",
+                      "size": [
+                        "100%",
+                        43
+                      ],
+                      "controls": [
+                        {
+                          "title@server_form.text": {
+                            "$text": "COUP DE LA REPARTATION",
+                            "$font_type": "MinecraftTen",
+                            "color": "white",
+                            "font_scale_factor": 0.7,
+                            "offset": [
+                              8,
+                              8
+                            ]
+                          }
+                        },
+                        {
+                          "action@server_form.button_horizontal": {
+                            "size": [
+                              78,
+                              12
+                            ],
+                            "offset": [
+                              8,
+                              21
+                            ],
+                            "$button": "reaper_main.choice_action_coup"
+                          }
+                        },
+                        {
+                          "choice_action": {
+                            "type": "image",
+                            "texture": "textures/global/button_color_white",
+                            "color": "$color2",
+                            "offset": [
+                              42,
+                              0
+                            ],
+                            "size": [
+                              42,
+                              25
+                            ],
+                            "controls": {
+                              "info@server_form.button_horizontal": {
+                                "size": [
+                                  78,
+                                  12
+                                ],
+                                "offset": [
+                                  8,
+                                  21
+                                ],
+                                "$button": "reaper_main.choice_action_coup"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        3
+                      ]
+                    }
+                  },
+                  {
+                    "choice_action": {
+                      "type": "image",
+                      "texture": "textures/global/button_color_white",
+                      "color": "$color_blue",
+                      "size": [
+                        "100%",
+                        19
+                      ],
+                      "controls": [
+                        {
+                          "number@server_form.button_one": {
+                            "$button": "reaper_main.choice_action"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "desc_info": {
+    "type": "panel",
+    "controls": [
+      {
+        "title@rd_choice.data_desc": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§e§s§c§r§e§p§a§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_action_coup": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "plus@reaper_main.number_button": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§m§o§i§n§c§o§u§p§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "qte@reaper_main.qte": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§o§c§o§u§p§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "moin@reaper_main.number_button": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§l§u§s§c§o§u§p§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "info_coup@reaper_main.text_img": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§a§y§s§d§o§l§l§a§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_action_percent": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "plus@reaper_main.number_button": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§l§u§s§p§e§r§c§t§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "qte@reaper_main.qte": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§o§p§e§r§c§t§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "moin@reaper_main.number_button": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§m§o§i§n§p§e§r§c§t§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_info": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "basic@reaper_main.text_info": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§a§t§a§o§n§e§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "text_img": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%c",
+      11
+    ],
+    "controls": [
+      {
+        "dollars": {
+          "type": "panel",
+          "size": [
+            "100%c",
+            1
+          ],
+          "controls": [
+            {
+              "logo": {
+                "type": "image",
+                "texture": "textures/global/dollard",
+                "layer": 99,
+                "color": "white",
+                "offset": [
+                  0,
+                  -5
+                ],
+                "size": [
+                  8,
+                  8
+                ]
+              }
+            },
+            {
+              "title@server_form.text": {
+                "$text": "#form_button_text",
+                "$font_size": "normal",
+                "$font_type": "MinecraftTen",
+                "font_scale_factor": 0.65,
+                "$color": "white",
+                "offset": [
+                  18,
+                  -10
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_text",
+                    "binding_name_override": "#form_button_text",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "power": {
+          "type": "panel",
+          "size": [
+            "100%c",
+            1
+          ],
+          "controls": [
+            {
+              "logo": {
+                "type": "image",
+                "texture": "textures/global/power",
+                "layer": 99,
+                "color": "white",
+                "offset": [
+                  0,
+                  5
+                ],
+                "size": [
+                  8,
+                  8
+                ]
+              }
+            },
+            {
+              "subtitle@server_form.text": {
+                "$text": "#subtitle",
+                "$font_size": "normal",
+                "$font_type": "MinecraftTen",
+                "font_scale_factor": 0.65,
+                "$color": "white",
+                "offset": [
+                  18,
+                  0
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_texture",
+                    "binding_name_override": "#subtitle",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "text_info": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      11
+    ],
+    "controls": [
+      {
+        "title@server_form.text": {
+          "$text": "#form_button_text",
+          "$font_size": "normal",
+          "$font_type": "MinecraftTen",
+          "font_scale_factor": 0.8,
+          "$color": "$color9",
+          "offset": [
+            6,
+            1
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [
+            "100%c",
+            1
+          ],
+          "controls": [
+            {
+              "subtitle@server_form.text": {
+                "$text": "#subtitle",
+                "$font_size": "normal",
+                "$font_type": "MinecraftTen",
+                "font_scale_factor": 0.65,
+                "$color": "white",
+                "offset": [
+                  5,
+                  1
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_texture",
+                    "binding_name_override": "#subtitle",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_action": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "plus@reaper_main.button_action": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§c§t§i§o§n§r§e§p§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "qte": {
+    "type": "image",
+    "texture": "textures/global/background_full_color_white",
+    "keep_ratio": false,
+    "color": "$color6",
+    "size": [
+      53,
+      13
+    ],
+    "controls": [
+      {
+        "desc@server_form.text": {
+          "$text": "#form_button_text",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "$font_type": "MinecraftTen",
+          "offset": [
+            0,
+            -1
+          ],
+          "color": "white",
+          "font_scale_factor": 0.9,
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "collection_details",
+        "binding_collection_name": "form_buttons"
+      }
+    ]
+  },
+  "button_action": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "offset": "$offset_modif",
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$pressed_button_name": "button.form_button_click",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "size": [
+            137,
+            19
+          ],
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/button_color_white",
+                      "color": "$color_blue",
+                      "keep_ratio": false,
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "text@server_form.text": {
+                      "$text": "#title",
+                      "$font_type": "MinecraftTen",
+                      "color": "white",
+                      "font_scale_factor": 1,
+                      "$font_size": "normal",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "offset": [
+                        1,
+                        -1
+                      ],
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text",
+                          "binding_name_override": "#title"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/button_color_white",
+                      "color": "white",
+                      "keep_ratio": false,
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "text@server_form.text": {
+                      "$font_type": "MinecraftTen",
+                      "$text": "#title",
+                      "color": "$color3",
+                      "font_scale_factor": 1,
+                      "$font_size": "normal",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "offset": [
+                        1,
+                        -1
+                      ],
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text",
+                          "binding_name_override": "#title"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "number_button": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "offset": "$offset_modif",
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$pressed_button_name": "button.form_button_click",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "size": [
+            13,
+            13
+          ],
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/background_full_color_white",
+                      "color": "$color5",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "text@server_form.text": {
+                      "$text": "#title",
+                      "$font_type": "MinecraftTen",
+                      "color": "$color9",
+                      "font_scale_factor": 1.7,
+                      "$font_size": "normal",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "offset": [
+                        1,
+                        -1
+                      ],
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text",
+                          "binding_name_override": "#title"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/background_full_color_white",
+                      "color": "$color10",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "text@server_form.text": {
+                      "$font_type": "MinecraftTen",
+                      "$text": "#title",
+                      "color": "$color3",
+                      "font_scale_factor": 1.7,
+                      "$font_size": "normal",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "offset": [
+                        1,
+                        -1
+                      ],
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text",
+                          "binding_name_override": "#title"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "check_info_pay": {
+    "type": "panel",
+    "controls": [
+      {
+        "title@rd_main.data_title": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§t§i§t§l§r§d') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "data_title": {
+    "type": "panel",
+    "controls": [
+      {
+        "title@server_form.text": {
+          "$text": "#form_button_text",
+          "$font_size": "normal",
+          "$font_type": "MinecraftTen",
+          "font_scale_factor": 1.4,
+          "$color": "white",
+          "offset": [
+            6,
+            1
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      },
+      {
+        "subtitle@server_form.text": {
+          "$text": "#subtitle",
+          "$font_size": "normal",
+          "$font_type": "MinecraftTen",
+          "font_scale_factor": 0.9,
+          "$color": "$color_blue",
+          "offset": [
+            6,
+            14
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#subtitle",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "check_title": {
+    "type": "panel",
+    "controls": [
+      {
+        "title@rd_main.data_title": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§t§i§t§l§r§e') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

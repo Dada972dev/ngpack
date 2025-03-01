@@ -1,0 +1,32 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "ng jt",
+		"description": "ng jt Behavior Pack",
+		"uuid": "c8810bb1-c444-b9f0-ada8-e5c52252077f",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["Dada972"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.5.0", "1.6.0"],
+			"blockbench_block_wizard": ["1.2.1", "1.2.2"],
+			"blockbench_item_wizard": ["1.1.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "1722f0cf-5e29-b9ac-9dec-3bb74526ca38",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "3e6243ab-d382-0640-eb48-fce577dc859a",
+			"version": [1, 0, 0]
+		}
+	]
+}

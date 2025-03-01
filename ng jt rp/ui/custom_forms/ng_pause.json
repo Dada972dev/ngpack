@@ -1,0 +1,277 @@
+{
+  "namespace": "ng_pause",
+  "content": {
+    "type": "panel",
+    "controls": [
+      {
+        "@main_menu": {}
+      }
+    ]
+  },
+  "main_menu": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "layer": -1,
+    "controls": [
+      {
+        "content": {
+          "type": "panel",
+          "size": [
+            "390%",
+            "390%"
+          ],
+          "controls": [
+            {
+              "@main_menu_bg": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "main_menu_bg@server_form.color_global": {
+    "type": "panel",
+    "controls": [
+      {
+        "panel_base": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            125,
+            144
+          ],
+          "controls": [
+            {
+              "title_page": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "color": "$181821",
+                "keep_ratio": false,
+                "size": [
+                  "100%",
+                  28
+                ],
+                "controls": [
+                  {
+                    "bg_effet": {
+                      "type": "image",
+                      "texture": "textures/global/effet_radian",
+                      "keep_ratio": false,
+                      "color": "white",
+                      "layer": 2,
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "bg": {
+                      "type": "image",
+                      "texture": "textures/global/effet",
+                      "keep_ratio": false,
+                      "color": "white",
+                      "size": [
+                        93,
+                        28
+                      ]
+                    }
+                  },
+                  {
+                    "logo": {
+                      "type": "image",
+                      "texture": "textures/global/logong",
+                      "color": "white",
+                      "alpha": 1,
+                      "layer": 3,
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "size": [
+                        12,
+                        12
+                      ],
+                      "offset": [
+                        8,
+                        0
+                      ]
+                    }
+                  },
+                  {
+                    "title": {
+                      "type": "label",
+                      "text": "§lNationsGlory",
+                      "color": "white",
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "font_type": "smooth",
+                      "layer": 3,
+                      "font_scale_factor": 0.9,
+                      "font_size": "normal",
+                      "offset": [
+                        24,
+                        0
+                      ]
+                    }
+                  },
+                  {
+                    "version@server_form.color_global": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "keep_ratio": false,
+                      "color": "$5E5E69",
+                      "anchor_from": "top_right",
+                      "anchor_to": "top_right",
+                      "size": [
+                        19,
+                        12
+                      ],
+                      "layer": 3,
+                      "offset": [
+                        -8,
+                        8
+                      ],
+                      "controls": [
+                        {
+                          "content": {
+                            "type": "label",
+                            "text": "§lV.01",
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "font_type": "smooth",
+                            "font_size": "normal",
+                            "font_scale_factor": 0.8,
+                            "layer": 3,
+                            "offset": [
+                              1,
+                              0
+                            ]
+                          }
+                        },
+                        {
+                          "shadow": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "white",
+                            "alpha": 0.4,
+                            "layer": 3,
+                            "anchor_from": "top_middle",
+                            "anchor_to": "top_middle",
+                            "keep_ratio": false,
+                            "size": [
+                              "100%",
+                              1
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "linear": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "keep_ratio": false,
+                "color": "$111117",
+                "size": [
+                  "100%",
+                  2
+                ]
+              }
+            },
+            {
+              "all_option": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "color": "$14141B",
+                "keep_ratio": false,
+                "size": [
+                  "100%",
+                  114
+                ],
+                "controls": [
+                  {
+                    "play_buttons@ng_buttons.ng_button2": {
+                      "size": [
+                        109,
+                        19
+                      ],
+                      "offset": [
+                        0,
+                        -48
+                      ],
+                      "property_bag": {
+                        "#hyperlink": "https://discord.gg/nationsglory"
+                      },
+                      "$pressed_button_name": "button.menu_continue",
+                      "$button_text": "Jouer"
+                    }
+                  },
+                  {
+                    "settings_button@ng_buttons.ng_button2": {
+                      "size": [
+                        109,
+                        19
+                      ],
+                      "offset": [
+                        0,
+                        -21
+                      ],
+                      "$pressed_button_name": "button.menu_settings",
+                      "$button_text": "Paramètres"
+                    }
+                  },
+                  {
+                    "vestaire_button@ng_buttons.ng_button2": {
+                      "size": [
+                        109,
+                        19
+                      ],
+                      "offset": [
+                        0,
+                        7
+                      ],
+                      "$pressed_button_name": "button.to_profile_or_skins_screen",
+                      "$button_text": "Vestiaire"
+                    }
+                  },
+                  {
+                    "save@ng_buttons.ng_button2": {
+                      "size": [
+                        109,
+                        19
+                      ],
+                      "offset": [
+                        0,
+                        35
+                      ],
+                      "$pressed_button_name": "button.menu_quit",
+                      "$button_text": "Quitter"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "bg": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "color": "$0D0D12",
+          "alpha": 0.85,
+          "size": [
+            "100%",
+            "100%"
+          ]
+        }
+      }
+    ]
+  }
+}

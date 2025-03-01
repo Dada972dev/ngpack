@@ -1,0 +1,857 @@
+{
+  "namespace": "atm_main",
+  "main_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "panel": {
+          "type": "panel",
+          "size": [
+            200,
+            190
+          ],
+          "controls": [
+            {
+              "background_all": {
+                "type": "image",
+                "texture": "textures/global/background_color_white",
+                "keep_ratio": false,
+                "color":  "$color4",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [
+                  0,
+                  26
+                ],
+                "size": [
+                  "100%",
+                  "100%-26px"
+                ]
+              }
+            },
+            {
+              "background_timer": {
+                "type": "image",
+                "texture": "textures/global/background_color_white",
+                "color": "$color5",
+                "keep_ratio": false,
+                "anchor_from": "top_center",
+                "anchor_to": "top_center",
+                "layer": "top",
+                "offset": [
+                  0,
+                  -32
+                ],
+                "size": [
+                  168,
+                  46
+                ]
+              }
+            },
+            {
+              "panel_component": {
+                "type": "stack_panel",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "offset": [
+                  0,
+                  0
+                ],
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "orientation": "vertical",
+                "controls": [
+                  {
+                    "top_panel": {
+                      "type": "stack_panel",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        "100%",
+                        25
+                      ],
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "text_title": {
+                            "type": "panel",
+                            "size": [
+                              "40%",
+                              "100%"
+                            ],
+                            "controls": [
+                              {
+                                "common_title@server_form.text": {
+                                  "$text": "ATM",
+                                  "$color": "white",
+                                  "$font_type": "MinecraftTen",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "$offset": [
+                                    0,
+                                    5
+                                  ],
+                                  "$font_size": "normal",
+                                  "font_scale_factor": 1.4
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text_time_activity": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        15
+                      ],
+                      "controls": [
+                        {
+                          "text_time_activity@server_form.text": {
+                            "$text": "Temps d'activité",
+                            "$font_type": "MinecraftTen",
+                            "$color": [
+                              0.474,
+                              0.474,
+                              0.717
+                            ],
+                            "$offset": [
+                              16,
+                              4
+                            ],
+                            "$font_size": "normal",
+                            "font_scale_factor": 0.7
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "time_activity": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        46
+                      ],
+                      "controls": [
+                        {
+                          "info_time@server_form.button_one": {
+                            "$button": "atm_main.info_time_button"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_between_timer_convert_dollars": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        13
+                      ]
+                    }
+                  },
+                  {
+                    "convert_dollars": {
+                      "type": "stack_panel",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        "100%",
+                        37
+                      ],
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "button_convert_dollars@server_form.button_one": {
+                            "$button": "atm_main.convert_dollars_button"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        7
+                      ]
+                    }
+                  },
+                  {
+                    "convert_orbs": {
+                      "type": "stack_panel",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        "100%",
+                        37
+                      ],
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "buttons_convert_orbs@server_form.button_one": {
+                            "$button": "atm_main.convert_orbs_button"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "info_time_button": {
+    "type": "panel",
+    "controls": [
+      {
+        "value_dollars@server_form.text": {
+          "$text": "#form_button_text",
+          "$color": "white",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "$font_size": "large",
+          "font_scale_factor": 1.2,
+          "offset": [
+            0,
+            25
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§a§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "convert_dollars_button": {
+    "type": "panel",
+    "controls": [
+      {
+        "button@atm_main.convert_dollars_button_inner": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§d§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "convert_dollars_button_inner": {
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [
+      168,
+      37
+    ],
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$default_state|default": true,
+          "$pressed_button_name": "button.form_button_click",
+          "$hover_state|default": false,
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/button_color_white",
+                      "color": [
+                        0.4314,
+                        0.4314,
+                        0.9333
+                      ],
+                      "size": [
+                        168,
+                        37
+                      ]
+                    }
+                  },
+                  {
+                    "value_dollars@server_form.text": {
+                      "$text": "#value_dollars",
+                      "color": "white",
+                      "$offset": [
+                        -5,
+                        5
+                      ],
+                      "$font_size": "$font_size",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text",
+                          "binding_name_override": "#value_dollars"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "img_dollars@server_form.img_dollars": {
+                      "$color_img": "white",
+                      "$offset_img": [
+                        18,
+                        4.5
+                      ],
+                      "$size_img": [
+                        8,
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "dollars_for_min": {
+                      "type": "panel",
+                      "controls": [
+                        {
+                          "dollars_for_min@server_form.text": {
+                            "$text": "#dollars_for_min",
+                            "$color": "white",
+                            "$font_size": "small",
+                            "anchor_from": "bottom_right",
+                            "anchor_to": "bottom_right",
+                            "offset": [
+                              -6.5,
+                              -2
+                            ],
+                            "bindings": [
+                              {
+                                "binding_name": "#form_button_texture",
+                                "binding_name_override": "#dollars_for_min",
+                                "binding_type": "collection",
+                                "binding_collection_name": "form_buttons"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "img_help@server_form.img_help": {
+                            "anchor_from": "bottom_right",
+                            "anchor_to": "bottom_right",
+                            "$color_img": "white",
+                            "$offset_img": [
+                              -2,
+                              -2
+                            ],
+                            "$size_img": [
+                              4,
+                              4
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text_convert_dollars@server_form.text": {
+                      "$text": "Convertir en",
+                      "color": "white",
+                      "$offset": [
+                        0,
+                        -5
+                      ],
+                      "$font_size": "normal",
+                      "font_scale_factor": 0.8,
+                      "anchor_from": "center",
+                      "anchor_to": "center"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background_hover": {
+                      "type": "image",
+                      "texture": "textures/global/button_color_white",
+                      "color": "white",
+                      "size": [
+                        168,
+                        37
+                      ]
+                    }
+                  },
+                  {
+                    "value_dollars@server_form.text": {
+                      "$text": "#value_dollars",
+                      "color": [
+                        0.109,
+                        0.117,
+                        0.258
+                      ],
+                      "$offset": [
+                        -5,
+                        5
+                      ],
+                      "$font_size": "$font_size",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_name_override": "#value_dollars",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "img_dollars@server_form.img_dollars": {
+                      "$color_img": [
+                        0.109,
+                        0.117,
+                        0.258
+                      ],
+                      "$offset_img": [
+                        18,
+                        4.5
+                      ],
+                      "$size_img": [
+                        8,
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "dollars_for_min": {
+                      "type": "panel",
+                      "controls": [
+                        {
+                          "dollars_for_min@server_form.text": {
+                            "$text": "#dollars_for_min",
+                            "$color": [
+                              0.109,
+                              0.117,
+                              0.258
+                            ],
+                            "$font_size": "small",
+                            "anchor_from": "bottom_right",
+                            "anchor_to": "bottom_right",
+                            "offset": [
+                              -6.5,
+                              -2
+                            ],
+                            "bindings": [
+                              {
+                                "binding_name": "#form_button_texture",
+                                "binding_name_override": "#dollars_for_min",
+                                "binding_type": "collection",
+                                "binding_collection_name": "form_buttons"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "img_help@server_form.img_help": {
+                            "anchor_from": "bottom_right",
+                            "anchor_to": "bottom_right",
+                            "$color_img": [
+                              0.109,
+                              0.117,
+                              0.258
+                            ],
+                            "$offset_img": [
+                              -2,
+                              -2
+                            ],
+                            "$size_img": [
+                              4,
+                              4
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text_convert_dollars@server_form.text": {
+                      "$text": "Convertir en",
+                      "color": [
+                        0.109,
+                        0.117,
+                        0.258
+                      ],
+                      "$offset": [
+                        0,
+                        -5
+                      ],
+                      "$font_size": "normal",
+                      "font_scale_factor": 0.8,
+                      "anchor_from": "center",
+                      "anchor_to": "center"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "convert_orbs_button": {
+    "type": "panel",
+    "controls": [
+      {
+        "button_enable@atm_main.convert_orbs_button_inner": {
+          "$pressed_button_name": "button.form_button_click",
+          "$text_value": "Convertir en",
+          "$texture": "textures/global/button_color_white",
+          "$texture_hover": "textures/global/button_color_white",
+          "$color_texture": [
+            0.4314,
+            0.4314,
+            0.9333
+          ],
+          "$color_texture_hover": "white",
+          "$color_text": "white",
+          "$color_text_hover": [
+            0.109,
+            0.117,
+            0.258
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§b§c§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "button_desable@atm_main.convert_orbs_button_inner": {
+          "$text_value": "Sans NgPrime",
+          "$texture": "textures/global/button_color_white_stroke",
+          "$texture_hover": "textures/global/button_color_white",
+          "$color_texture": [
+            0.29,
+            0.29,
+            0.549
+          ],
+          "$color_texture_hover": [
+            0.29,
+            0.29,
+            0.549
+          ],
+          "$color_text": [
+            0.29,
+            0.29,
+            0.549
+          ],
+          "$color_text_hover": [
+            0.29,
+            0.29,
+            0.549
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§b§b§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "button_prime_enable@atm_main.convert_orbs_button_inner": {
+          "$text_value": "Convertir en",
+          "$pressed_button_name": "button.form_button_click",
+          "$texture": "textures/global/button_color_prime",
+          "$texture_hover": "textures/global/button_color_white",
+          "$color_texture": "",
+          "$color_texture_hover": "",
+          "$color_text": "white",
+          "$color_text_hover": [
+            0.109,
+            0.117,
+            0.258
+          ],
+          "offset": [
+            89,
+            0
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§c§c§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "button_prime_desable@atm_main.convert_orbs_button_inner": {
+          "$text_value": "Avec NgPrime",
+          "$texture": "textures/global/button_color_prime_stroke",
+          "$texture_hover": "textures/global/button_color_prime_stroke",
+          "$color_text": [
+            0.29,
+            0.29,
+            0.549
+          ],
+          "$color_text_hover": [
+            0.29,
+            0.29,
+            0.549
+          ],
+          "offset": [
+            89,
+            0
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§c§a§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "convert_orbs_button_inner": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      80,
+      37
+    ],
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$pressed_button_name|default": "",
+          "$pressed_button_name": "$pressed_button_name",
+          "$default_state|default": true,
+          "$hover_state|default": false,
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "$texture",
+                      "color": "$color_texture",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "value_dollars@server_form.text": {
+                      "$text": "#value_dollars",
+                      "color": "$color_text",
+                      "$offset": [
+                        -5,
+                        5
+                      ],
+                      "$font_size": "$font_size",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text",
+                          "binding_name_override": "#value_dollars"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "img_orbs@server_form.img_orbes": {
+                      "$color_img": "$color_text",
+                      "$offset_img": [
+                        18,
+                        4.5
+                      ],
+                      "$size_img": [
+                        8,
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "text_convert_orbs@server_form.text": {
+                      "$text": "$text_value",
+                      "color": "$color_text",
+                      "$offset": [
+                        0,
+                        -5
+                      ],
+                      "$font_size": "normal",
+                      "font_scale_factor": 0.8,
+                      "anchor_from": "center",
+                      "anchor_to": "center"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background_hover": {
+                      "type": "image",
+                      "texture": "$texture_hover",
+                        "color": "$color_texture_hover",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "value_dollars@server_form.text": {
+                      "$text": "#value_dollars",
+                      "color": "$color_text_hover",
+                      "$offset": [
+                        -5,
+                        5
+                      ],
+                      "$font_size": "$font_size",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "bindings": [
+                        {
+                          "binding_collection_name": "form_buttons",
+                          "binding_name_override": "#value_dollars",
+                          "binding_type": "collection",
+                          "binding_condition": "none",
+                          "binding_name": "#form_button_text"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "img_orbs@server_form.img_orbes": {
+                      "$color_img": "$color_text_hover",
+                      "$offset_img": [
+                        18,
+                        4.5
+                      ],
+                      "$size_img": [
+                        8,
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "text_convert_orbs@server_form.text": {
+                      "$text": "$text_value",
+                      "color": "$color_text_hover",
+                      "$offset": [
+                        0,
+                        -5
+                      ],
+                      "$font_size": "normal",
+                      "font_scale_factor": 0.8,
+                      "anchor_from": "center",
+                      "anchor_to": "center"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

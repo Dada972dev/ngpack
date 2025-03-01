@@ -1,0 +1,26 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "ng jt",
+		"description": "ng jt Resource Pack",
+		"uuid": "3e6243ab-d382-0640-eb48-fce577dc869a",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["Dada972"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.5.0", "1.6.0"],
+			"blockbench_block_wizard": ["1.2.1", "1.2.2"],
+			"blockbench_item_wizard": ["1.1.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "ng jt",
+			"type": "resources",
+			"uuid": "8b0fce26-6667-ffe6-b39b-b3f73f9ce22c",
+			"version": [1, 0, 0]
+		}
+	]
+}

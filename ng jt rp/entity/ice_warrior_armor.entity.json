@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:ice_warrior_armor",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ice_warrior_armor"
+			},
+			"animations": {
+			  "new": "animation.icewarriorarmor.new"
+			},
+			"scripts": {
+				"animate": [
+				  "new"
+				]
+			  },
+			"geometry": {
+				"default": "geometry.ice_warrior_armor"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

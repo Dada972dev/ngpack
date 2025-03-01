@@ -1,0 +1,68 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+	  "description": {
+		"identifier": "myname:lootbox_white_spartan",
+		"is_spawnable": true,
+		"is_summonable": true,
+		"is_experimental": false
+	  },
+	  "components": {
+		"minecraft:physics": {
+		  "has_gravity": true,
+		  "has_collision": true
+		},
+		"minecraft:pushable": {
+		  "is_pushable": false
+		},
+		"minecraft:push_through": {
+		  "value": 1
+		},
+		"minecraft:loot": {
+		  "table": "loot_tables/entities/lootbox_white_spartan.json"
+		},
+		"minecraft:damage_sensor": {
+		  "triggers": [
+			{
+			  "cause": "any",
+			  "on_damage": {
+				"event": "on_hurt",
+				"target": "self"
+			  }
+			}
+		  ]
+		}
+	  },
+	  "events": {
+		"on_hurt": {
+		  "sequence": [
+			{
+			  "run_command": {
+				"command": "event @s stop_idle_animation"
+			  }
+			},
+			{
+			  "run_command": {
+				"command": "playanimation @s animation.lootbox_white_spartan.open4"
+			  }
+			},
+			{
+			  "run_command": {
+				"command": "kill @s"
+			  }
+			}
+		  ]
+		},
+		"stop_idle_animation": {
+		  "remove": {
+			"minecraft:animation": {
+			  "animations": [
+				"animation.lootbox_white_spartan.idle"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+  

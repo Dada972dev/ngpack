@@ -1,0 +1,152 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"empire": {
+			"sounds": ["sounds/empire"]
+		},
+		"armor_normal_to_evolve": {
+			"sounds": ["sounds/armor_normal_to_evolve"]
+		},
+		"armor_evolve_to_normal": {
+			"sounds": ["sounds/armor_evolve_to_normal"]
+		},
+		"gun_shoot": {
+			"sounds": ["sounds/gun_shoot"]
+		},
+		"shield_to_sword": {
+			"sounds": ["sounds/shield_to_sword"]
+		},
+		"sword_to_shield": {
+			"sounds": ["sounds/sword_to_shield"]
+		},
+		"voriack_idle1": {
+			"sounds": ["sounds/voriack_idle1"]
+		},
+		"noel": {
+			"sounds": ["sounds/noel"]
+		},
+		"key_mob_death": {
+			"sounds": ["sounds/key_mob_death"]
+		},
+		"key_mob_step": {
+			"sounds": ["sounds/key_mob_step"]
+		},
+		"key_mob_idle": {
+			"sounds": ["sounds/key_mob_idle"]
+		},
+		"noel_2": {
+			"sounds": ["sounds/noel_2"]
+		},
+		"end_dialogue": {
+			"sounds": ["sounds/end_dialogue"]
+		},
+		"start_dialogue": {
+			"sounds": ["sounds/start_dialogue"]
+		},
+		"voriack_idle2": {
+			"sounds": ["sounds/voriack_idle2"]
+		},
+		"reaper_idle1": {
+			"sounds": ["sounds/reaper_idle1"]
+		},
+		"reaper_idle2": {
+			"sounds": ["sounds/reaper_idle2"]
+		},
+		"non_mistersand": {
+			"sounds": ["sounds/non_mistersand"]
+		},
+		"assault": {
+			"sounds": ["sounds/assault"]
+		},
+		"paiment": {
+			"sounds": ["sounds/paiment"]
+		},
+		"giant_gift_loot_unique": {
+			"sounds": ["sounds/giant_gift_loot_unique"]
+		},
+		"giant_gift_loot_epic": {
+			"sounds": ["sounds/giant_gift_loot_epic"]
+		},
+		"giant_gift_idle": {
+			"sounds": ["sounds/giant_gift_idle"]
+		},
+		"giant_gift_idle_key": {
+			"sounds": ["sounds/giant_gift_idle_key"]
+		},
+		"giant_gift_open_key": {
+			"sounds": ["sounds/giant_gift_open_key"]
+		},
+		"giant_gift_open": {
+			"sounds": ["sounds/giant_gift_open"]
+		},
+		"cash": {
+			"sounds": ["sounds/cash"]
+		},
+		"halloween_2024_smash": {
+			"sounds": ["sounds/halloween_2024_smash"]
+		},
+		"lootbox_white_spartan_1": {
+			"sounds": ["sounds/lootbox_white_spartan_1"]
+		},
+		"lootbox_white_spartan_2": {
+			"sounds": ["sounds/lootbox_white_spartan_2"]
+		},
+		"lootbox_white_spartan_3": {
+			"sounds": ["sounds/lootbox_white_spartan_3"]
+		},
+		"lootbox_white_spartan_4": {
+			"sounds": ["sounds/lootbox_white_spartan_4"]
+		},
+		"lootbox_halloween_1": {
+			"sounds": ["sounds/lootbox_halloween_1"]
+		},
+		"lootbox_halloween_2": {
+			"sounds": ["sounds/lootbox_halloween_2"]
+		},
+		"lootbox_halloween_3": {
+			"sounds": ["sounds/lootbox_halloween_3"]
+		},
+		"lootbox_halloween_4": {
+			"sounds": ["sounds/lootbox_halloween_4"]
+		},
+		"antimatter": {
+			"sounds": ["sounds/antimatter"]
+		},
+		"mega_lootbox_sound": {
+			"sounds": ["sounds/mega_lootbox_sound"]
+		},
+		"lootbox_sound_1": {
+			"sounds": ["sounds/lootbox_sound_1"]
+		},
+		"lootbox_sound_2": {
+			"sounds": ["sounds/lootbox_sound_2"]
+		},
+		"lootbox_sound_3": {
+			"sounds": ["sounds/lootbox_sound_3"]
+		},
+		"lootbox_sound_4": {
+			"sounds": ["sounds/lootbox_sound_4"]
+		},
+		"lootbox_anniv_1": {
+			"sounds": ["sounds/lootbox_anniv_1"]
+		},
+		"lootbox_anniv_2": {
+			"sounds": ["sounds/lootbox_anniv_2"]
+		},
+		"lootbox_anniv_3": {
+			"sounds": ["sounds/lootbox_anniv_3"]
+		},
+		"lootbox_anniv_4": {
+			"sounds": ["sounds/lootbox_anniv_4"]
+		},
+		"edora_sound_1": {
+			"sounds": ["sounds/edora_sound_1"]
+		},
+		"loose_out": {
+			"sounds": ["sounds/loose_out"]
+		},
+		"victory_out": {
+			"sounds": ["sounds/victory_out"]
+		}
+	}
+}

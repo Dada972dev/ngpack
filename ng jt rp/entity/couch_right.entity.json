@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:couch_right",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/couch_right"
+			},
+			"geometry": {
+				"default": "geometry.couch_right"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#1a2d67",
+				"overlay_color": "#f17881"
+			}
+		}
+	}
+}

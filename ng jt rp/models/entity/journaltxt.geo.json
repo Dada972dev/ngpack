@@ -1,0 +1,190 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.journaltxt",
+				"texture_width": 1000,
+				"texture_height": 320,
+				"visible_bounds_width": 18,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [134, 52, 10],
+							"size": [-268, -52, -20],
+							"uv": {
+								"north": {"uv": [0, 246], "uv_size": [1, 1]},
+								"east": {"uv": [0, 246], "uv_size": [1, 1]},
+								"south": {"uv": [0, 246], "uv_size": [1, 1]},
+								"west": {"uv": [0, 246], "uv_size": [1, 1]},
+								"up": {"uv": [1, 247], "uv_size": [-1, -1]},
+								"down": {"uv": [1, 247], "uv_size": [-1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "open_terminator",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-132, 2, -8],
+							"size": [6, 48, 16],
+							"uv": {
+								"north": {"uv": [310, 180], "uv_size": [6, 48]},
+								"east": {"uv": [294, 180], "uv_size": [16, 48]},
+								"south": {"uv": [316, 180], "uv_size": [-6, 48]},
+								"up": {"uv": [310, 164], "uv_size": [6, 16]},
+								"down": {"uv": [310, 228], "uv_size": [6, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "j",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-126, 2, -8],
+							"size": [36, 48, 16],
+							"uv": {
+								"north": {"uv": [368, 16], "uv_size": [36, 48]},
+								"south": {"uv": [404, 16], "uv_size": [-36, 48]},
+								"up": {"uv": [368, 0], "uv_size": [36, 16]},
+								"down": {"uv": [368, 64], "uv_size": [36, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "o",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-90, 2, -8],
+							"size": [36, 48, 16],
+							"uv": {
+								"north": {"uv": [558, 16], "uv_size": [36, 48]},
+								"south": {"uv": [594, 16], "uv_size": [-36, 48]},
+								"up": {"uv": [558, 0], "uv_size": [36, 16]},
+								"down": {"uv": [558, 64], "uv_size": [36, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "u",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-54, 2, -8],
+							"size": [36, 48, 16],
+							"uv": {
+								"north": {"uv": [786, 16], "uv_size": [36, 48]},
+								"south": {"uv": [822, 16], "uv_size": [-36, 48]},
+								"up": {"uv": [786, 0], "uv_size": [36, 16]},
+								"down": {"uv": [786, 64], "uv_size": [36, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "r",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-18, 2, -8],
+							"size": [36, 48, 16],
+							"uv": {
+								"north": {"uv": [672, 16], "uv_size": [36, 48]},
+								"south": {"uv": [708, 16], "uv_size": [-36, 48]},
+								"up": {"uv": [672, 0], "uv_size": [36, 16]},
+								"down": {"uv": [672, 64], "uv_size": [36, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "n",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [18, 2, -8],
+							"size": [36, 48, 16],
+							"uv": {
+								"north": {"uv": [520, 16], "uv_size": [36, 48]},
+								"south": {"uv": [556, 16], "uv_size": [-36, 48]},
+								"up": {"uv": [520, 0], "uv_size": [36, 16]},
+								"down": {"uv": [520, 64], "uv_size": [36, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "a",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [54, 2, -8],
+							"size": [36, 48, 16],
+							"uv": {
+								"north": {"uv": [38, 16], "uv_size": [36, 48]},
+								"south": {"uv": [74, 16], "uv_size": [-36, 48]},
+								"up": {"uv": [38, 0], "uv_size": [36, 16]},
+								"down": {"uv": [38, 64], "uv_size": [36, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "l",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [90, 2, -8],
+							"size": [36, 48, 16],
+							"uv": {
+								"north": {"uv": [444, 16], "uv_size": [36, 48]},
+								"south": {"uv": [480, 16], "uv_size": [-36, 48]},
+								"up": {"uv": [444, 0], "uv_size": [36, 16]},
+								"down": {"uv": [444, 64], "uv_size": [36, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "close_terminator",
+					"parent": "journal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [126, 2, -8],
+							"size": [6, 48, 16],
+							"uv": {
+								"north": {"uv": [318, 180], "uv_size": [6, 48]},
+								"south": {"uv": [324, 180], "uv_size": [-6, 48]},
+								"west": {"uv": [324, 180], "uv_size": [16, 48]},
+								"up": {"uv": [318, 164], "uv_size": [6, 16]},
+								"down": {"uv": [318, 228], "uv_size": [6, 16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

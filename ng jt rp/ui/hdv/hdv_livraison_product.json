@@ -1,0 +1,167 @@
+{
+  "namespace": "hdv_livraison_product",
+  "main_panel": {
+    "type": "panel",
+    "size": [
+      356,
+      226
+    ],
+    "controls": [
+      {
+        "form": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "color": "$1B1B24",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "content": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "img": {
+                      "type": "panel",
+                      "size": [
+                        115,
+                        "100%"
+                      ],
+                      "controls": [
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        112,
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "content_form": {
+                      "type": "stack_panel",
+                      "orientation": "vertical",
+                      "size": [
+                        217,
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "title": {
+                            "type": "label",
+                            "size": [
+                              "100%",
+                              16
+                            ],
+                            "text": "§l§i§s§t§r§e§n§r",
+                            "color": "white",
+                            "font_size": 16,
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left"
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              12
+                            ]
+                          }
+                        },
+                        {
+                          "define_all": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              60
+                            ],
+                            "controls": [
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              12
+                            ]
+                          }
+                        },
+                        {
+                          "info": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              76
+                            ],
+                            "controls": [
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              12
+                            ]
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              12
+                            ],
+                            "controls": [
+
+                              {
+                                "action@server_form.button_one": {
+                                  "size": [
+                                    217,
+                                    16
+                                  ],
+                                  "offset": [
+                                    0,
+                                    0
+                                  ],
+                                  "$button": "hdv_add_product.choice_conclude"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

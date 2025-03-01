@@ -1,0 +1,196 @@
+{
+	"texture_data": {
+		"bottes_en_eco": {
+			"textures": "textures/items/bottes_en_eco.png"
+		},
+		"jambires_en_eco": {
+			"textures": "textures/items/jambires_en_eco.png"
+		},
+		"plastron_eco": {
+			"textures": "textures/items/plastron_eco.png"
+		},
+		"casque_en_eco": {
+			"textures": "textures/items/casque_en_eco.png"
+		},
+		"bottes_en_prototype": {
+			"textures": "textures/items/bottes_en_prototype.png"
+		},
+		"jambire_prototype": {
+			"textures": "textures/items/jambire_prototype.png"
+		},
+		"plastron_prototype": {
+			"textures": "textures/items/plastron_prototype.png"
+		},
+		"casque_prototype": {
+			"textures": "textures/items/casque_prototype.png"
+		},
+		"speed_leg": {
+			"textures": "textures/items/speed_leg.png"
+		},
+		"jump_boots": {
+			"textures": "textures/items/jump_boots.png"
+		},
+		"magic_boots": {
+			"textures": "textures/items/magic_boots.png"
+		},
+		"bottes_desh": {
+			"textures": "textures/items/bottes_desh.png"
+		},
+		"jambires_desh": {
+			"textures": "textures/items/jambires_desh.png"
+		},
+		"plastron_desh": {
+			"textures": "textures/items/plastron_desh.png"
+		},
+		"casque_desh": {
+			"textures": "textures/items/casque_desh.png"
+		},
+		"bottes_en_onyx": {
+			"textures": "textures/items/bottes_en_onyx.png"
+		},
+		"jambires_en_onyx": {
+			"textures": "textures/items/jambires_en_onyx.png"
+		},
+		"plastron_en_onyx": {
+			"textures": "textures/items/plastron_en_onyx.png"
+		},
+		"casque_en_onyx": {
+			"textures": "textures/items/casque_en_onyx.png"
+		},
+		"bottes_noel": {
+			"textures": "textures/items/bottes_noel.png"
+		},
+		"jambires_noel": {
+			"textures": "textures/items/jambires_noel.png"
+		},
+		"plastron_noel": {
+			"textures": "textures/items/plastron_noel.png"
+		},
+		"casque_noel": {
+			"textures": "textures/items/casque_noel.png"
+		},
+		"bottes_alpha": {
+			"textures": "textures/items/bottes_alpha.png"
+		},
+		"jambires_alpha": {
+			"textures": "textures/items/jambires_alpha.png"
+		},
+		"plastron_alpha": {
+			"textures": "textures/items/plastron_alpha.png"
+		},
+		"casque_alpha": {
+			"textures": "textures/items/casque_alpha.png"
+		},
+		"bottes_en_spartan_blanc_en_mode_combat": {
+			"textures": "textures/items/bottes_en_spartan_blanc_en_mode_combat.png"
+		},
+		"jambires_en_spartan_blanc_en_mode_combat": {
+			"textures": "textures/items/jambires_en_spartan_blanc_en_mode_combat.png"
+		},
+		"plastron_en_spartan_blanc_en_mode_combat": {
+			"textures": "textures/items/plastron_en_spartan_blanc_en_mode_combat.png"
+		},
+		"casque_en_spartan_blanc_mode_combat": {
+			"textures": "textures/items/casque_en_spartan_blanc_mode_combat.png"
+		},
+		"bottes_en_spartan_blanc_classique": {
+			"textures": "textures/items/bottes_en_spartan_blanc_classique.png"
+		},
+		"jambires_en_spartan_blanc_classique": {
+			"textures": "textures/items/jambires_en_spartan_blanc_classique.png"
+		},
+		"plastron_en_spartan_blanc_classique": {
+			"textures": "textures/items/plastron_en_spartan_blanc_classique.png"
+		},
+		"casque_en_spartan_blanc_classique": {
+			"textures": "textures/items/casque_en_spartan_blanc_classique.png"
+		},
+		"bottes_spartan": {
+			"textures": "textures/items/bottes_spartan.png"
+		},
+		"jambires_spartan": {
+			"textures": "textures/items/jambires_spartan.png"
+		},
+		"plastron_spartan": {
+			"textures": "textures/items/plastron_spartan.png"
+		},
+		"casque_sapartan": {
+			"textures": "textures/items/casque_sapartan.png"
+		},
+		"bottes_lune": {
+			"textures": "textures/items/bottes_lune.png"
+		},
+		"plastron_lune": {
+			"textures": "textures/items/plastron_lune.png"
+		},
+		"casque_lune": {
+			"textures": "textures/items/casque_lune.png"
+		},
+		"jambires_lune": {
+			"textures": "textures/items/jambires_lune.png"
+		},
+		"bottes_gaz": {
+			"textures": "textures/items/bottes_gaz.png"
+		},
+		"jambires_gaz": {
+			"textures": "textures/items/jambires_gaz.png"
+		},
+		"plastron_gaz": {
+			"textures": "textures/items/plastron_gaz.png"
+		},
+		"casque_gaz": {
+			"textures": "textures/items/casque_gaz.png"
+		},
+		"casque_frozen_2023": {
+			"textures": "textures/items/casque_frozen_2023.png"
+		},
+		"plastron_frozen_2023": {
+			"textures": "textures/items/plastron_frozen_2023.png"
+		},
+		"jambire_frozen_2023": {
+			"textures": "textures/items/jambire_frozen_2023.png"
+		},
+		"bottes_frozen_2023": {
+			"textures": "textures/items/bottes_frozen_2023.png"
+		},
+		"frozen_2023": {
+			"textures": "textures/items/frozen_2023.png"
+		},
+		"jambire_frost_knight": {
+			"textures": "textures/items/jambire_frost_knight.png"
+		},
+		"plastron_frost_knight": {
+			"textures": "textures/items/plastron_frost_knight.png"
+		},
+		"casque_frost_knight": {
+			"textures": "textures/items/casque_frost_knight.png"
+		},
+		"bottes_frost_knight": {
+			"textures": "textures/items/bottes_frost_knight.png"
+		},
+		"bottes_builder": {
+			"textures": "textures/items/bottes_builder.png"
+		},
+		"casque_builder": {
+			"textures": "textures/items/casque_builder.png"
+		},
+		"jambires_builder": {
+			"textures": "textures/items/jambires_builder.png"
+		},
+		"plastron_builder": {
+			"textures": "textures/items/plastron_builder.png"
+		},
+		"botte_en_zicronium": {
+			"textures": "textures/items/botte_en_zicronium.png"
+		},
+		"jambire_zirconium": {
+			"textures": "textures/items/jambire_zirconium.png"
+		},
+		"plastron_zirconium": {
+			"textures": "textures/items/plastron_zirconium.png"
+		},
+		"zirconium_casque": {
+			"textures": "textures/items/zirconium_casque.png"
+		}
+	}
+}

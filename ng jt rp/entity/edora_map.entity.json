@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:edora_map",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/edora_map"
+			},
+			"geometry": {
+				"default": "geometry.edora_map"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#a301c2",
+				"overlay_color": "#def814"
+			}
+		}
+	}
+}

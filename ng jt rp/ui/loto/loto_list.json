@@ -1,0 +1,475 @@
+{
+   "namespace":"loto_list",
+   "main_panel": {
+      "type": "stack_panel",
+      "orientation": "horizontal",
+      "size": [
+         "100%",
+         "100%"
+      ],
+      "controls": [
+         {
+            "content": {
+               "type": "image",
+               "texture": "textures/global/background",
+               "size": [
+                  "100%",
+                  "100%"
+               ],
+               "color": "$14141B",
+               "keep_ratio": false,
+               "controls": [
+                  {
+                     "bank": {
+                        "type": "stack_panel",
+                        "orientation": "vertical",
+                        "size": [
+                           "100%",
+                           "100%"
+                        ],
+                        "controls": [
+                           {
+                              "title": {
+                                 "type": "image",
+                                 "texture": "textures/global/background",
+                                 "size": [
+                                    "100%",
+                                    17
+                                 ],
+                                 "color": "$181821",
+                                 "keep_ratio": false,
+                                 "controls": [
+                                    {
+                                       "bg": {
+                                          "type": "image",
+                                          "texture": "textures/global/effet_radian",
+                                          "keep_ratio": false,
+                                          "color": "white",
+                                          "size": [
+                                             "100%",
+                                             "100%"
+                                          ],
+                                          "controls": [
+                                             {
+                                                "title@server_form.button_one": {
+                                                   "offset": [
+                                                      0,
+                                                      -5
+                                                   ],
+                                                   "anchor_from": "left_middle",
+                                                   "anchor_to": "left_middle",
+                                                   "$button": "rd_main.check_title"
+                                                }
+                                             }
+                                          ]
+                                       }
+                                    },
+                                    {
+                                       "border_bottom": {
+                                          "type": "image",
+                                          "anchor_from": "bottom_left",
+                                          "anchor_to": "bottom_left",
+                                          "alpha": 1,
+                                          "size": [
+                                             "100%",
+                                             1
+                                          ],
+                                          "offset": [
+                                             0,
+                                             0
+                                          ],
+                                          "color": "$0D0D12",
+                                          "keep_ratio": false,
+                                          "texture": "textures/global/background"
+                                       }
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "padding": {
+                                 "type": "panel",
+                                 "size": [
+                                    "100%",
+                                    17
+                                 ],
+                                 "controls": [
+                                    {
+                                       "title_left@server_form.text": {
+                                          "$text": "Gagnant(s)",
+                                          "$font_size": "normal",
+                                          "anchor_from": "left_middle",
+                                          "anchor_to": "left_middle",
+                                          "font_scale_factor": 0.7,
+                                          "$color": "white",
+                                          "offset": [
+                                             14,
+                                             0
+                                          ]
+                                       }
+                                    },
+                                    {
+                                       "title_center@server_form.text": {
+                                          "$text": "Loterie",
+                                          "$font_size": "normal",
+                                          "anchor_from": "center_middle",
+                                          "anchor_to": "center_middle",
+                                          "font_scale_factor": 0.7,
+                                          "$color": "white",
+                                          "offset": [
+                                             -50,
+                                             0
+                                          ]
+                                       }
+                                    },
+                                    {
+                                       "date@server_form.text": {
+                                          "$text": "Date",
+                                          "$font_size": "normal",
+                                          "anchor_from": "center_middle",
+                                          "anchor_to": "center_middle",
+                                          "font_scale_factor": 0.7,
+                                          "$color": "white",
+                                          "offset": [
+                                             40,
+                                             0
+                                          ]
+                                       }
+                                    },
+                                    {
+                                       "title_right@server_form.text": {
+                                          "$text": "Prix",
+                                          "$font_size": "normal",
+                                          "anchor_from": "right_middle",
+                                          "anchor_to": "right_middle",
+                                          "font_scale_factor": 0.7,
+                                          "$color": "white",
+                                          "offset": [
+                                             -26,
+                                             0
+                                          ]
+                                       }
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "content": {
+                                 "type": "panel",
+                                 "size": [
+                                    "100%",
+                                    160
+                                 ],
+                                 "controls": [
+                                    {
+                                       "list": {
+                                          "type": "image",
+                                          "texture": "textures/global/background",
+                                          "color": "$0D0D12",
+                                          "layer": 1,
+                                          "keep_ratio": false,
+                                          "size": [
+                                             340,
+                                             160
+                                          ],
+                                          "offset": [
+                                             0,
+                                             0
+                                          ],
+                                          "controls": [
+                                             {
+                                                "scrolling_condition@server_form.scrolling_panel": {
+                                                   "anchor_from": "top_middle",
+                                                   "anchor_to": "top_middle",
+                                                   "$color_bg_rail": "$14141B",
+                                                   "$color_bg_handle": "$363643",
+                                                   "size": [
+                                                      328,
+                                                      150
+                                                   ],
+                                                   "offset": [
+                                                      -3,
+                                                      0
+                                                   ],
+                                                   "layer": 16,
+                                                   "$show_background": false,
+                                                   "$scroll_bar_side": "right",
+                                                   "$scrolling_content": "bank_history.button_list_condition",
+                                                   "$scroll_size": [
+                                                      3,
+                                                      "100%"
+                                                   ],
+                                                   "$scrolling_pane_size": [
+                                                      "100% + 26px",
+                                                      "100%"
+                                                   ],
+                                                   "$scrolling_pane_offset": [
+                                                      11,
+                                                      3
+                                                   ],
+                                                   "$scroll_bar_right_padding_size": [
+                                                      25,
+                                                      0
+                                                   ]
+                                                }
+                                             }
+                                          ]
+                                       }
+                                    }
+                                 ]
+                              }
+                           }
+                        ]
+                     }
+                  }
+               ]
+            }
+         }
+      ]
+   },
+
+   "button_list_condition": {
+      "type": "panel",
+      "anchor_from": "top_middle",
+      "anchor_to": "top_middle",
+      "controls": [
+         {
+            "button_list@bank_history.button_grid_condition": {
+            }
+         }
+      ],
+      "offset": [
+         0,
+         0
+      ],
+      "size": [
+         "100% + 10px",
+         "100%c + 10px"
+      ]
+   },
+   "button_grid_condition": {
+      "type": "stack_panel",
+      "orientation": "vertical",
+      "size": [
+         "100%",
+         "100%c"
+      ],
+      "anchor_from": "top_middle",
+      "anchor_to": "top_middle",
+      "bindings": [
+         {
+            "binding_name": "#form_button_length",
+            "binding_name_override": "#collection_length"
+         }
+      ],
+      "collection_name": "form_buttons",
+      "factory": {
+         "control_name": "bank_history.button_choice_condition",
+         "name": "button_list_factory"
+      }
+   },
+   "button_choice_condition": {
+      "type": "panel",
+      "size": [
+         "100%",
+         "100%c"
+      ],
+      "controls": [
+         {
+            "plus@bank_history.button_tab_condition": {
+               "$color_text": "$00FF85",
+               "bindings": [
+                  {
+                     "binding_name": "#form_button_text",
+                     "binding_name_override": "#form_button_text",
+                     "binding_type": "collection",
+                     "binding_collection_name": "form_buttons"
+                  },
+                  {
+                     "binding_type": "view",
+                     "source_property_name": "(not((#form_button_text - '§h§i§s§t§o§p§l§u§s§r') \u003d #form_button_text))",
+                     "target_property_name": "#visible"
+                  }
+               ]
+            }
+         },
+         {
+
+            "moin@bank_history.button_tab_condition": {
+               "$color_text": "$FF005C",
+               "bindings": [
+                  {
+                     "binding_name": "#form_button_text",
+                     "binding_name_override": "#form_button_text",
+                     "binding_type": "collection",
+                     "binding_collection_name": "form_buttons"
+                  },
+                  {
+                     "binding_type": "view",
+                     "source_property_name": "(not((#form_button_text - '§h§i§s§t§o§m§o§i§n§r') \u003d #form_button_text))",
+                     "target_property_name": "#visible"
+                  }
+               ]
+            }
+         }
+      ]
+   },
+   "button_tab_condition": {
+      "type": "panel",
+      "size": [
+         328,
+         14
+      ],
+      "anchor_from": "top_left",
+      "anchor_to": "top_left",
+      "controls": [
+         {
+            "raison@server_form.text": {
+               "$text": "#text",
+               "color": "white",
+               "anchor_from": "left_middle",
+               "anchor_to": "left_middle",
+               "$offset": [
+                  10,
+                  0
+               ],
+               "font_type": "normal",
+               "font_scale_factor": 0.75,
+               "bindings": [
+                  {
+                     "binding_collection_name": "form_buttons",
+                     "binding_condition": "none",
+                     "binding_name": "#form_button_text",
+                     "binding_type": "collection"
+                  },
+                  {
+                     "binding_type": "view",
+                     "source_property_name": "((#form_button_text - ('%.100s' * #form_button_text)) - ':')",
+                     "target_property_name": "#text"
+                  }
+               ]
+            }
+         },
+         {
+            "date@server_form.text": {
+               "$text": "#dollars_for_min",
+               "color": "white",
+               "anchor_from": "center",
+               "anchor_to": "center",
+               "$offset": [
+                  10,
+                  0
+               ],
+               "font_type": "normal",
+               "font_scale_factor": 0.75,
+               "bindings": [
+                  {
+                     "binding_name": "#form_button_texture",
+                     "binding_name_override": "#dollars_for_min",
+                     "binding_type": "collection",
+                     "binding_collection_name": "form_buttons"
+                  }
+               ]
+            }
+         },
+         {
+            "prix@server_form.text": {
+               "$text": "#form_button_text",
+               "color": "$color_text",
+               "anchor_from": "right_middle",
+               "anchor_to": "right_middle",
+               "$offset": [
+                  -4,
+                  0
+               ],
+               "font_type": "normal",
+               "font_scale_factor": 0.75,
+               "bindings": [
+                  {
+                     "binding_collection_name": "form_buttons",
+                     "binding_condition": "none",
+                     "binding_name": "#form_button_text",
+                     "binding_type": "collection"
+                  },
+                  {
+                     "binding_type": "view",
+                     "source_property_name": "(('%.100s' * #form_button_text) - ':')",
+                     "target_property_name": "#form_button_text"
+                  }
+               ]
+            }
+         }
+      ]
+   },
+
+   "check_title": {
+      "type": "panel",
+      "controls": [
+         {
+            "title@bank_main_faction.data_title": {
+               "bindings": [
+                  {
+                     "binding_name": "#form_button_text",
+                     "binding_name_override": "#form_button_text",
+                     "binding_type": "collection",
+                     "binding_collection_name": "form_buttons"
+                  },
+                  {
+                     "binding_type": "view",
+                     "source_property_name": "(not((#form_button_text - '§a§c§t§i§t§l§e§r') \u003d #form_button_text))",
+                     "target_property_name": "#visible"
+                  }
+               ]
+            }
+         }
+      ]
+   },
+   "data_title": {
+      "type": "panel",
+      "controls": [
+         {
+            "title@server_form.text": {
+               "$text": "#form_button_text",
+               "$font_type": "MinecraftTen",
+               "anchor_from": "left_middle",
+               "anchor_to": "left_middle",
+               "font_scale_factor": 0.7,
+               "$color": "white",
+               "offset": [
+                  8,
+                  0
+               ],
+               "bindings": [
+                  {
+                     "binding_name": "#form_button_text",
+                     "binding_name_override": "#form_button_text",
+                     "binding_type": "collection",
+                     "binding_collection_name": "form_buttons"
+                  }
+               ]
+            }
+         },
+         {
+            "subtitle@server_form.text": {
+               "$text": "#subtitle",
+               "anchor_from": "right_middle",
+               "anchor_to": "right_middle",
+               "font_scale_factor": 0.7,
+               "$color": "white",
+               "offset": [
+                  -8,
+                  2
+               ],
+               "bindings": [
+                  {
+                     "binding_name": "#form_button_texture",
+                     "binding_name_override": "#subtitle",
+                     "binding_type": "collection",
+                     "binding_collection_name": "form_buttons"
+                  }
+               ]
+            }
+         }
+      ]
+   }
+}

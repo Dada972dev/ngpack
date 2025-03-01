@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:panel_halloween",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/panel_halloween"
+			},
+			"geometry": {
+				"default": "geometry.panel_halloween"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#91096c",
+				"overlay_color": "#2b6c1e"
+			}
+		}
+	}
+}

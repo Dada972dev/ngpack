@@ -1,0 +1,739 @@
+{
+  "namespace": "edora_boss",
+  "main_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "offset": "@base_machine.anim_notif_background_alpha_in",
+    "controls": [
+      {
+        "panel_home": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "controls": [
+            {
+              "map": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": [
+                  210,
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "top_title": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        20
+                      ],
+                      "controls": [
+                        {
+                          "content": {
+                            "type": "label",
+                            "layer": 99,
+                            "text": "< RUINES D'EDORA >",
+                            "font_type": "MinecraftTen",
+                            "offset": [
+                              0,
+                              -2
+                            ],
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "font_scale_factor": 1.1,
+                            "color": "white"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "content": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "keep_ratio": false,
+                      "color": "$111117",
+                      "size": [
+                        "100%",
+                        137
+                      ],
+                      "controls": [
+                        {
+                          "carte": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$0D0D12",
+                            "size": [
+                              194,
+                              99
+                            ],
+                            "anchor_from": "top_middle",
+                            "anchor_to": "top_middle",
+                            "offset": [
+                              0,
+                              8
+                            ],
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "bg": {
+                                  "type": "image",
+                                  "texture": "textures/global/bg_edora_boss",
+                                  "keep_ratio": false,
+                                  "size": [
+                                    "100%",
+                                    "100%"
+                                  ],
+                                  "controls": [
+                                    {
+                                      "logo_boss": {
+                                        "type": "image",
+                                        "texture": "textures/global/boss",
+                                        "keep_ratio": false,
+                                        "offset": [
+                                          0,
+                                          -14
+                                        ],
+                                        "size": [
+                                          8,
+                                          8
+                                        ],
+                                        "anchor_from": "center",
+                                        "anchor_to": "center"
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "bar_border_top": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "color": "$060608",
+                                  "keep_ratio": false,
+                                  "layer": 1,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ]
+                                }
+                              },
+                              {
+                                "bar_border_bottom": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "color": "$33333E",
+                                  "keep_ratio": false,
+                                  "layer": 1,
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              4,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "progress": {
+                            "type": "panel",
+                            "size": [
+                              194,
+                              14
+                            ],
+                            "anchor_from": "bottom_middle",
+                            "anchor_to": "bottom_middle",
+                            "offset": [
+                              -2,
+                              -6
+                            ],
+                            "controls": [
+                              {
+                                "100@server_form.progress": {
+                                  "$size_progress" : ["100%","100%"],
+                                  "$color_bg": "$FF005C",
+                                  "$color_border_top": "$FF6EA2",
+                                  "$size_global": [
+                                    186,
+                                    6
+                                  ]
+                                }
+                              },
+                              {
+                                "logo": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "keep_ratio": false,
+                                  "color": "$FF6EA2",
+                                  "layer": 99,
+                                  "size": [
+                                    14,
+                                    14
+                                  ],
+                                  "offset": [
+                                    0,
+                                    -1
+                                  ],
+                                  "anchor_from": "right_middle",
+                                  "anchor_to": "right_middle",
+                                  "controls": [
+                                    {
+                                      "buttons_choice": {
+                                        "type": "image",
+                                        "texture": "textures/global/background",
+                                        "keep_ratio": false,
+                                        "color": "$FF005C",
+                                        "layer": 99,
+                                        "size": [
+                                          12,
+                                          12
+                                        ],
+                                        "anchor_from": "center",
+                                        "anchor_to": "center",
+                                        "controls": [
+                                          {
+                                            "logo": {
+                                              "type": "image",
+                                              "texture": "textures/global/boss_right",
+                                              "keep_ratio": false,
+                                              "color": "$0D0D12",
+                                              "layer": 99,
+                                              "anchor_from": "center",
+                                              "anchor_to": "center",
+                                              "size": [
+                                                8,
+                                                8
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  4,
+                  "100%"
+                ]
+              }
+            },
+            {
+              "info": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": [
+                  142,
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        20
+                      ]
+                    }
+                  },
+                  {
+                    "desc": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$242431",
+                      "keep_ratio": false,
+                      "size": [
+                        "100%",
+                        90
+                      ],
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "alpha": 1,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$393945",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "alpha": 1,
+                            "layer": 99,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "desc@server_form.text": {
+                            "$text": "#form_text",
+                            "$font_type": "normal",
+                            "size": [
+                              126,
+                              65
+                            ],
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "$color": "white",
+                            "alpha": 0.70,
+                            "font_scale_factor": 0.6,
+                            "offset": [
+                              8,
+                              18
+                            ]
+                          }
+                        },
+                        {
+                          "content": {
+                            "type": "label",
+                            "layer": 99,
+                            "text": "Description",
+                            "offset": [
+                              8,
+                              8
+                            ],
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "font_scale_factor": 0.8,
+                            "color": "white"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        4
+                      ]
+                    }
+                  },
+                  {
+                    "legende": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$111117",
+                      "keep_ratio": false,
+                      "size": [
+                        "100%",
+                        43
+                      ],
+                      "controls": [
+                        {
+                          "title_select@server_form.button_horizontal": {
+                            "offset": [
+                              8,
+                              4
+                            ],
+                            "$button": "edora_autel.choice_title_select"
+                          }
+                        },
+                        {
+                          "content": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$0D0D12",
+                            "size": [
+                              126,
+                              20
+                            ],
+                            "anchor_from": "top_middle",
+                            "anchor_to": "top_middle",
+                            "offset": [
+                              0,
+                              16
+                            ],
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "buttons_choice@server_form.button_vertical": {
+                                  "offset": [
+                                    4,
+                                    2
+                                  ],
+                                  "$button": "edora_autel.choice_legende"
+                                }
+                              },
+                              {
+                                "content": {
+                                  "type": "label",
+                                  "layer": 99,
+                                  "text": "Légende",
+                                  "offset": [
+                                    0,
+                                    -10
+                                  ],
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "font_scale_factor": 0.6,
+                                  "color": "white"
+                                }
+                              },
+                              {
+                                "bar_border_top": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "color": "$060608",
+                                  "keep_ratio": false,
+                                  "layer": 1,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ]
+                                }
+                              },
+                              {
+                                "bar_border_bottom": {
+                                  "type": "image",
+                                  "texture": "textures/global/background",
+                                  "color": "$33333E",
+                                  "keep_ratio": false,
+                                  "layer": 1,
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_title_select": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "on@edora_autel.title_select": {
+          "$alphaG": 1,
+          "$coloLogo": "",
+          "$alphaHover": 1,
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§o§s§e§l§t§i§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "title_select": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "title@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "offset": [
+            14,
+            0
+          ],
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 0.8,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "img": {
+          "type": "image",
+          "texture": "#texture",
+          "layer": 99,
+          "offset": [
+            0,
+            2
+          ],
+          "size": [
+            10,
+            10
+          ],
+          "keep_ratio": true,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_name": "#form_button_texture_file_system",
+              "binding_name_override": "#texture_file_system",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#texture \u003d \u0027\u0027) or (#texture \u003d \u0027loading\u0027)))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_legende": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "on@edora_autel.legende": {
+          "$alphaG": 1,
+          "$coloLogo": "",
+          "$alphaHover": 1,
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§o§s§e§l§c§o§n§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "legende": {
+    "type": "panel",
+    "size": [
+      118,
+      10
+    ],
+    "controls": [
+      {
+        "info@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "offset": [
+            0,
+            0
+          ],
+          "font_scale_factor": 0.7,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "value@server_form.text": {
+          "$text": "#texture",
+          "color": "white",
+          "alpha": 0.70,
+          "offset": [
+            0,
+            0
+          ],
+          "font_scale_factor": 0.7,
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_progress": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "on@edora_autel.progress": {
+          "$alphaG": 1,
+          "$coloLogo": "",
+          "$alphaHover": 1,
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§r§o§g§r§e§s§s§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "progress": {
+    "type": "panel",
+    "size": [
+      118,
+      10
+    ],
+    "controls": [
+      {
+        "value@server_form.text": {
+          "$text": "#form_button_texture",
+          "color": "white",
+          "alpha": 0.70,
+          "offset": [
+            0,
+            0
+          ],
+          "font_scale_factor": 0.7,
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "property_bag": {
+            "#score": "%"
+          },
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "((#form_button_texture * 1) + #score )",
+              "target_property_name": "#form_button_texture"
+            }
+          ]
+        }
+      },
+      {
+        "background": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "keep_ratio": false,
+          "color": "red",
+          "size": [
+            "60%",
+            "100%"
+          ],
+          "property_bag": {
+            "#score": 0
+          },
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "((#form_button_texture * 1) + #score )",
+              "target_property_name": "#item_id_aux"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

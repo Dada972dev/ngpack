@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "myname:bloc_acier",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"minecraft:geometry": "geometry.bloc_acier",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "bloc_acier",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#ffffff"
+		}
+	}
+}

@@ -1,0 +1,163 @@
+{
+  "namespace": "ng_buttons",
+  "button_label": {
+    "type": "label",
+    "font_scale_factor": 1.0,
+    "size": [
+      "default",
+      "default"
+    ],
+    "color": "white",
+    "offset": [
+      0,
+      0
+    ],
+    "alpha": 0.7,
+    "text": "$button_text",
+    "font_type": "smooth",
+    "bindings": "$button_bindings",
+    "layer": 2,
+    "max_size": [
+      "100% - 4px",
+      "100% - 4px"
+    ]
+  },
+  "button_image@server_form.color_global": {
+    "type": "image",
+    "$custom_content|default": "",
+    "color": "$0D0D12",
+    "$default|default": false,
+    "$hover|default": false,
+    "$pressed|default": false,
+    "$locked|default": false,
+    "$button_bindings|default": [],
+    "controls": [
+      {
+        "button_custom_content@$custom_content": {}
+      },
+      {
+        "button_panel": {
+          "type": "panel",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "layer": 10,
+          "$button_content|default": "ng_buttons.button_label",
+          "controls": [
+            {
+              "button_content@$button_content": {
+                "layer": 3
+              }
+            },
+            {
+              "button_texture@$button_texture": {
+                "layer": 1
+              }
+            }
+          ]
+        }
+      },
+      {
+        "default_button_content@ng_buttons.button_label": {
+          "visible": "($custom_content = '')"
+        }
+      }
+    ]
+  },
+  "ng_button2@common.button": {
+    "size": [
+      109,
+      19
+    ],
+    "controls": [
+      {
+        "button_panel": {
+          "type": "panel",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "layer": 10,
+          "$button_content|default": "ng_buttons.button_label",
+          "controls": [
+            {
+              "button_content@$button_content": {
+                "layer": 3
+              }
+            },
+            {
+              "button_texture@$button_texture": {
+                "layer": 1
+              }
+            }
+          ]
+        }
+      },
+      {
+        "default@ng_buttons.button_default2": {}
+      },
+      {
+        "hover@ng_buttons.button_hover2": {}
+      },
+      {
+        "pressed@ng_buttons.button_pressed2": {}
+      }
+    ]
+  },
+  "button_default2@ng_buttons.button_image": {
+    "$default": true,
+    "alpha": "$default_alpha",
+    "$default_alpha|default": 1,
+    "keep_ratio": false,
+    "texture": "textures/global/background",
+    "color": "$181821",
+    "controls": [
+      {
+        "border": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            "100%",
+            1
+          ],
+          "color": "$2F2F37",
+          "keep_ratio": false,
+          "texture": "textures/global/background"
+        }
+      }
+    ]
+  },
+  "button_hover2@ng_buttons.button_image": {
+    "$hover": true,
+    "texture": "textures/global/background",
+    "color": "$6864FF",
+    "keep_ratio": false,
+    "propagate_alpha": true,
+    "controls": [
+      {
+        "border": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "alpha": 0.4,
+          "size": [
+            "100%",
+            1
+          ],
+          "color": "white",
+          "keep_ratio": false,
+          "texture": "textures/global/background"
+        }
+      }
+    ]
+  },
+  "button_pressed2@ng_buttons.button_hover": {
+    "$pressed": true,
+    "texture": "textures/global/background",
+    "color": "$6864FF",
+    "keep_ratio": false,
+    "propagate_alpha": true
+  }
+}

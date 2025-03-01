@@ -1,0 +1,1103 @@
+{
+  "namespace": "warzone_main",
+  "main_panel": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "top_panel": {
+          "type": "panel",
+          "size": [
+            "100%",
+            36
+          ],
+          "controls": [
+            {
+              "title_warzone@server_form.text": {
+                "$text": "LES WARZONES",
+                "$font_type": "MinecraftTen",
+                "font_scale_factor": 1.3,
+                "$font_size": "normal",
+                "$color": "white",
+                "offset": [
+                  0,
+                  9
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "choice_and_info": {
+          "type": "stack_panel",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            356,
+            134
+          ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "options_warzone": {
+                "type": "image",
+                "texture": "textures/global/background",
+                "color": "$0D0D12",
+                "keep_ratio": false,
+                "size": [
+                  230,
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "buttons_warzone@server_form.button_horizontal": {
+                      "offset": [
+                        6,
+                        8
+                      ],
+                      "$button": "warzone_main.choice_warzone"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  6,
+                  "100%"
+                ]
+              }
+            },
+            {
+              "info_warzone": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": [
+                  120,
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "content": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [
+                        "100%",
+                        112
+                      ],
+                      "color": "$242431",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border": {
+                            "type": "image",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "alpha": 0.75,
+                            "layer": 99,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$42424F",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "alpha": 0.75,
+                            "layer": 99,
+                            "size": [
+                              "100%",
+                              1
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "texture": "textures/global/background"
+                          }
+                        },
+                        {
+                          "base_info@server_form.button_one": {
+                            "offset": [
+                              0,
+                              0
+                            ],
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "$button": "warzone_main.choice_title_country"
+                          }
+                        },
+                        {
+                          "list": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "layer": 16,
+                            "size": [
+                              105,
+                              44
+                            ],
+                            "offset": [
+                              8,
+                              30
+                            ],
+                            "color": "$1A1A23",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$42424F",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_top": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$0D0D12",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "base_info@server_form.button_one": {
+                                  "size": [
+                                    100,
+                                    40
+                                  ],
+                                  "anchor_from": "center",
+                                  "anchor_to": "center",
+                                  "offset": [
+                                    0,
+                                    6
+                                  ],
+                                  "$button": "warzone_main.choice_all_data"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "desc@server_form.button_one": {
+                            "size": [
+                              105,
+                              30
+                            ],
+                            "anchor_from": "bottom_middle",
+                            "anchor_to": "bottom_middle",
+                            "offset": [
+                              0,
+                              -4
+                            ],
+                            "$button": "warzone_main.choice_desc"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        4
+                      ]
+                    }
+                  },
+                  {
+                    "button_recherche": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        18
+                      ],
+                      "controls": [
+                        {
+                          "action@server_form.button_one": {
+                            "$button": "warzone_main.view_rank"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_title_country": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "option@warzone_main.select": {
+          "$color_texte": "white",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§d§d§d§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "select": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      200,
+      16
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "controls": [
+      {
+        "name@server_form.text": {
+          "$font_type": "MinecraftTen",
+          "$text": "#form_button_text",
+          "font_scale_factor": 0.8,
+          "color": "white",
+          "offset": [
+            8,
+            6
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "date@server_form.text": {
+          "$font_type": "normal",
+          "$text": "#texture",
+          "font_scale_factor": 0.6,
+          "color": "white",
+          "offset": [
+            8,
+            18
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_all_data": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "option@warzone_main.option": {
+          "$color_texte": "white",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§a§t§m§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "option": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      100,
+      11
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "controls": [
+      {
+        "name@server_form.text": {
+          "$font_type": "normal",
+          "$text": "#form_button_text",
+          "font_scale_factor": 0.6,
+          "color": "white",
+          "offset": [
+            2,
+            0
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "date@server_form.text": {
+          "$font_type": "normal",
+          "$text": "#texture",
+          "font_scale_factor": 0.6,
+          "color": "white",
+          "offset": [
+            -2,
+            0
+          ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_desc": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "option@warzone_main.desc": {
+          "$color_texte": "white",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§e§s§c§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "desc": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      105,
+      30
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "controls": [
+      {
+        "content@server_form.text": {
+          "$font_type": "normal",
+          "$text": "#form_button_text",
+          "font_scale_factor": 0.6,
+          "color": "white",
+          "size": [
+            105,
+            30
+          ],
+          "offset": [
+            2,
+            0
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_warzone": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "petrole@warzone_main.choice_warzone_inner": {
+          "$font_type": "MinecraftTen",
+          "$text_value": "PETROLE",
+          "texture": "textures/global/button_color_white",
+          "color": "$color6",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§d§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "bateau@warzone_main.choice_warzone_inner": {
+          "$text_value": "BATEAU",
+          "texture": "textures/global/button_color_white",
+          "color": "$color_blue",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§b§b§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "mine@warzone_main.choice_warzone_inner": {
+          "$text_value": "MINE",
+          "texture": "textures/global/button_color_white",
+          "color": "$color_blue",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§c§c§a§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_warzone_inner": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$pressed_button_name": "button.form_button_click",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "size": [
+            69,
+            118
+          ],
+          "controls": [
+            {
+              "info_warzone@server_form.text": {
+                "$text": "$text_value",
+                "$color": "white",
+                "$font_type": "MinecraftTen",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 16,
+                "offset": [
+                  0,
+                  12
+                ]
+              }
+            },
+            {
+              "value_warzone@server_form.text": {
+                "$text": "#form_button_text",
+                "$color": "white",
+                "font_scale_factor": 0.6,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "text_alignment": "center",
+                "layer": 16,
+                "size": [
+                  "85%",
+                  20
+                ],
+                "offset": [
+                  0,
+                  32
+                ],
+                "bindings": [
+                  {
+                    "binding_collection_name": "form_buttons",
+                    "binding_condition": "none",
+                    "binding_name": "#form_button_text",
+                    "binding_type": "collection"
+                  }
+                ]
+              }
+            },
+            {
+              "background_render": {
+                "type": "image",
+                "texture": "#texture",
+                "offset": [
+                  0,
+                  -14
+                ],
+                "layer": 15,
+                "size": [
+                  25,
+                  25
+                ],
+                "keep_ratio": false,
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_texture",
+                    "binding_name_override": "#texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_name": "#form_button_texture_file_system",
+                    "binding_name_override": "#texture_file_system",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(not ((#texture \u003d \u0027\u0027) or (#texture \u003d \u0027loading\u0027)))",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "keep_ratio": false,
+                      "color": "$181821",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "cadre": {
+                      "type": "image",
+                      "texture": "textures/global/cadre_default",
+                      "keep_ratio": false,
+                      "color": "$42424F",
+                      "size": [
+                        "95%",
+                        "95%"
+                      ]
+                    }
+                  },
+                  {
+                    "border": {
+                      "type": "image",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "alpha": 0.75,
+                      "layer": 16,
+                      "size": [
+                        "100%",
+                        1
+                      ],
+                      "color": "$42424F",
+                      "keep_ratio": false,
+                      "texture": "textures/global/background"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "keep_ratio": false,
+                      "color": "$FF005C",
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "cadre": {
+                      "type": "image",
+                      "texture": "textures/global/cadre_default",
+                      "keep_ratio": false,
+                      "color": "$9B0038",
+                      "layer": 15,
+                      "size": [
+                        "95%",
+                        "95%"
+                      ]
+                    }
+                  },
+                  {
+                    "border": {
+                      "type": "image",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "alpha": 0.75,
+                      "layer": 16,
+                      "size": [
+                        "100%",
+                        1
+                      ],
+                      "color": "$42424F",
+                      "keep_ratio": false,
+                      "texture": "textures/global/background"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            4,
+            0
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "view_rank": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "send@server_form.button_base_text": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$bg": "$FF005C",
+          "$bg_hover": "white",
+          "$color_text": "black",
+          "$size_button": [
+            120,
+            18
+          ],
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§e§e§a§a§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+
+  "info_warzone_inner": {
+    "type": "stack_panel",
+    "size": [
+      77,
+      148
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "button_ranks": {
+          "type": "panel",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            "100%",
+            17
+          ],
+          "controls": [
+            {
+              "form_button@common.button": {
+                "$pressed_button_name": "button.form_button_click",
+                "$default_state|default": false,
+                "$hover_state|default": false,
+                "controls": [
+                  {
+                    "background_button": {
+                      "type": "panel",
+                      "controls": [
+                        {
+                          "background": {
+                            "type": "image",
+                            "texture": "textures/global/button_color_white",
+                            "color": "$color_red",
+                            "layer": 15,
+                            "size": [
+                              "100%",
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "title_warzone@server_form.text": {
+                            "$text": "Voir classements",
+                            "font_scale_factor": 1.2,
+                            "$color": "white",
+                            "layer": 16,
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "$font_size": "small"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "hover": {
+                      "type": "panel",
+                      "controls": [
+                        {
+                          "background_hover": {
+                            "type": "image",
+                            "texture": "textures/global/button_color_white",
+                            "layer": 15,
+                            "size": [
+                              "100%",
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "title_warzone@server_form.text": {
+                            "$text": "Voir classements",
+                            "font_scale_factor": 1.2,
+                            "$color": [
+                              0.109,
+                              0.117,
+                              0.258
+                            ],
+                            "layer": 16,
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "$font_size": "small"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "collection_details",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            "100%",
+            4
+          ]
+        }
+      },
+      {
+        "country": {
+          "type": "panel",
+          "size": [
+            "100%",
+            35
+          ],
+          "controls": [
+            {
+              "background": {
+                "type": "image",
+                "texture": "textures/global/button_color_white",
+                "color": "$color3",
+                "keep_ratio": false,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "layer": 2,
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            "100%",
+            3
+          ]
+        }
+      },
+      {
+        "info_country": {
+          "type": "panel",
+          "size": [
+            "100%",
+            89
+          ],
+          "controls": [
+            {
+              "background": {
+                "type": "image",
+                "texture": "textures/global/button_color_white",
+                "color": "$color3",
+                "keep_ratio": false,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "layer": 2,
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            },
+            {
+              "label_countrie@server_form.text": {
+                "$text": "BONUS DE PAYS",
+                "$font_type": "MinecraftTen",
+                "$color": "white",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "font_scale_factor": 1.2,
+                "$offset": [
+                  6,
+                  6
+                ],
+                "$font_size": "small"
+              }
+            },
+            {
+              "bonus_countrie@server_form.text": {
+                "$text": "#bonus",
+                "$color": "white",
+                "alpha": 0.8,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$offset": [
+                  6,
+                  15
+                ],
+                "$font_size": "small",
+                "bindings": [
+                  {
+                    "binding_collection_name": "form_buttons",
+                    "binding_type": "collection",
+                    "binding_condition": "none",
+                    "binding_name": "#form_button_texture",
+                    "binding_name_override": "#bonus"
+                  }
+                ]
+              }
+            },
+            {
+              "help_warzone@server_form.text": {
+                "$text": "Capturez les zones pour\nobtenir des bonus de pays.\nLes meilleurs pays gagnent\ndes bonus supplémentaires",
+                "$color": "white",
+                "alpha": 0.8,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$offset": [
+                  6,
+                  50
+                ],
+                "$font_size": "small"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "info_country_inner": {
+    "type": "panel",
+    "controls": [
+      {
+        "name_country@server_form.text": {
+          "$text": "#form_button_text",
+          "$color": "white",
+          "$font_type": "MinecraftTen",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "$font_size": "normal",
+          "font_scale_factor": 0.9,
+          "offset": [
+            0,
+            25
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§d§d§d§d') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "ranks_country@server_form.text": {
+          "$text": "#form_button_texture",
+          "$color": "white",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "$font_size": "normal",
+          "alpha": 0.8,
+          "font_scale_factor": 0.6,
+          "offset": [
+            3,
+            46
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_texture",
+              "binding_name_override": "#form_button_texture",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

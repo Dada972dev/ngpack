@@ -1,0 +1,63 @@
+{
+  "namespace": "menu_page",
+  "main_panel": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "choice": {
+          "type": "panel",
+          "controls": [
+            {
+              "buttons_choice@menu_page.button_list_wrapper_daily": {
+                "offset": [
+                  -42,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_list_wrapper_daily": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "button_list@menu_page.button_grid": {
+        }
+      }
+    ]
+  },
+  "button_grid": {
+    "type": "grid",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "offset": [
+      -11,
+      0
+    ],
+    "grid_item_template": "menu_main.app_option",
+    "grid_rescaling_type": "horizontal",
+    "collection_name": "form_buttons",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#maximum_grid_items"
+      }
+    ]
+  }
+}

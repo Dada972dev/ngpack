@@ -1,0 +1,1408 @@
+{
+  "namespace": "skills_faction",
+  "main_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "info": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            193,
+            "100%"
+          ],
+          "color": "$111117",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "content": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "title": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "size": [
+                        "100%",
+                        17
+                      ],
+                      "color": "$181821",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "layer": 3,
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "size": [
+                              "100%",
+                              1
+                            ]
+                          }
+                        },
+                        {
+                          "bg": {
+                            "type": "image",
+                            "texture": "textures/global/effet_radian",
+                            "keep_ratio": false,
+                            "color": "white",
+                            "size": [
+                              "100%",
+                              "100%"
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.button_one": {
+                                  "offset": [
+                                    0,
+                                    -5
+                                  ],
+                                  "anchor_from": "left_middle",
+                                  "anchor_to": "left_middle",
+                                  "$button": "rd_main.check_title"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "rank_member": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        83
+                      ],
+                      "controls": [
+                        {
+                          "content": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              177,
+                              "100%"
+                            ],
+                            "offset": [
+                              8,
+                              0
+                            ],
+                            "color": "$1A1A23",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$42424F",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$0D0D12",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "logo": {
+                                  "type": "image",
+                                  "texture": "textures/global/ranking",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "size": [
+                                    6,
+                                    6
+                                  ],
+                                  "offset": [
+                                    8,
+                                    7
+                                  ],
+                                  "color": "white",
+                                  "keep_ratio": false
+                                }
+                              },
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Classement des membres",
+                                  "color": "white",
+                                  "offset": [
+                                    18,
+                                    6
+                                  ],
+                                  "font_type": "MinecraftTen",
+                                  "font_scale_factor": 0.6,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "xp@server_form.text": {
+                                  "$text": "XP",
+                                  "color": "white",
+                                  "offset": [
+                                    -8,
+                                    6
+                                  ],
+                                  "font_type": "MinecraftTen",
+                                  "font_scale_factor": 0.6,
+                                  "anchor_from": "top_right",
+                                  "anchor_to": "top_right"
+                                }
+                              },
+                              {
+                                "content@server_form.scrolling_panel": {
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "$color_bg_rail": "$14141B",
+                                  "$color_bg_handle": "$363643",
+                                  "size": [
+                                    168,
+                                    60
+                                  ],
+                                  "offset": [
+                                    -4,
+                                    15
+                                  ],
+                                  "layer": 16,
+                                  "$show_background": false,
+                                  "$scroll_bar_side": "right",
+                                  "$scrolling_content": "skills_faction.button_list_rank_member",
+                                  "$scroll_size": [
+                                    3,
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_size": [
+                                    "100% + 10px",
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_offset": [
+                                    15,
+                                    3
+                                  ],
+                                  "$scroll_bar_right_padding_size": [
+                                    15,
+                                    0
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "stat_progress": {
+                      "type": "panel",
+                      "size": [
+                        177,
+                        72
+                      ],
+                      "controls": [
+                        {
+                          "buttons_choice@server_form.button_vertical": {
+                            "offset": [
+                              6,
+                              0
+                            ],
+                            "$button": "skills_faction.choice_setting"
+                          }
+                        },
+                        {
+                          "buttons_choice@server_form.button_vertical": {
+                            "$color_bg": "$30EE89",
+                            "$color_bg_bottom": "$18BB65",
+                            "$bg_back": "$1A1A23",
+                            "$bg_back_bottom": "$15151D",
+                            "$size_global_padding": [
+                              137,
+                              12
+                            ],
+                            "$size_global": [
+                              137,
+                              4
+                            ],
+                            "offset": [
+                              32,
+                              0
+                            ],
+                            "$button": "server_form.choice_progress"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            10,
+            "100%"
+          ]
+        }
+      },
+      {
+        "rank": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            153,
+            "100%"
+          ],
+          "color": "$111117",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "action": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "title": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "size": [
+                        "100%",
+                        17
+                      ],
+                      "color": "$181821",
+                      "keep_ratio": false,
+                      "controls": [
+                        {
+                          "border_bottom": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "layer": 3,
+                            "anchor_from": "bottom_left",
+                            "anchor_to": "bottom_left",
+                            "size": [
+                              "100%",
+                              1
+                            ]
+                          }
+                        },
+                        {
+                          "bg": {
+                            "type": "image",
+                            "texture": "textures/global/effet_radian",
+                            "keep_ratio": false,
+                            "color": "white",
+                            "size": [
+                              "100%",
+                              "100%"
+                            ],
+                            "controls": [
+                              {
+                                "title@server_form.button_one": {
+                                  "offset": [
+                                    0,
+                                    -5
+                                  ],
+                                  "anchor_from": "left_middle",
+                                  "anchor_to": "left_middle",
+                                  "$button": "bank_main_faction.check_title"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "info": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": [
+                        "100%",
+                        83
+                      ],
+                      "controls": [
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "filtre": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              64.5,
+                              "100%"
+                            ],
+                            "offset": [
+                              8,
+                              0
+                            ],
+                            "color": "$0D0D12",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "buttons_choice@server_form.button_vertical": {
+                                  "anchor_from": "top_left",
+                                    "anchor_to": "top_left",
+                                  "offset": [
+                                    8,
+                                    8
+                                  ],
+                                  "$button": "skills_faction.button_choice_filtre"
+                                }
+                              },
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 1,
+                                  "layer": 3,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$060608",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$0D0D12",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              8,
+                              "100%"
+                            ]
+                          }
+                        },
+                        {
+                          "score": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "size": [
+                              64.5,
+                              "100%"
+                            ],
+                            "color": "$242431",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "buttons_choice@server_form.button_vertical": {
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "offset": [
+                                    8,
+                                    8
+                                  ],
+                                  "$button": "skills_faction.button_choice_score"
+                                }
+                              },
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$393945",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 1,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$0D0D12",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        8
+                      ]
+                    }
+                  },
+                  {
+                    "rank_countrie": {
+                      "type": "panel",
+                      "size": [
+                        "100%",
+                        77
+                      ],
+                      "controls": [
+                        {
+                          "content": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "size": [
+                              137,
+                              "100%"
+                            ],
+                            "offset": [
+                              8,
+                              0
+                            ],
+                            "color": "$1A1A23",
+                            "keep_ratio": false,
+                            "controls": [
+                              {
+                                "border": {
+                                  "type": "image",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$42424F",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "border_bottom": {
+                                  "type": "image",
+                                  "anchor_from": "bottom_left",
+                                  "anchor_to": "bottom_left",
+                                  "alpha": 0.75,
+                                  "size": [
+                                    "100%",
+                                    1
+                                  ],
+                                  "color": "$0D0D12",
+                                  "keep_ratio": false,
+                                  "texture": "textures/global/background"
+                                }
+                              },
+                              {
+                                "logo": {
+                                  "type": "image",
+                                  "texture": "textures/global/ranking",
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "size": [
+                                    6,
+                                    6
+                                  ],
+                                  "offset": [
+                                    8,
+                                    7
+                                  ],
+                                  "color": "white",
+                                  "keep_ratio": false
+                                }
+                              },
+                              {
+                                "title@server_form.text": {
+                                  "$text": "Classement des pays",
+                                  "color": "white",
+                                  "offset": [
+                                    18,
+                                    6
+                                  ],
+                                  "font_type": "MinecraftTen",
+                                  "font_scale_factor": 0.6,
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left"
+                                }
+                              },
+                              {
+                                "xp@server_form.text": {
+                                  "$text": "XP",
+                                  "color": "white",
+                                  "offset": [
+                                    -8,
+                                    6
+                                  ],
+                                  "font_type": "MinecraftTen",
+                                  "font_scale_factor": 0.6,
+                                  "anchor_from": "top_right",
+                                  "anchor_to": "top_right"
+                                }
+                              },
+                              {
+                                "content@server_form.scrolling_panel": {
+                                  "anchor_from": "top_left",
+                                  "anchor_to": "top_left",
+                                  "$color_bg_rail": "$14141B",
+                                  "$color_bg_handle": "$363643",
+                                  "size": [
+                                    130,
+                                    54
+                                  ],
+                                  "offset": [
+                                    -4,
+                                    15
+                                  ],
+                                  "layer": 16,
+                                  "$show_background": false,
+                                  "$scroll_bar_side": "right",
+                                  "$scrolling_content": "skills_faction.button_list_rank_country",
+                                  "$scroll_size": [
+                                    3,
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_size": [
+                                    "100% + 10px",
+                                    "100%"
+                                  ],
+                                  "$scrolling_pane_offset": [
+                                    15,
+                                    3
+                                  ],
+                                  "$scroll_bar_right_padding_size": [
+                                    15,
+                                    0
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_list_rank_member": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@skills_faction.button_grid_rank_member": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 10px",
+      "100%c + 10px"
+    ]
+  },
+  "button_grid_rank_member": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "skills_faction.button_choice_rank_member",
+      "name": "button_list_factory"
+    }
+  },
+
+  "button_choice_rank_member": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "on@skills_faction.info": {
+          "$size_type": [
+            153,
+            11
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§r§a§m§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "info": {
+    "type": "panel",
+    "size": "$size_type",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "rank@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "$offset": [
+            4,
+            1
+          ],
+          "font_type": "normal",
+          "font_scale_factor": 0.75,
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "pts@server_form.text": {
+          "$text": "#form_button_texture",
+          "color": "white",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "$offset": [
+            4,
+            1
+          ],
+          "font_type": "normal",
+          "font_scale_factor": 0.75,
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_texture",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_choice_score": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "texte@skills_faction.score": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§o§s§k§i§l§b§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "score": {
+    "type": "panel",
+    "size": [
+      41,
+      17
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "title@server_form.text": {
+          "$text": "#form_button_texture",
+          "color": "white",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "$offset": [
+            0,
+            -3
+          ],
+          "font_type": "normal",
+          "font_scale_factor": 0.7,
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_texture",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "content@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "$offset": [
+            0,
+            2
+          ],
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 0.75,
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_choice_filtre": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "off@skills_faction.filtre": {
+          "$border": "$363643",
+          "$bg": "$0D0D12",
+          "$click": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§s§k§t§n§a§t§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "on@skills_faction.filtre": {
+          "$border": "$A4A2FF",
+            "$bg": "$6864FF",
+          "$click": "",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§t§s§k§t§a§c§t§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "filtre": {
+    "type": "panel",
+    "size": [
+      41,
+      11
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "rank@server_form.text": {
+          "$text": "#form_button_text",
+          "color": "white",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "$offset": [
+            10,
+            0
+          ],
+          "font_type": "normal",
+          "font_scale_factor": 0.75,
+          "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_condition": "none",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      },
+      {
+        "action@common.button": {
+          "$pressed_button_name": "$click",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "size": [
+            41,
+            6
+          ],
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "border": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$border",
+                      "keep_ratio": false,
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "size": [
+                        6,
+                        6
+                      ],
+                      "controls": [
+                        {
+                          "background": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$bg",
+                            "keep_ratio": false,
+                            "size": [
+                              5,
+                              5
+                            ]
+                          }
+                        }]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "border": {
+                      "type": "image",
+                      "texture": "textures/global/background",
+                      "color": "$A4A2FF",
+                      "keep_ratio": false,
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "size": [
+                        6,
+                        6
+                      ],
+                      "controls": [
+                        {
+                          "background": {
+                            "type": "image",
+                            "texture": "textures/global/background",
+                            "color": "$6864FF",
+                            "keep_ratio": false,
+                            "size": [
+                              5,
+                              5
+                            ]
+                          }
+                        }]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_list_rank_country": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "button_list@skills_faction.button_grid_rank_country": {
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100% + 10px",
+      "100%c + 10px"
+    ]
+  },
+  "button_grid_rank_country": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#collection_length"
+      }
+    ],
+    "collection_name": "form_buttons",
+    "factory": {
+      "control_name": "skills_faction.button_choice_rank_country",
+      "name": "button_list_factory"
+    }
+  },
+  "button_choice_rank_country": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "on@skills_faction.info": {
+          "$size_type": [
+            120,
+            11
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§l§i§s§r§a§c§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "choice_setting": {
+    "type": "panel",
+    "size": [
+      "100%c",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "block_1@skills_faction.content": {
+          "$color_theme": "$111117",
+          "$color_box": "$111117",
+          "$alpha_variable": 0,
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§1§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "block_2@skills_faction.content": {
+          "$color_theme": "$1A1A23",
+          "$color_box": "$242431",
+          "$alpha_variable": 0.3,
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§2§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "block_3@skills_faction.content": {
+          "$color_theme": "$111117",
+          "$color_box": "$111117",
+          "$alpha_variable": 0,
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§3§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "block_4@skills_faction.content": {
+          "$color_theme": "$1A1A23",
+          "$color_box": "$242431",
+          "$alpha_variable": 0.3,
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§4§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "block_5@skills_faction.content": {
+          "$color_theme": "$111117",
+          "$color_box": "$111117",
+          "$alpha_variable": 0,
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§5§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "block_6@skills_faction.content": {
+          "$color_theme": "$1A1A23",
+          "$color_box": "$242431",
+          "$alpha_variable": 0.3,
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§i§n§f§6§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "content": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      177,
+      12
+    ],
+    "controls": [
+      {
+        "logo": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            12,
+            12
+          ],
+          "color": "$color_box",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "border_top": {
+                "texture": "textures/global/background",
+                "color": "white",
+                "type": "image",
+                "layer": 99,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "alpha": "$alpha_variable",
+                "size": [
+                  "100%",
+                  1
+                ],
+                "keep_ratio": false
+              }
+            },
+            {
+              "logo": {
+                "type": "image",
+                "texture": "#texture",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "size": [
+                  6,
+                  6
+                ],
+                "color": "white",
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_texture",
+                    "binding_name_override": "#texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_name": "#form_button_texture_file_system",
+                    "binding_name_override": "#texture_file_system",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(not ((#texture \u003d \u0027\u0027) or (#texture \u003d \u0027loading\u0027)))",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "note": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            14,
+            12
+          ],
+          "color": "$color_theme",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "content@server_form.text": {
+                "$text": "#form_button_text",
+                "$color": "white",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_scale_factor": 0.7,
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_text",
+                    "binding_name_override": "#form_button_text",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            141,
+            12
+          ],
+          "color": "$color_theme",
+          "keep_ratio": false
+        }
+      },
+      {
+        "note_default": {
+          "type": "image",
+          "texture": "textures/global/background",
+          "size": [
+            14,
+            12
+          ],
+          "color": "$color_theme",
+          "keep_ratio": false,
+          "controls": [
+            {
+              "content@server_form.text": {
+                "$text": "10",
+                "$color": "white",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_scale_factor": 0.7
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

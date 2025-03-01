@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "myname:bamboo_vertical",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.planks"
+			}
+		},
+		"components": {
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"minecraft:geometry": "geometry.bamboo_vertical",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "bamboo_vertical",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#ffffff"
+		}
+	}
+}

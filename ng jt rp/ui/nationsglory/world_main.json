@@ -1,0 +1,1302 @@
+{
+  "namespace": "world_main",
+  "main_panel": {
+          "type": "stack_panel",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "orientation": "vertical",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "controls": [
+            {
+              "top_panel": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  42
+                ],
+                "controls": [
+                  {
+                    "logo_porot": {
+                      "type": "image",
+                      "keep_ratio": false,
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "layer": 19,
+                      "size": [
+                        22,
+                        22
+                      ],
+                      "offset": [
+                        9,
+                        13
+                      ],
+                      "texture": "textures/global/voyage"
+                    }
+                  },
+                  {
+                    "title_first@server_form.text": {
+                      "$text": "PARROT AIRLINE",
+                      "$font_type": "MinecraftTen",
+                      "font_scale_factor": 1.6,
+                      "$font_size": "normal",
+                      "$color": "white",
+                      "offset": [
+                        33,
+                        7
+                      ]
+                    }
+                  },
+                  {
+                    "title_seconde@server_form.text": {
+                      "$text": "LES CONTINENTS",
+                      "$font_size": "normal",
+                      "$font_type": "MinecraftTen",
+                      "$color": [
+                        0.4314,
+                        0.7529,
+                        0.9333
+                      ],
+                      "offset": [
+                        33,
+                        24
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "panel": {
+                "type": "stack_panel",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "size": [
+                  "100%",
+                  147
+                ],
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        9,
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "map": {
+                      "type": "panel",
+                      "size": [
+                        231,
+                        "100%"
+                      ],
+                      "controls": [
+                        {
+                          "background": {
+                            "type": "image",
+                            "keep_ratio": false,
+                            "size": [
+                              "100%",
+                              "100%"
+                            ],
+                            "texture": "textures/global/background_color_white",
+                            "color": [
+                              0.1137,
+                              0.1137,
+                              0.2078
+                            ]
+                          }
+                        },
+                        {
+                          "map": {
+                            "type": "image",
+                            "keep_ratio": false,
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "layer": 19,
+                            "size": [
+                              221,
+                              109
+                            ],
+                            "texture": "textures/global/world"
+                          }
+                        },
+                        {
+                          "point": {
+                            "type": "image",
+                            "keep_ratio": false,
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "layer": 90,
+                            "size": [
+                              221,
+                              109
+                            ],
+                            "texture": "textures/global/point"
+                          }
+                        },
+                        {
+                          "panel": {
+                            "type": "stack_panel",
+                            "size": [
+                              "100%",
+                              "100%"
+                            ],
+                            "orientation": "horizontal",
+                            "controls": [
+                              {
+                                "amerique": {
+                                  "type": "panel",
+                                  "keep_ratio": false,
+                                  "size": [
+                                    90,
+                                    "100%"
+                                  ],
+                                  "controls": [
+                                    {
+                                      "text@server_form.text": {
+                                        "$text": "AMERIQUE",
+                                        "$font_size": "normal",
+                                        "$font_type": "MinecraftTen",
+                                        "anchor_from": "center",
+                                        "anchor_to": "center",
+                                        "font_scale_factor": 0.8,
+                                        "$color": [
+                                          0.7294,
+                                          0.7294,
+                                          0.8549
+                                        ],
+                                        "offset": [
+                                          -16,
+                                          -6
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "button_choice@server_form.button_one": {
+                                        "$button": "world_main.choice_amerique"
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "europ_affrique": {
+                                  "type": "stack_panel",
+                                  "size": [
+                                    61,
+                                    "100%"
+                                  ],
+                                  "orientation": "vertical",
+                                  "controls": [
+                                    {
+                                      "europ": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          73.5
+                                        ],
+                                        "controls": [
+                                          {
+                                            "text@server_form.text": {
+                                              "$text": "EUROPE",
+                                              "$font_size": "normal",
+                                              "$font_type": "MinecraftTen",
+                                              "anchor_from": "center",
+                                              "anchor_to": "center",
+                                              "font_scale_factor": 0.8,
+                                              "$color": [
+                                                0.7294,
+                                                0.7294,
+                                                0.8549
+                                              ],
+                                              "offset": [
+                                                18,
+                                                9
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "button_choice@server_form.button_one": {
+                                              "$button": "world_main.choice_europe"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "affrique": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          73.5
+                                        ],
+                                        "controls": [
+                                          {
+                                            "text@server_form.text": {
+                                              "$text": "AFRIQUE",
+                                              "$font_size": "normal",
+                                              "$font_type": "MinecraftTen",
+                                              "anchor_from": "center",
+                                              "anchor_to": "center",
+                                              "font_scale_factor": 0.8,
+                                              "$color": [
+                                                0.7294,
+                                                0.7294,
+                                                0.8549
+                                              ],
+                                              "offset": [
+                                                -32,
+                                                -26
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "button_choice@server_form.button_one": {
+                                              "$button": "world_main.choice_afrique"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "asie_oceanie": {
+                                  "type": "stack_panel",
+                                  "size": [
+                                    80,
+                                    "100%"
+                                  ],
+                                  "orientation": "vertical",
+                                  "controls": [
+                                    {
+                                      "asie": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          73.5
+                                        ],
+                                        "controls": [
+                                          {
+                                            "text@server_form.text": {
+                                              "$text": "ASIE",
+                                              "$font_size": "normal",
+                                              "$font_type": "MinecraftTen",
+                                              "anchor_from": "center",
+                                              "anchor_to": "center",
+                                              "font_scale_factor": 0.8,
+                                              "$color": [
+                                                0.7294,
+                                                0.7294,
+                                                0.8549
+                                              ],
+                                              "offset": [
+                                                -43,
+                                                37
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "button_choice@server_form.button_one": {
+                                              "$button": "world_main.choice_asie"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "oceanie": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          73.5
+                                        ],
+                                        "controls": [
+                                          {
+                                            "text@server_form.text": {
+                                              "$text": "OCEANIE",
+                                              "$font_size": "normal",
+                                              "$font_type": "MinecraftTen",
+                                              "anchor_from": "center",
+                                              "anchor_to": "center",
+                                              "font_scale_factor": 0.8,
+                                              "$color": [
+                                                0.7294,
+                                                0.7294,
+                                                0.8549
+                                              ],
+                                              "offset": [
+                                                18,
+                                                -18
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "button_choice@server_form.button_one": {
+                                              "$button": "world_main.choice_oceanie"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [
+                        6,
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "info": {
+                      "type": "stack_panel",
+                      "size": [
+                        102,
+                        "100%"
+                      ],
+                      "orientation": "vertical",
+                      "controls": [
+                        {
+                          "pilote": {
+                            "type": "image",
+                            "texture": "textures/global/background_color_white",
+                            "color": [
+                              0.1137,
+                              0.1137,
+                              0.2078
+                            ],
+                            "keep_ratio": false,
+                            "size": [
+                              "100%",
+                              78
+                            ],
+                            "controls": [
+                              {
+                                "renderpicture@server_form.button_one": {
+                                  "$button": "warp_main.choice_render"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding": {
+                            "type": "panel",
+                            "size": [
+                              "100%",
+                              5
+                            ]
+                          }
+                        },
+                        {
+                          "info": {
+                            "type": "image",
+                            "texture": "textures/global/background_color_white",
+                            "color": [
+                              0.1137,
+                              0.1137,
+                              0.2078
+                            ],
+                            "keep_ratio": false,
+                            "size": [
+                              "100%",
+                              64
+                            ],
+                            "controls": [
+                              {
+                                "stack_info": {
+                                  "type": "stack_panel",
+                                  "size": [
+                                    "100%",
+                                    "100%"
+                                  ],
+                                  "orientation": "vertical",
+                                  "controls": [
+                                    {
+                                      "title": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          19
+                                        ],
+                                        "controls": [
+                                          {
+                                            "text@server_form.text": {
+                                              "$text": "VOTRE BILLET",
+                                              "$font_size": "normal",
+                                              "$font_type": "MinecraftTen",
+                                              "anchor_from": "center",
+                                              "anchor_to": "center",
+                                              "$color": "white"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "prime": {
+                                        "type": "panel",
+                                        "size": [
+                                          "100%",
+                                          19
+                                        ],
+                                        "controls": [
+                                          {
+                                            "buttons_prime@server_form.button_one": {
+                                              "$button": "world_main.prime_choice"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+  "prime_choice": {
+    "type": "panel",
+    "controls": [
+      {
+        "not_prime@world_main.button_action_not_prime": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§g§r§a§d') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "prime@world_main.button_action_prime": {
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§p§r§i§m§c') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_action_prime": {
+    "type": "stack_panel",
+    "size": [
+      91,
+      35
+    ],
+    "offset": [
+      0,
+      19
+    ],
+    "controls": [
+      {
+        "choice_prime": {
+          "type": "image",
+          "texture": "textures/global/button_color_prime",
+          "size": [
+            "100%",
+            16
+          ],
+          "controls": [
+            {
+              "check": {
+                "type": "image",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "keep_ratio": false,
+                "texture": "textures/global/ok",
+                "color": [
+                  0.1137,
+                  0.1137,
+                  0.2078
+                ],
+                "layer": 15,
+                "size": [
+                  8,
+                  8
+                ],
+                "offset": [
+                  -30,
+                  0
+                ]
+              }
+            },
+            {
+              "text@server_form.text": {
+                "$text": "1er classe",
+                "$font_size": "normal",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_scale_factor": 0.7,
+                "$color": [
+                  0.1137,
+                  0.1137,
+                  0.2078
+                ]
+              }
+            },
+            {
+              "prime": {
+                "type": "image",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "keep_ratio": false,
+                "texture": "textures/global/prime_white",
+                "layer": 15,
+                "size": [
+                  8,
+                  8
+                ],
+                "offset": [
+                  30,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            "100%",
+            4
+          ]
+        }
+      },
+      {
+        "choice_not_prime": {
+          "type": "image",
+          "texture": "textures/global/button_color_white_stroke",
+          "color": [
+            0.2902,
+            0.2902,
+            0.5490
+          ],
+          "size": [
+            "100%",
+            16
+          ],
+          "controls": [
+            {
+              "check": {
+                "type": "image",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "keep_ratio": false,
+                "texture": "textures/global/nonok",
+                "color": [
+                  0.2902,
+                  0.2902,
+                  0.5490
+                ],
+                "layer": 15,
+                "size": [
+                  8,
+                  8
+                ],
+                "offset": [
+                  -30,
+                  0
+                ]
+              }
+            },
+            {
+            "text@server_form.text": {
+              "$text": "2nd classe",
+              "$font_size": "normal",
+              "anchor_from": "center",
+              "anchor_to": "center",
+              "font_scale_factor": 0.7,
+              "$color": [
+                0.2902,
+                0.2902,
+                0.5490
+              ]
+            }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_action_not_prime": {
+    "type": "stack_panel",
+    "size": [
+      91,
+      35
+    ],
+    "offset": [
+      0,
+      19
+    ],
+    "controls": [
+      {
+        "choice_prime": {
+          "type": "image",
+          "texture": "textures/global/button_color_prime_stroke",
+          "size": [
+            "100%",
+            16
+          ],
+          "controls": [
+            {
+              "prime": {
+                "type": "image",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "keep_ratio": false,
+                "texture": "textures/global/prime",
+                "layer": 15,
+                "size": [
+                  8,
+                  8
+                ],
+                "offset": [
+                  -30,
+                  0
+                ]
+              }
+            },
+            {
+              "text@server_form.text": {
+                "$text": "1er classe",
+                "$font_size": "normal",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_scale_factor": 0.7,
+                "$color": [
+                  0.6824,
+                  0.4314,
+                  0.9333
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            "100%",
+            4
+          ]
+        }
+      },
+      {
+        "choice_not_prime": {
+          "type": "image",
+          "texture": "textures/global/button_color_white",
+          "color": [
+            0.4314,
+            0.7529,
+            0.9333
+          ],
+          "size": [
+            "100%",
+            16
+          ],
+          "controls": [
+            {
+              "check": {
+                "type": "image",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "keep_ratio": false,
+                "texture": "textures/global/ok",
+                "color": [
+                  0.1137,
+                  0.1137,
+                  0.2078
+                ],
+                "layer": 15,
+                "size": [
+                  8,
+                  8
+                ],
+                "offset": [
+                  -30,
+                  0
+                ]
+              }
+            },
+            {
+              "text@server_form.text": {
+                "$text": "#form_button_text",
+                "$font_size": "normal",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "font_scale_factor": 0.7,
+                "$color": [
+                  0.1137,
+                  0.1137,
+                  0.2078
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_text",
+                    "binding_name_override": "#form_button_text",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(not((#form_button_text - '§g§r§a§d') \u003d #form_button_text))",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_amerique": {
+    "type": "panel",
+    "controls": [
+      {
+        "amerique@world_main.button_continent": {
+          "$size_button_continent": [
+            90,
+            147
+          ],
+          "$offset_img_button": [
+            70.5,
+            -0.5
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§m§e§r') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_europe": {
+    "type": "panel",
+    "controls": [
+      {
+        "europe@world_main.button_continent": {
+          "$size_button_continent": [
+            61,
+            73.5
+          ],
+          "$offset_img_button": [
+            -5,
+            36
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§e§u§r§o') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_afrique": {
+    "type": "panel",
+    "controls": [
+      {
+        "afrique@world_main.button_continent": {
+          "$size_button_continent": [
+            61,
+            73.5
+          ],
+          "$offset_img_button": [
+            -5,
+            -37
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§f§r§i') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_asie": {
+    "type": "panel",
+    "controls": [
+      {
+        "asie@world_main.button_continent": {
+          "$size_button_continent": [
+            80,
+            73.5
+          ],
+          "$offset_img_button": [
+            -75.5,
+            36
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§s§i§e') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_oceanie": {
+    "type": "panel",
+    "controls": [
+      {
+        "afrique@world_main.button_continent": {
+          "$size_button_continent": [
+            80,
+            73.5
+          ],
+          "$offset_img_button": [
+            -75.5,
+            -37
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§o§c§e§a') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_continent": {
+    "type": "panel",
+    "size": "$size_button_continent",
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$pressed_button_name": "button.form_button_click",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background_hover": {
+                      "type": "image",
+                      "anchor_from": "center_left",
+                      "anchor_to": "center_left",
+                      "texture": "#texture",
+                      "layer": 20,
+                      "size": [
+                        221,
+                        109
+                      ],
+                      "offset": "$offset_img_button",
+                      "bindings": [
+                        {
+                          "binding_name": "#form_button_texture",
+                          "binding_name_override": "#texture",
+                          "binding_type": "collection",
+                          "binding_collection_name": "form_buttons"
+                        },
+                        {
+                          "binding_name": "#form_button_texture_file_system",
+                          "binding_name_override": "#texture_file_system",
+                          "binding_type": "collection",
+                          "binding_collection_name": "form_buttons"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(not ((#texture \u003d \u0027\u0027) or (#texture \u003d \u0027loading\u0027)))",
+                          "target_property_name": "#visible"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "choice_action": {
+    "type": "panel",
+    "controls": [
+      {
+        "maps@world_main.button_action": {
+          "$size_button": [
+            36,
+            14
+          ],
+          "$color_default": [
+            0.1451,
+            0.1451,
+            0.2706
+          ],
+          "$color_hover": "white",
+          "$color_text_default": [
+            0.4314,
+            0.7529,
+            0.9333
+          ],
+          "$color_text_hover": [
+            0.1451,
+            0.1451,
+            0.2706
+          ],
+          "$text_value": "Maps",
+          "$texture_action": "textures/global/carte",
+          "$offset_img": [
+            -10,
+            0
+          ],
+          "$size_img": [
+            9,
+            8
+          ],
+          "$click_action": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§m§a§p§e') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "voyager@world_main.button_action": {
+          "$size_button": [
+            53,
+            14
+          ],
+          "offset": [
+            40,
+            0
+          ],
+          "$color_default": [
+            0.4314,
+            0.7529,
+            0.9333
+          ],
+          "$color_hover": [
+            0.4314,
+            0.7529,
+            0.9333
+          ],
+          "$color_text_default": [
+            0.1451,
+            0.1451,
+            0.2706
+          ],
+          "$color_text_hover": [
+            0.1451,
+            0.1451,
+            0.2706
+          ],
+          "$offset_img": [
+            -17,
+            0
+          ],
+          "$text_value": "Voyager",
+          "$texture_action": "textures/global/voyage",
+          "$click_action": "",
+          "$size_img": [
+            8,
+            8
+          ],
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§a§c§t§i') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "warp@world_main.button_action": {
+          "$size_button": [
+            36,
+            14
+          ],
+          "$color_default": [
+            0.1451,
+            0.1451,
+            0.2706
+          ],
+          "offset": [
+            97,
+            0
+          ],
+          "$color_hover": "white",
+          "$color_text_default": [
+            0.4314,
+            0.7529,
+            0.9333
+          ],
+          "$color_text_hover": [
+            0.1451,
+            0.1451,
+            0.2706
+          ],
+          "$text_value": "Warp",
+          "$texture_action": "textures/global/compass",
+          "$offset_img": [
+            -10,
+            0
+          ],
+          "$size_img": [
+            7,
+            7
+          ],
+          "$click_action": "button.form_button_click",
+          "bindings": [
+            {
+              "binding_name": "#form_button_text",
+              "binding_name_override": "#form_button_text",
+              "binding_type": "collection",
+              "binding_collection_name": "form_buttons"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not((#form_button_text - '§w§a§r§p') \u003d #form_button_text))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "button_action": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": "$size_button",
+    "controls": [
+      {
+        "form_button@common.button": {
+          "$pressed_button_name": "$click_action",
+          "$default_state|default": false,
+          "$hover_state|default": false,
+          "controls": [
+            {
+              "default": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background_all": {
+                      "type": "image",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "texture": "textures/global/button_color_white",
+                      "keep_ratio": false,
+                      "color": "$color_default",
+                      "layer": 15,
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "background_hover": {
+                      "type": "image",
+                      "anchor_from": "center_left",
+                      "anchor_to": "center_left",
+                      "keep_ratio": false,
+                      "texture": "$texture_action",
+                      "color": "$color_text_default",
+                      "layer": 15,
+                      "size": "$size_img",
+                      "offset": "$offset_img"
+                    }
+                  },
+                  {
+                    "info_action@server_form.text": {
+                      "$text": "$text_value",
+                      "font_scale_factor": 0.7,
+                      "$offset": [
+                        5,
+                        0
+                      ],
+                      "$color": "$color_text_default",
+                      "$font_type": "normal",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "layer": 16
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "hover": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "background_all": {
+                      "type": "image",
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "keep_ratio": false,
+                      "texture": "textures/global/button_color_white",
+                      "color": "$color_hover",
+                      "layer": 15,
+                      "size": [
+                        "100%",
+                        "100%"
+                      ]
+                    }
+                  },
+                  {
+                    "background_hover": {
+                      "type": "image",
+                      "anchor_from": "center_left",
+                      "anchor_to": "center_left",
+                      "keep_ratio": false,
+                      "texture": "$texture_action",
+                      "color": "$color_text_hover",
+                      "layer": 15,
+                      "size": "$size_img",
+                      "offset": "$offset_img"
+                    }
+                  },
+                  {
+                    "info_action@server_form.text": {
+                      "$text": "$text_value",
+                      "font_scale_factor": 0.7,
+                      "$offset": [
+                        5,
+                        0
+                      ],
+                      "$color": "$color_text_hover",
+                      "$font_type": "normal",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "layer": 16
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

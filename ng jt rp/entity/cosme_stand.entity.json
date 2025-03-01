@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:cosme_stand",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/cosme_stand"
+			},
+			"geometry": {
+				"default": "geometry.cosme_stand"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#a301c2",
+				"overlay_color": "#def814"
+			}
+		}
+	}
+}
