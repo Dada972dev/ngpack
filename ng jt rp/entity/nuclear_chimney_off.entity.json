@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:nuclear_chimney_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/nuclear_chimney_off"
+			},
+			"geometry": {
+				"default": "geometry.nuclear_chimney_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "nuclear_chimney_off_spawn_egg"
+			}
+		}
+	}
+}

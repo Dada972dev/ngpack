@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:chaudiere_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/chaudiere_off"
+			},
+			"geometry": {
+				"default": "geometry.chaudiere_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "chaudiere_off_spawn_egg"
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:platform",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/platform"
+			},
+			"animations": {
+				"wave": "animation.platform.default"
+			},
+			"scripts": {
+				"animate": [
+					"wave"
+				]
+			},
+			"geometry": {
+				"default": "geometry.platform"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "platform_spawn_egg"
+			}
+		}
+	}
+}

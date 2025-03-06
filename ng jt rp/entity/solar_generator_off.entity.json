@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:solar_generator_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/solar_generator_off"
+			},
+			"animations": {
+				"wave": "animation.solar_generator.off"
+			},
+			"scripts": {
+				"animate": [
+					"wave"
+				]
+			},
+			"geometry": {
+				"default": "geometry.solar_generator_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "solar_generator_off_spawn_egg"
+			}
+		}
+	}
+}

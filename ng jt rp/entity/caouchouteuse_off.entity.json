@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:caouchouteuse_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/caouchouteuse_off"
+			},
+			"geometry": {
+				"default": "geometry.caouchouteuse_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "caouchouteuse_off_spawn_egg"
+			}
+		}
+	}
+}

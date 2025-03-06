@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:acumulateur_plasmique_tier_1",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/acumulateur_plasmique_tier_1"
+			},
+			"animations": {
+				"wave": "animation.accumulateur_plasmique.work1"
+			},
+			"scripts": {
+				"animate": [
+					"wave"
+				]
+			},
+			"geometry": {
+				"default": "geometry.acumulateur_plasmique_tier_1"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#04695c",
+				"overlay_color": "#0d6ea8"
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:machine__potion_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/machine__potion_off"
+			},
+			"geometry": {
+				"default": "geometry.machine__potion_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "machine__potion_off_spawn_egg"
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:machine_casino_loose",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/machine_casino_loose"
+			},
+			"animations": {
+				"wave": "animation.machine_casino.casino_run_loose"
+			},
+			"scripts": {
+				"animate": [
+					"wave"
+				]
+			},
+			"geometry": {
+				"default": "geometry.machine_casino_loose"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "machine_casino_loose_spawn_egg"
+			}
+		}
+	}
+}

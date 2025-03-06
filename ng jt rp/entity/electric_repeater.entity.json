@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:electric_repeater",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/electric_repeater"
+			},
+			"geometry": {
+				"default": "geometry.electric_repeater"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "electric_repeater_spawn_egg"
+			}
+		}
+	}
+}

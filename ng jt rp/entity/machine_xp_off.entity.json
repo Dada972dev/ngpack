@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:machine_xp_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/machine_xp_off"
+			},
+			"geometry": {
+				"default": "geometry.machine_xp_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "machine_xp_off_spawn_egg"
+			}
+		}
+	}
+}

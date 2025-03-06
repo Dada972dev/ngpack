@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:uranium_refinery_on_235",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/uranium_refinery_on_235"
+			},
+			"animations": {
+				"wave": "animation.nuclear.nuclear_on"
+			},
+			"scripts": {
+				"animate": [
+					"wave"
+				]
+			},
+			"geometry": {
+				"default": "geometry.uranium_refinery_on_235"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "uranium_refinery_on_235_spawn_egg"
+			}
+		}
+	}
+}

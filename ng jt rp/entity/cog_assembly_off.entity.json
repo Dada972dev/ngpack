@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:cog_assembly_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/cog_assembly_off"
+			},
+			"geometry": {
+				"default": "geometry.cog_assembly_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "cog_assembly_off_spawn_egg"
+			}
+		}
+	}
+}

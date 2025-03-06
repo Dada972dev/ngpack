@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:gas_extractor_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/gas_extractor_off"
+			},
+			"geometry": {
+				"default": "geometry.gas_extractor_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "gas_extractor_off_spawn_egg"
+			}
+		}
+	}
+}

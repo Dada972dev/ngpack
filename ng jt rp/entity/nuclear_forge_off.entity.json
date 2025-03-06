@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:nuclear_forge_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/nuclear_forge_off"
+			},
+			"geometry": {
+				"default": "geometry.nuclear_forge_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "nuclear_forge_off_spawn_egg"
+			}
+		}
+	}
+}

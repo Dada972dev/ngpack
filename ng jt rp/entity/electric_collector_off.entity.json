@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:electric_collector_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/electric_collector_off"
+			},
+			"geometry": {
+				"default": "geometry.electric_collector_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "electric_collector_off_spawn_egg"
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:nuclear_reactor_panel_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/nuclear_reactor_panel_off"
+			},
+			"geometry": {
+				"default": "geometry.nuclear_reactor_panel_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "nuclear_reactor_panel_off_spawn_egg"
+			}
+		}
+	}
+}

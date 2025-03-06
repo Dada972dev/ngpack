@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:electric_charger_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/electric_charger_off"
+			},
+			"geometry": {
+				"default": "geometry.electric_charger_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "electric_charger_off_spawn_egg"
+			}
+		}
+	}
+}

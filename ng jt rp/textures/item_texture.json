@@ -1,5 +1,284 @@
 {
 	"texture_data": {
+		"fuel_loader_empty_on_spawn_egg": {
+			"textures": ["textures/items/fuel_loader_empty_on_spawn_egg"]
+		},
+		"fuel_loader_empty_off_spawn_egg": {
+			"textures": ["textures/items/fuel_loader_empty_off_spawn_egg"]
+		},
+		"fuel_loader_full_off_spawn_egg": {
+			"textures": ["textures/items/fuel_loader_full_off_spawn_egg"]
+		},
+		"fuel_loader_full_on_spawn_egg": {
+			"textures": ["textures/items/fuel_loader_full_on_spawn_egg"]
+		},
+		"platform_spawn_egg": {
+			"textures": ["textures/items/platform_spawn_egg"]
+		},
+		"oxygen_compressor_on_spawn_egg": {
+			"textures": ["textures/items/oxygen_compressor_on_spawn_egg"]
+		},
+		"oxygen_compressor_off_spawn_egg": {
+			"textures": ["textures/items/oxygen_compressor_off_spawn_egg"]
+		},
+		"oxygen_collector_off_spawn_egg": {
+			"textures": ["textures/items/oxygen_collector_off_spawn_egg"]
+		},
+		"oxygen_collector_on_spawn_egg": {
+			"textures": ["textures/items/oxygen_collector_on_spawn_egg"]
+		},
+		"machine_casino_loose_spawn_egg": {
+			"textures": ["textures/items/machine_casino_loose_spawn_egg"]
+		},
+		"machine_casino_win_spawn_egg": {
+			"textures": ["textures/items/machine_casino_win_spawn_egg"]
+		},
+		"machine_casino__spawn_egg": {
+			"textures": ["textures/items/machine_casino__spawn_egg"]
+		},
+		"machine_xp_off_spawn_egg": {
+			"textures": ["textures/items/machine_xp_off_spawn_egg"]
+		},
+		"machine_xp_on_spawn_egg": {
+			"textures": ["textures/items/machine_xp_on_spawn_egg"]
+		},
+		"machine_trader_on_spawn_egg": {
+			"textures": ["textures/items/machine_trader_on_spawn_egg"]
+		},
+		"machine_trader_off_spawn_egg": {
+			"textures": ["textures/items/machine_trader_off_spawn_egg"]
+		},
+		"machine_reparator_off_spawn_egg": {
+			"textures": ["textures/items/machine_reparator_off_spawn_egg"]
+		},
+		"machine_reparator_on_spawn_egg": {
+			"textures": ["textures/items/machine_reparator_on_spawn_egg"]
+		},
+		"machine_reaper_on_spawn_egg": {
+			"textures": ["textures/items/machine_reaper_on_spawn_egg"]
+		},
+		"machine_reaper_off_spawn_egg": {
+			"textures": ["textures/items/machine_reaper_off_spawn_egg"]
+		},
+		"machine_printer_off_spawn_egg": {
+			"textures": ["textures/items/machine_printer_off_spawn_egg"]
+		},
+		"machine_printer_on_spawn_egg": {
+			"textures": ["textures/items/machine_printer_on_spawn_egg"]
+		},
+		"machine__potion_on_spawn_egg": {
+			"textures": ["textures/items/machine__potion_on_spawn_egg"]
+		},
+		"machine__potion_off_spawn_egg": {
+			"textures": ["textures/items/machine__potion_off_spawn_egg"]
+		},
+		"fuel_generator_off_spawn_egg": {
+			"textures": ["textures/items/fuel_generator_off_spawn_egg"]
+		},
+		"fuel_generator_on_spawn_egg": {
+			"textures": ["textures/items/fuel_generator_on_spawn_egg"]
+		},
+		"electric_collector_on_spawn_egg": {
+			"textures": ["textures/items/electric_collector_on_spawn_egg"]
+		},
+		"electric_collector_off_spawn_egg": {
+			"textures": ["textures/items/electric_collector_off_spawn_egg"]
+		},
+		"liquid_azote_generator_off_spawn_egg": {
+			"textures": ["textures/items/liquid_azote_generator_off_spawn_egg"]
+		},
+		"liquid_azote_generator_on_spawn_egg": {
+			"textures": ["textures/items/liquid_azote_generator_on_spawn_egg"]
+		},
+		"gas_kettle_on_spawn_egg": {
+			"textures": ["textures/items/gas_kettle_on_spawn_egg"]
+		},
+		"gas_kettle_off_spawn_egg": {
+			"textures": ["textures/items/gas_kettle_off_spawn_egg"]
+		},
+		"gas_extractor_off_spawn_egg": {
+			"textures": ["textures/items/gas_extractor_off_spawn_egg"]
+		},
+		"gas_extractor_on_spawn_egg": {
+			"textures": ["textures/items/gas_extractor_on_spawn_egg"]
+		},
+		"electric_compressor_on_spawn_egg": {
+			"textures": ["textures/items/electric_compressor_on_spawn_egg"]
+		},
+		"electric_compressor_off_spawn_egg": {
+			"textures": ["textures/items/electric_compressor_off_spawn_egg"]
+		},
+		"centrifuge_off_spawn_egg": {
+			"textures": ["textures/items/centrifuge_off_spawn_egg"]
+		},
+		"centrifuge_on_spawn_egg": {
+			"textures": ["textures/items/centrifuge_on_spawn_egg"]
+		},
+		"nuclear_chimney_off_spawn_egg": {
+			"textures": ["textures/items/nuclear_chimney_off_spawn_egg"]
+		},
+		"nuclear_chimney_on_spawn_egg": {
+			"textures": ["textures/items/nuclear_chimney_on_spawn_egg"]
+		},
+		"nuclear_fuel_loader_off_spawn_egg": {
+			"textures": ["textures/items/nuclear_fuel_loader_off_spawn_egg"]
+		},
+		"nuclear_fuel_loader_on_spawn_egg": {
+			"textures": ["textures/items/nuclear_fuel_loader_on_spawn_egg"]
+		},
+		"nuclear_reactor_panel_on_spawn_egg": {
+			"textures": ["textures/items/nuclear_reactor_panel_on_spawn_egg"]
+		},
+		"nuclear_reactor_panel_off_spawn_egg": {
+			"textures": ["textures/items/nuclear_reactor_panel_off_spawn_egg"]
+		},
+		"nuclear_forge_off_spawn_egg": {
+			"textures": ["textures/items/nuclear_forge_off_spawn_egg"]
+		},
+		"nuclear_forge_on_spawn_egg": {
+			"textures": ["textures/items/nuclear_forge_on_spawn_egg"]
+		},
+		"solar_generator_on_spawn_egg": {
+			"textures": ["textures/items/solar_generator_on_spawn_egg"]
+		},
+		"solar_generator_off_spawn_egg": {
+			"textures": ["textures/items/solar_generator_off_spawn_egg"]
+		},
+		"uranium_refinery_on_238_spawn_egg": {
+			"textures": ["textures/items/uranium_refinery_on_238_spawn_egg"]
+		},
+		"uranium_refinery_on_235_spawn_egg": {
+			"textures": ["textures/items/uranium_refinery_on_235_spawn_egg"]
+		},
+		"uranium_refinery_off_spawn_egg": {
+			"textures": ["textures/items/uranium_refinery_off_spawn_egg"]
+		},
+		"pumpjack_on_spawn_egg": {
+			"textures": ["textures/items/pumpjack_on_spawn_egg"]
+		},
+		"pumpjack_off_spawn_egg": {
+			"textures": ["textures/items/pumpjack_off_spawn_egg"]
+		},
+		"uranium_compactor_on_238_spawn_egg": {
+			"textures": ["textures/items/uranium_compactor_on_238_spawn_egg"]
+		},
+		"uranium_compactor_on_235_spawn_egg": {
+			"textures": ["textures/items/uranium_compactor_on_235_spawn_egg"]
+		},
+		"uranium_compactor_off_spawn_egg": {
+			"textures": ["textures/items/uranium_compactor_off_spawn_egg"]
+		},
+		"uranium_extractor_off_spawn_egg": {
+			"textures": ["textures/items/uranium_extractor_off_spawn_egg"]
+		},
+		"uranium_extractor_on_spawn_egg": {
+			"textures": ["textures/items/uranium_extractor_on_spawn_egg"]
+		},
+		"electric_charger_off_spawn_egg": {
+			"textures": ["textures/items/electric_charger_off_spawn_egg"]
+		},
+		"electric_charger_on_spawn_egg": {
+			"textures": ["textures/items/electric_charger_on_spawn_egg"]
+		},
+		"gas_collector_on_spawn_egg": {
+			"textures": ["textures/items/gas_collector_on_spawn_egg"]
+		},
+		"gas_collector_off_spawn_egg": {
+			"textures": ["textures/items/gas_collector_off_spawn_egg"]
+		},
+		"gas_compressor_off_spawn_egg": {
+			"textures": ["textures/items/gas_compressor_off_spawn_egg"]
+		},
+		"gas_compressor_on_spawn_egg": {
+			"textures": ["textures/items/gas_compressor_on_spawn_egg"]
+		},
+		"cog_assembly_on_spawn_egg": {
+			"textures": ["textures/items/cog_assembly_on_spawn_egg"]
+		},
+		"cog_assembly_off_spawn_egg": {
+			"textures": ["textures/items/cog_assembly_off_spawn_egg"]
+		},
+		"caouchouteuse_off_spawn_egg": {
+			"textures": ["textures/items/caouchouteuse_off_spawn_egg"]
+		},
+		"caouchouteuse_on_spawn_egg": {
+			"textures": ["textures/items/caouchouteuse_on_spawn_egg"]
+		},
+		"coal_generator_on_spawn_egg": {
+			"textures": ["textures/items/coal_generator_on_spawn_egg"]
+		},
+		"coal_generator_off_spawn_egg": {
+			"textures": ["textures/items/coal_generator_off_spawn_egg"]
+		},
+		"crusher_off_spawn_egg": {
+			"textures": ["textures/items/crusher_off_spawn_egg"]
+		},
+		"crusher_on_spawn_egg": {
+			"textures": ["textures/items/crusher_on_spawn_egg"]
+		},
+		"ecotron_on_spawn_egg": {
+			"textures": ["textures/items/ecotron_on_spawn_egg"]
+		},
+		"ecotron_off_spawn_egg": {
+			"textures": ["textures/items/ecotron_off_spawn_egg"]
+		},
+		"tritium_synthesizer_on_spawn_egg": {
+			"textures": ["textures/items/tritium_synthesizer_on_spawn_egg"]
+		},
+		"tritium_synthesizer_off_spawn_egg": {
+			"textures": ["textures/items/tritium_synthesizer_off_spawn_egg"]
+		},
+		"solar_panel_advanced_spawn_egg": {
+			"textures": ["textures/items/solar_panel_advanced_spawn_egg"]
+		},
+		"solar_panel_spawn_egg": {
+			"textures": ["textures/items/solar_panel_spawn_egg"]
+		},
+		"tubine_on_spawn_egg": {
+			"textures": ["textures/items/tubine_on_spawn_egg"]
+		},
+		"tubine_off_spawn_egg": {
+			"textures": ["textures/items/tubine_off_spawn_egg"]
+		},
+		"electric_repeater_spawn_egg": {
+			"textures": ["textures/items/electric_repeater_spawn_egg"]
+		},
+		"gaz_tank_spawn_egg": {
+			"textures": ["textures/items/gaz_tank_spawn_egg"]
+		},
+		"radioactive_collector_spawn_egg": {
+			"textures": ["textures/items/radioactive_collector_spawn_egg"]
+		},
+		"refinery_spawn_egg": {
+			"textures": ["textures/items/refinery_spawn_egg"]
+		},
+		"terminal_spawn_egg": {
+			"textures": ["textures/items/terminal_spawn_egg"]
+		},
+		"workstation_spawn_egg": {
+			"textures": ["textures/items/workstation_spawn_egg"]
+		},
+		"bio_generator_off_spawn_egg": {
+			"textures": ["textures/items/bio_generator_off_spawn_egg"]
+		},
+		"bio_generator_on_spawn_egg": {
+			"textures": ["textures/items/bio_generator_on_spawn_egg"]
+		},
+		"aircraft_turret_on_spawn_egg": {
+			"textures": ["textures/items/aircraft_turret_on_spawn_egg"]
+		},
+		"aircraft_turret_off_spawn_egg": {
+			"textures": ["textures/items/aircraft_turret_off_spawn_egg"]
+		},
+		"chaudiere_off_spawn_egg": {
+			"textures": ["textures/items/chaudiere_off_spawn_egg"]
+		},
+		"chaudiere_on_spawn_egg": {
+			"textures": ["textures/items/chaudiere_on_spawn_egg"]
+		},
+		"solar_generator_spawn_egg": {
+			"textures": ["textures/items/solar_generator_spawn_egg"]
+		},
 		"bottes_en_eco": {
 			"textures": "textures/items/bottes_en_eco.png"
 		},

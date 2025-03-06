@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:uranium_compactor_on_238",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/uranium_compactor_on_238"
+			},
+			"animations": {
+				"wave": "animation.nuclear.nuclear_on"
+			},
+			"scripts": {
+				"animate": [
+					"wave"
+				]
+			},
+			"geometry": {
+				"default": "geometry.uranium_compactor_on_238"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "uranium_compactor_on_238_spawn_egg"
+			}
+		}
+	}
+}

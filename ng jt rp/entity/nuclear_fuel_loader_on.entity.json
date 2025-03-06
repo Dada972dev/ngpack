@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:nuclear_fuel_loader_on",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/nuclear_fuel_loader_on"
+			},
+			"geometry": {
+				"default": "geometry.nuclear_fuel_loader_on"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "nuclear_fuel_loader_on_spawn_egg"
+			}
+		}
+	}
+}

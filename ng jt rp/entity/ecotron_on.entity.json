@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:ecotron_on",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ecotron_on"
+			},
+			"geometry": {
+				"default": "geometry.ecotron_on"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "ecotron_on_spawn_egg"
+			}
+		}
+	}
+}

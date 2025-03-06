@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:fuel_generator_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fuel_generator_off"
+			},
+			"geometry": {
+				"default": "geometry.fuel_generator_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "fuel_generator_off_spawn_egg"
+			}
+		}
+	}
+}

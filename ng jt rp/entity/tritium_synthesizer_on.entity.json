@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:tritium_synthesizer_on",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/tritium_synthesizer_on"
+			},
+			"geometry": {
+				"default": "geometry.tritium_synthesizer_on"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "tritium_synthesizer_on_spawn_egg"
+			}
+		}
+	}
+}

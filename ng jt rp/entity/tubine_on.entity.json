@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:tubine_on",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/tubine_on"
+			},
+		"animations": {
+			"wave": "animation.turbine.on"
+		},
+		"scripts": {
+			"animate": [
+			  "wave"
+			]
+		  },
+			"geometry": {
+				"default": "geometry.tubine_on"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "tubine_on_spawn_egg"
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:uranium_refinery_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/uranium_refinery_off"
+			},
+			"geometry": {
+				"default": "geometry.uranium_refinery_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "uranium_refinery_off_spawn_egg"
+			}
+		}
+	}
+}

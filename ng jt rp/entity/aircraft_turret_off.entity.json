@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:aircraft_turret_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/aircraft_turret_off"
+			},
+			"geometry": {
+				"default": "geometry.aircraft_turret_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "aircraft_turret_off_spawn_egg"
+			}
+		}
+	}
+}

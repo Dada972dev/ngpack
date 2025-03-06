@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:gas_kettle_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/gas_kettle_off"
+			},
+			"geometry": {
+				"default": "geometry.gas_kettle_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "gas_kettle_off_spawn_egg"
+			}
+		}
+	}
+}

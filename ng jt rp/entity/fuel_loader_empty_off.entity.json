@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:fuel_loader_empty_off",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fuel_loader_empty_off"
+			},
+			"geometry": {
+				"default": "geometry.fuel_loader_empty_off"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "fuel_loader_empty_off_spawn_egg"
+			}
+		}
+	}
+}
